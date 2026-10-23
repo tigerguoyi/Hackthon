@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "competition": "Premier League (synthetic)",
+  "teams": 20,
+  "matchweeks": 4,
+  "matches": 40,
+  "goals": 103,
+  "matches_with_full_tracking": 4,
+  "checks": [
+    "20 unique clubs and 10 fixtures per matchweek",
+    "every club plays exactly once per matchweek",
+    "no repeated pairing in the selected rounds",
+    "per-match metadata, summary, events, states and preview exist",
+    "all 20 clubs have a real 2026/27 squad and match lineups use squad players",
+    "event order, match_end and event/score consistency",
+    "substitute identity, team membership and no events from departed players",
+    "state snapshots and final statistics consistency",
+    "fixture scores, standings, totals and scorer totals agree",
+    "featured matches contain exactly 30,001 tracking frames"
+  ],
+  "scope": "Structural and internal consistency; not validation against real football data."
+}

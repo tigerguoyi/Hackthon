@@ -1,0 +1,195 @@
+{
+  "match_id": "PL26-W04-AVL-LEE",
+  "seed": 20265023,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 656374,
+  "state_snapshots": 6001,
+  "event_count": 3641,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 126,
+    "restart": 25,
+    "carry": 1258,
+    "pressure": 1273,
+    "pass": 799,
+    "interception": 105,
+    "shot": 18,
+    "save": 8,
+    "stoppage": 10,
+    "yellow_card": 2,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    3,
+    2
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 399,
+      "completed_passes": 350,
+      "shots": 13,
+      "shots_on_target": 9,
+      "interceptions": 56,
+      "pressure_events": 644,
+      "possession_seconds": 2889.2,
+      "possession_pct": 50.3,
+      "pass_accuracy_pct": 87.72
+    },
+    "AWAY": {
+      "passes": 400,
+      "completed_passes": 344,
+      "shots": 5,
+      "shots_on_target": 4,
+      "interceptions": 49,
+      "pressure_events": 629,
+      "possession_seconds": 2854.6,
+      "possession_pct": 49.7,
+      "pass_accuracy_pct": 86.0
+    }
+  },
+  "distance_m": {
+    "H01": 3104.3,
+    "H02": 8299.1,
+    "H03": 11484.0,
+    "H04": 11847.1,
+    "H05": 10874.4,
+    "H06": 8889.2,
+    "H07": 13638.4,
+    "H08": 13254.4,
+    "H09": 12927.2,
+    "H10": 13472.5,
+    "H11": 12605.6,
+    "A01": 3223.1,
+    "A02": 10929.1,
+    "A03": 12066.3,
+    "A04": 11950.9,
+    "A05": 9410.7,
+    "A06": 10802.2,
+    "A07": 14085.2,
+    "A08": 13357.0,
+    "A09": 12162.4,
+    "A10": 12658.7,
+    "A11": 7823.8,
+    "H12": 4671.5,
+    "H13": 0.0,
+    "H14": 2744.6,
+    "A12": 2717.3,
+    "A13": 4326.8,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 868400,
+      "period": 1,
+      "period_ms": 868400,
+      "team_id": "AWAY",
+      "club_id": "LEE",
+      "club_name": "Leeds United",
+      "player_id": "A10",
+      "player_name": "Lukas Nmecha",
+      "shirt_number": 14,
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "t_ms": 1435600,
+      "period": 1,
+      "period_ms": 1435600,
+      "team_id": "HOME",
+      "club_id": "AVL",
+      "club_name": "Aston Villa",
+      "player_id": "H10",
+      "player_name": "Nicolas Jackson",
+      "shirt_number": 11,
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "t_ms": 2239200,
+      "period": 1,
+      "period_ms": 2239200,
+      "team_id": "HOME",
+      "club_id": "AVL",
+      "club_name": "Aston Villa",
+      "player_id": "H10",
+      "player_name": "Nicolas Jackson",
+      "shirt_number": 11,
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "t_ms": 3164000,
+      "period": 2,
+      "period_ms": 164000,
+      "team_id": "AWAY",
+      "club_id": "LEE",
+      "club_name": "Leeds United",
+      "player_id": "A09",
+      "player_name": "Daniel James",
+      "shirt_number": 7,
+      "score": [
+        2,
+        2
+      ]
+    },
+    {
+      "t_ms": 5225000,
+      "period": 2,
+      "period_ms": 2225000,
+      "team_id": "HOME",
+      "club_id": "AVL",
+      "club_name": "Aston Villa",
+      "player_id": "H10",
+      "player_name": "Nicolas Jackson",
+      "shirt_number": 11,
+      "score": [
+        3,
+        2
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 4,
+    "kickoff_local": "2026-11-14T20:00:00",
+    "time_zone": "Europe/London",
+    "venue": "Villa Park"
+  },
+  "home_club": {
+    "club_id": "AVL",
+    "name": "Aston Villa",
+    "short_name": "Aston Villa",
+    "stadium": "Villa Park",
+    "colors": {
+      "primary": "#670E36",
+      "secondary": "#95BFE5"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "LEE",
+    "name": "Leeds United",
+    "short_name": "Leeds",
+    "stadium": "Elland Road",
+    "colors": {
+      "primary": "#FFFFFF",
+      "secondary": "#1D428A"
+    },
+    "formation": "4-3-3"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "match_id": "PL26-W02-BRE-MCI",
+  "seed": 20263023,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 656286,
+  "state_snapshots": 6001,
+  "event_count": 3609,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 139,
+    "restart": 28,
+    "pressure": 1220,
+    "carry": 1258,
+    "pass": 787,
+    "interception": 116,
+    "shot": 21,
+    "save": 10,
+    "stoppage": 11,
+    "yellow_card": 2,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    1,
+    1
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 329,
+      "completed_passes": 269,
+      "shots": 9,
+      "shots_on_target": 4,
+      "interceptions": 56,
+      "pressure_events": 723,
+      "possession_seconds": 2354.0,
+      "possession_pct": 40.84,
+      "pass_accuracy_pct": 81.76
+    },
+    "AWAY": {
+      "passes": 458,
+      "completed_passes": 402,
+      "shots": 12,
+      "shots_on_target": 8,
+      "interceptions": 60,
+      "pressure_events": 497,
+      "possession_seconds": 3409.8,
+      "possession_pct": 59.16,
+      "pass_accuracy_pct": 87.77
+    }
+  },
+  "distance_m": {
+    "H01": 3242.7,
+    "H02": 8309.9,
+    "H03": 12077.8,
+    "H04": 12026.1,
+    "H05": 11106.1,
+    "H06": 8642.8,
+    "H07": 14645.3,
+    "H08": 14105.3,
+    "H09": 13033.1,
+    "H10": 14137.7,
+    "H11": 13048.0,
+    "A01": 3228.3,
+    "A02": 11123.1,
+    "A03": 11835.2,
+    "A04": 11993.7,
+    "A05": 9783.6,
+    "A06": 10410.6,
+    "A07": 13262.6,
+    "A08": 13513.2,
+    "A09": 12803.4,
+    "A10": 13117.6,
+    "A11": 8401.0,
+    "H12": 5349.9,
+    "H13": 0.0,
+    "H14": 2868.6,
+    "A12": 2771.0,
+    "A13": 4349.7,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 1201200,
+      "period": 1,
+      "period_ms": 1201200,
+      "team_id": "AWAY",
+      "club_id": "MCI",
+      "club_name": "Manchester City",
+      "player_id": "A10",
+      "player_name": "Erling Haaland",
+      "shirt_number": 9,
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "t_ms": 3155600,
+      "period": 2,
+      "period_ms": 155600,
+      "team_id": "HOME",
+      "club_id": "BRE",
+      "club_name": "Brentford",
+      "player_id": "H11",
+      "player_name": "Igor Thiago",
+      "shirt_number": 9,
+      "score": [
+        1,
+        1
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 2,
+    "kickoff_local": "2026-10-31T20:00:00",
+    "time_zone": "Europe/London",
+    "venue": "Gtech Community Stadium"
+  },
+  "home_club": {
+    "club_id": "BRE",
+    "name": "Brentford",
+    "short_name": "Brentford",
+    "stadium": "Gtech Community Stadium",
+    "colors": {
+      "primary": "#E30613",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "MCI",
+    "name": "Manchester City",
+    "short_name": "Man City",
+    "stadium": "Etihad Stadium",
+    "colors": {
+      "primary": "#6CABDD",
+      "secondary": "#1C2C5B"
+    },
+    "formation": "4-3-3"
+  }
+}

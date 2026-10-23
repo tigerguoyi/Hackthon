@@ -1,0 +1,1 @@
+{"status":"PASS","matches":40,"covered":5377,"missing":44768,"representative":137,"source_files":250,"checks":["Source and generator SHA-256 unchanged","Exact-time existing tracking only","No simulator import or replay","4-fold match isolation","No preview fitting/calibration","Softmax sum, bounds and ranking","Representative player/team/possession/time constraints"]}

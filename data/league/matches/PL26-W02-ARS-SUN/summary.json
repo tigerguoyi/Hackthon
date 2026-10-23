@@ -1,0 +1,210 @@
+{
+  "match_id": "PL26-W02-ARS-SUN",
+  "seed": 20263019,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 656413,
+  "state_snapshots": 6001,
+  "event_count": 3638,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 138,
+    "restart": 38,
+    "carry": 1250,
+    "pressure": 1251,
+    "pass": 775,
+    "interception": 105,
+    "shot": 31,
+    "stoppage": 16,
+    "save": 15,
+    "yellow_card": 2,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    5,
+    1
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 367,
+      "completed_passes": 321,
+      "shots": 22,
+      "shots_on_target": 16,
+      "interceptions": 59,
+      "pressure_events": 649,
+      "possession_seconds": 2730.6,
+      "possession_pct": 48.28,
+      "pass_accuracy_pct": 87.47
+    },
+    "AWAY": {
+      "passes": 408,
+      "completed_passes": 349,
+      "shots": 9,
+      "shots_on_target": 5,
+      "interceptions": 46,
+      "pressure_events": 602,
+      "possession_seconds": 2925.2,
+      "possession_pct": 51.72,
+      "pass_accuracy_pct": 85.54
+    }
+  },
+  "distance_m": {
+    "H01": 3200.2,
+    "H02": 8284.5,
+    "H03": 12142.5,
+    "H04": 11928.3,
+    "H05": 10928.7,
+    "H06": 8298.1,
+    "H07": 14382.2,
+    "H08": 13313.6,
+    "H09": 12801.1,
+    "H10": 13274.1,
+    "H11": 12430.9,
+    "A01": 3321.2,
+    "A02": 10955.2,
+    "A03": 11979.5,
+    "A04": 11983.0,
+    "A05": 9802.7,
+    "A06": 10474.1,
+    "A07": 13682.4,
+    "A08": 13470.9,
+    "A09": 12398.3,
+    "A10": 13191.8,
+    "A11": 8449.8,
+    "H12": 5064.3,
+    "H13": 0.0,
+    "H14": 2797.0,
+    "A12": 2837.8,
+    "A13": 4106.8,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 1233200,
+      "period": 1,
+      "period_ms": 1233200,
+      "team_id": "HOME",
+      "club_id": "ARS",
+      "club_name": "Arsenal",
+      "player_id": "H09",
+      "player_name": "Bukayo Saka",
+      "shirt_number": 7,
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "t_ms": 1479000,
+      "period": 1,
+      "period_ms": 1479000,
+      "team_id": "HOME",
+      "club_id": "ARS",
+      "club_name": "Arsenal",
+      "player_id": "H11",
+      "player_name": "Noni Madueke",
+      "shirt_number": 20,
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "t_ms": 1575000,
+      "period": 1,
+      "period_ms": 1575000,
+      "team_id": "AWAY",
+      "club_id": "SUN",
+      "club_name": "Sunderland",
+      "player_id": "A10",
+      "player_name": "Brian Brobbey",
+      "shirt_number": 9,
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "t_ms": 2005600,
+      "period": 1,
+      "period_ms": 2005600,
+      "team_id": "HOME",
+      "club_id": "ARS",
+      "club_name": "Arsenal",
+      "player_id": "H10",
+      "player_name": "Viktor Gyokeres",
+      "shirt_number": 14,
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "t_ms": 3645000,
+      "period": 2,
+      "period_ms": 645000,
+      "team_id": "HOME",
+      "club_id": "ARS",
+      "club_name": "Arsenal",
+      "player_id": "H11",
+      "player_name": "Noni Madueke",
+      "shirt_number": 20,
+      "score": [
+        4,
+        1
+      ]
+    },
+    {
+      "t_ms": 4865400,
+      "period": 2,
+      "period_ms": 1865400,
+      "team_id": "HOME",
+      "club_id": "ARS",
+      "club_name": "Arsenal",
+      "player_id": "H11",
+      "player_name": "Noni Madueke",
+      "shirt_number": 20,
+      "score": [
+        5,
+        1
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 2,
+    "kickoff_local": "2026-10-31T12:30:00",
+    "time_zone": "Europe/London",
+    "venue": "Emirates Stadium"
+  },
+  "home_club": {
+    "club_id": "ARS",
+    "name": "Arsenal",
+    "short_name": "Arsenal",
+    "stadium": "Emirates Stadium",
+    "colors": {
+      "primary": "#EF0107",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "SUN",
+    "name": "Sunderland",
+    "short_name": "Sunderland",
+    "stadium": "Stadium of Light",
+    "colors": {
+      "primary": "#EB172B",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  }
+}

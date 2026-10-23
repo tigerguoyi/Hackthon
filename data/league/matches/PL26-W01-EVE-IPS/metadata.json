@@ -1,0 +1,400 @@
+{
+  "schema_version": "1.0.0",
+  "match_id": "PL26-W01-EVE-IPS",
+  "synthetic": true,
+  "seed": 20262027,
+  "generator": "generate.py v2.1.0",
+  "duration_ms": 6000000,
+  "tracking_hz": 5,
+  "pitch": {
+    "length_m": 105,
+    "width_m": 68,
+    "origin": "top_left",
+    "x_axis": "right",
+    "y_axis": "down",
+    "z_axis": "up"
+  },
+  "periods": [
+    {
+      "period": 1,
+      "start_ms": 0,
+      "duration_ms": 3000000,
+      "regulation_ms": 2700000,
+      "home_attacks": "positive_x"
+    },
+    {
+      "period": 2,
+      "start_ms": 3000000,
+      "duration_ms": 3000000,
+      "regulation_ms": 2700000,
+      "home_attacks": "negative_x"
+    }
+  ],
+  "clock_note": "Two 45+5 minute periods; halftime break omitted. Use period and period_ms for displayed clock.",
+  "teams": [
+    {
+      "team_id": "HOME",
+      "club_id": "EVE",
+      "name": "Everton",
+      "short_name": "Everton",
+      "stadium": "Hill Dickinson Stadium",
+      "colors": {
+        "primary": "#003399",
+        "secondary": "#FFFFFF"
+      },
+      "formation": "4-3-3"
+    },
+    {
+      "team_id": "AWAY",
+      "club_id": "IPS",
+      "name": "Ipswich Town",
+      "short_name": "Ipswich Town",
+      "stadium": "Portman Road",
+      "colors": {
+        "primary": "#0044A9",
+        "secondary": "#FFFFFF"
+      },
+      "formation": "4-3-3"
+    }
+  ],
+  "players": [
+    {
+      "player_id": "H01",
+      "team_id": "HOME",
+      "jersey_number": 1,
+      "name": "Jordan Pickford",
+      "position": "GK",
+      "position_detail": "Goalkeeper",
+      "nationality": "England",
+      "starter": true
+    },
+    {
+      "player_id": "H02",
+      "team_id": "HOME",
+      "jersey_number": 16,
+      "name": "Vitalii Mykolenko",
+      "position": "LB",
+      "position_detail": "Left Full Back",
+      "nationality": "Ukraine",
+      "starter": true
+    },
+    {
+      "player_id": "H03",
+      "team_id": "HOME",
+      "jersey_number": 5,
+      "name": "Michael Keane",
+      "position": "LCB",
+      "position_detail": "Centre Central Defender",
+      "nationality": "England",
+      "starter": true
+    },
+    {
+      "player_id": "H04",
+      "team_id": "HOME",
+      "jersey_number": 6,
+      "name": "James Tarkowski",
+      "position": "RCB",
+      "position_detail": "Centre Central Defender",
+      "nationality": "England",
+      "starter": true
+    },
+    {
+      "player_id": "H05",
+      "team_id": "HOME",
+      "jersey_number": 4,
+      "name": "Jarrad Branthwaite",
+      "position": "RB",
+      "position_detail": "Defender",
+      "nationality": "England",
+      "starter": true
+    },
+    {
+      "player_id": "H06",
+      "team_id": "HOME",
+      "jersey_number": 2,
+      "name": "Ainsley Maitland-Niles",
+      "position": "LCM",
+      "position_detail": "Centre/Right Wing Back",
+      "nationality": "England",
+      "starter": true
+    },
+    {
+      "player_id": "H07",
+      "team_id": "HOME",
+      "jersey_number": 23,
+      "name": "Christian Norgaard",
+      "position": "DM",
+      "position_detail": "Defensive Midfielder",
+      "nationality": "Denmark",
+      "starter": true
+    },
+    {
+      "player_id": "H08",
+      "team_id": "HOME",
+      "jersey_number": 8,
+      "name": "Kiernan Dewsbury-Hall",
+      "position": "RCM",
+      "position_detail": "Central Midfielder",
+      "nationality": "England",
+      "starter": true
+    },
+    {
+      "player_id": "H09",
+      "team_id": "HOME",
+      "jersey_number": 19,
+      "name": "Tyrique George",
+      "position": "LW",
+      "position_detail": "Left Winger",
+      "nationality": "England",
+      "starter": true
+    },
+    {
+      "player_id": "H10",
+      "team_id": "HOME",
+      "jersey_number": 11,
+      "name": "Thierno Barry",
+      "position": "ST",
+      "position_detail": "Centre Striker",
+      "nationality": "France",
+      "starter": true
+    },
+    {
+      "player_id": "H11",
+      "team_id": "HOME",
+      "jersey_number": 20,
+      "name": "Tyler Dibling",
+      "position": "RW",
+      "position_detail": "Right Winger",
+      "nationality": "England",
+      "starter": true
+    },
+    {
+      "player_id": "A01",
+      "team_id": "AWAY",
+      "jersey_number": 1,
+      "name": "Alex Palmer",
+      "position": "GK",
+      "position_detail": "Goalkeeper",
+      "nationality": null,
+      "starter": true
+    },
+    {
+      "player_id": "A02",
+      "team_id": "AWAY",
+      "jersey_number": 3,
+      "name": "Leif Davis",
+      "position": "LB",
+      "position_detail": "Left Full Back",
+      "nationality": "England",
+      "starter": true
+    },
+    {
+      "player_id": "A03",
+      "team_id": "AWAY",
+      "jersey_number": 4,
+      "name": "Cedric Kipre",
+      "position": "LCB",
+      "position_detail": "Central Defender",
+      "nationality": "Cote D’Ivoire",
+      "starter": true
+    },
+    {
+      "player_id": "A04",
+      "team_id": "AWAY",
+      "jersey_number": 6,
+      "name": "Issa Diop",
+      "position": "RCB",
+      "position_detail": "Centre Central Defender",
+      "nationality": "Morocco",
+      "starter": true
+    },
+    {
+      "player_id": "A05",
+      "team_id": "AWAY",
+      "jersey_number": 2,
+      "name": "Darnell Furlong",
+      "position": "RB",
+      "position_detail": "Right-Back",
+      "nationality": null,
+      "starter": true
+    },
+    {
+      "player_id": "A06",
+      "team_id": "AWAY",
+      "jersey_number": 10,
+      "name": "Julio Enciso",
+      "position": "LCM",
+      "position_detail": "Centre Attacking Midfielder",
+      "nationality": "Paraguay",
+      "starter": true
+    },
+    {
+      "player_id": "A07",
+      "team_id": "AWAY",
+      "jersey_number": 5,
+      "name": "Azor Matusiwa",
+      "position": "DM",
+      "position_detail": "Centre Defensive Midfielder",
+      "nationality": "Netherlands",
+      "starter": true
+    },
+    {
+      "player_id": "A08",
+      "team_id": "AWAY",
+      "jersey_number": 12,
+      "name": "Florentino",
+      "position": "RCM",
+      "position_detail": "Centre Defensive Midfielder",
+      "nationality": "Portugal",
+      "starter": true
+    },
+    {
+      "player_id": "A09",
+      "team_id": "AWAY",
+      "jersey_number": 11,
+      "name": "Jaden Philogene",
+      "position": "LW",
+      "position_detail": "Left Winger",
+      "nationality": "England",
+      "starter": true
+    },
+    {
+      "player_id": "A10",
+      "team_id": "AWAY",
+      "jersey_number": 9,
+      "name": "Zian Flemming",
+      "position": "ST",
+      "position_detail": "Centre Striker",
+      "nationality": "Netherlands",
+      "starter": true
+    },
+    {
+      "player_id": "A11",
+      "team_id": "AWAY",
+      "jersey_number": 7,
+      "name": "Abdul Fatawu",
+      "position": "RW",
+      "position_detail": "Right Winger",
+      "nationality": "Ghana",
+      "starter": true
+    },
+    {
+      "player_id": "H12",
+      "team_id": "HOME",
+      "jersey_number": 10,
+      "name": "Jack Grealish",
+      "position": "LCM",
+      "position_detail": "Left/Centre/Right Attacking Midfielder",
+      "nationality": "England",
+      "starter": false
+    },
+    {
+      "player_id": "H13",
+      "team_id": "HOME",
+      "jersey_number": 22,
+      "name": "Brennan Johnson",
+      "position": "RW",
+      "position_detail": "Right Winger",
+      "nationality": "Wales",
+      "starter": false
+    },
+    {
+      "player_id": "H14",
+      "team_id": "HOME",
+      "jersey_number": 15,
+      "name": "Jake O'Brien",
+      "position": "LB",
+      "position_detail": "Centre Central Defender",
+      "nationality": "Ireland",
+      "starter": false
+    },
+    {
+      "player_id": "A12",
+      "team_id": "AWAY",
+      "jersey_number": 14,
+      "name": "Jack Taylor",
+      "position": "LCM",
+      "position_detail": "Centre Central Midfielder",
+      "nationality": "Ireland",
+      "starter": false
+    },
+    {
+      "player_id": "A13",
+      "team_id": "AWAY",
+      "jersey_number": 8,
+      "name": "Sindre Egeli",
+      "position": "RW",
+      "position_detail": "Right Winger",
+      "nationality": "Norway",
+      "starter": false
+    },
+    {
+      "player_id": "A14",
+      "team_id": "AWAY",
+      "jersey_number": 24,
+      "name": "Jacob Greaves",
+      "position": "LB",
+      "position_detail": "Central Defender",
+      "nationality": "England",
+      "starter": false
+    }
+  ],
+  "columns": {
+    "tracking.players": [
+      "player_id",
+      "x_m",
+      "y_m",
+      "vx_mps",
+      "vy_mps"
+    ],
+    "tracking.ball": [
+      "x_m",
+      "y_m",
+      "z_m",
+      "vx_mps",
+      "vy_mps",
+      "vz_mps"
+    ]
+  },
+  "limitations": [
+    "Simplified procedural motion, not a professional football or physics simulator.",
+    "Club names, squad numbers and player names follow the public 2026/27 Premier League squad lists; match events and tracking are synthetic.",
+    "No offsides, physical collisions or realistic fatigue. Cards and tactical substitutions follow a synthetic schedule.",
+    "Incoming substitutes inherit the outgoing formation slot and position; no touchline entrance animation is modeled.",
+    "Pressure is a proximity heuristic; ball transport during restart_setup is non-playing animation.",
+    "Outcomes exist only in resolved events at available_at_ms; do not expose future events during replay."
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 1,
+    "kickoff_local": "2026-10-25T16:30:00",
+    "time_zone": "Europe/London",
+    "venue": "Hill Dickinson Stadium"
+  },
+  "home_club": {
+    "club_id": "EVE",
+    "name": "Everton",
+    "short_name": "Everton",
+    "stadium": "Hill Dickinson Stadium",
+    "colors": {
+      "primary": "#003399",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "IPS",
+    "name": "Ipswich Town",
+    "short_name": "Ipswich Town",
+    "stadium": "Portman Road",
+    "colors": {
+      "primary": "#0044A9",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  },
+  "venue": "Hill Dickinson Stadium"
+}

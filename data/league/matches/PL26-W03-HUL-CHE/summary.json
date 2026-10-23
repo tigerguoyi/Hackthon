@@ -1,0 +1,180 @@
+{
+  "match_id": "PL26-W03-HUL-CHE",
+  "seed": 20264026,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 655962,
+  "state_snapshots": 6001,
+  "event_count": 3592,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 128,
+    "restart": 41,
+    "pressure": 1234,
+    "carry": 1241,
+    "pass": 768,
+    "interception": 91,
+    "shot": 35,
+    "save": 19,
+    "stoppage": 16,
+    "yellow_card": 2,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    0,
+    4
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 429,
+      "completed_passes": 375,
+      "shots": 10,
+      "shots_on_target": 7,
+      "interceptions": 37,
+      "pressure_events": 557,
+      "possession_seconds": 3120.8,
+      "possession_pct": 55.07,
+      "pass_accuracy_pct": 87.41
+    },
+    "AWAY": {
+      "passes": 339,
+      "completed_passes": 302,
+      "shots": 25,
+      "shots_on_target": 16,
+      "interceptions": 54,
+      "pressure_events": 677,
+      "possession_seconds": 2546.6,
+      "possession_pct": 44.93,
+      "pass_accuracy_pct": 89.09
+    }
+  },
+  "distance_m": {
+    "H01": 3446.6,
+    "H02": 8234.1,
+    "H03": 11800.5,
+    "H04": 11958.5,
+    "H05": 10698.2,
+    "H06": 8410.2,
+    "H07": 13548.0,
+    "H08": 13154.5,
+    "H09": 12651.6,
+    "H10": 12804.4,
+    "H11": 12008.7,
+    "A01": 3220.3,
+    "A02": 11023.4,
+    "A03": 11714.0,
+    "A04": 11489.4,
+    "A05": 9445.6,
+    "A06": 11297.9,
+    "A07": 14024.0,
+    "A08": 13267.4,
+    "A09": 13043.3,
+    "A10": 13807.7,
+    "A11": 8747.5,
+    "H12": 5081.8,
+    "H13": 0.0,
+    "H14": 2839.9,
+    "A12": 2757.7,
+    "A13": 4194.6,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 1625000,
+      "period": 1,
+      "period_ms": 1625000,
+      "team_id": "AWAY",
+      "club_id": "CHE",
+      "club_name": "Chelsea",
+      "player_id": "A10",
+      "player_name": "Joao Pedro",
+      "shirt_number": 9,
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "t_ms": 2121800,
+      "period": 1,
+      "period_ms": 2121800,
+      "team_id": "AWAY",
+      "club_id": "CHE",
+      "club_name": "Chelsea",
+      "player_id": "A10",
+      "player_name": "Joao Pedro",
+      "shirt_number": 9,
+      "score": [
+        0,
+        2
+      ]
+    },
+    {
+      "t_ms": 3542800,
+      "period": 2,
+      "period_ms": 542800,
+      "team_id": "AWAY",
+      "club_id": "CHE",
+      "club_name": "Chelsea",
+      "player_id": "A10",
+      "player_name": "Joao Pedro",
+      "shirt_number": 9,
+      "score": [
+        0,
+        3
+      ]
+    },
+    {
+      "t_ms": 3799800,
+      "period": 2,
+      "period_ms": 799800,
+      "team_id": "AWAY",
+      "club_id": "CHE",
+      "club_name": "Chelsea",
+      "player_id": "A09",
+      "player_name": "Pedro Neto",
+      "shirt_number": 7,
+      "score": [
+        0,
+        4
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 3,
+    "kickoff_local": "2026-11-08T16:30:00",
+    "time_zone": "Europe/London",
+    "venue": "MKM Stadium"
+  },
+  "home_club": {
+    "club_id": "HUL",
+    "name": "Hull City",
+    "short_name": "Hull City",
+    "stadium": "MKM Stadium",
+    "colors": {
+      "primary": "#F5A12D",
+      "secondary": "#000000"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "CHE",
+    "name": "Chelsea",
+    "short_name": "Chelsea",
+    "stadium": "Stamford Bridge",
+    "colors": {
+      "primary": "#034694",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  }
+}

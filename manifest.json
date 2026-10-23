@@ -1,0 +1,71 @@
+{
+  "match_id": "SYN-20261019-001",
+  "files": [
+    {
+      "path": "data/metadata.json",
+      "bytes": 7015,
+      "sha256": "0c0d1e8ade3cbdb80782100149dbc41cd0ba14c4009ef271b9ee2c7196965697"
+    },
+    {
+      "path": "data/preview-60s.json",
+      "bytes": 315004,
+      "sha256": "7dd45bd1d41d73e4cc670036bef16dec235e00b89b00209f44341b1f6082ee81"
+    },
+    {
+      "path": "data/summary.json",
+      "bytes": 2831,
+      "sha256": "2132b0749c09831b0a42e51f15b18f23342b8f5626004b37228561da0cb1633d"
+    },
+    {
+      "path": "data/validation_report.json",
+      "bytes": 743,
+      "sha256": "fc991e1d3aa5a913d47bb65ff344307302a9cf9792867e07c3f4b19b264e0827"
+    },
+    {
+      "path": "data/events.jsonl",
+      "bytes": 1305700,
+      "sha256": "30824466f687ebb23dc1adbfab02d170088706af5a38b4217061addb3664e165"
+    },
+    {
+      "path": "data/states.jsonl",
+      "bytes": 2862114,
+      "sha256": "238ed47794695b13c1675292a2cd06273bf768d7525d71790c8f3cb4bd5b4b17"
+    },
+    {
+      "path": "data/tracking.jsonl",
+      "bytes": 29795611,
+      "sha256": "ac48ff840fdecde0b0fba561d8dc32c1f896999adac31f2e23ae1390ac9aad7b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8006,
+      "sha256": "2ab50637be6896e3b6a586fd0f35453271c7bc08b3c3dfa3a78fdf4038c957e1"
+    },
+    {
+      "path": "generate.py",
+      "bytes": 58928,
+      "sha256": "be62ffbe68a84e4cc46338e31a48f20d38e7e76550ee52448587a634f5e4fbaa"
+    },
+    {
+      "path": "validate.py",
+      "bytes": 7678,
+      "sha256": "089a28bdb6babaa0faa05fff79d0a8b893f51d01396608cc5b5f773a9c4abc50"
+    },
+    {
+      "path": "validate_league.py",
+      "bytes": 12429,
+      "sha256": "88d4c3fa9118937c99e91b9a8858bdd4d7f81a5d0b5e197ebb894ad8e81f8e3f"
+    },
+    {
+      "path": "package.py",
+      "bytes": 2146,
+      "sha256": "9f99a7930e88fd930bc66aa42a28401f41d5ae33ebc88be845da8234722ea128"
+    },
+    {
+      "path": "schema.json",
+      "bytes": 7843,
+      "sha256": "7f4dda8ccec516466b41629d3e779ec4a7692f43f4bc7da14daf5efc9e22309e"
+    }
+  ],
+  "total_bytes_excluding_manifest": 34386048
+}

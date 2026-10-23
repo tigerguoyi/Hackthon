@@ -1,0 +1,165 @@
+{
+  "match_id": "PL26-W04-SUN-MCI",
+  "seed": 20265021,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 655971,
+  "state_snapshots": 6001,
+  "event_count": 3609,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 105,
+    "restart": 21,
+    "pressure": 1272,
+    "carry": 1276,
+    "pass": 799,
+    "interception": 89,
+    "shot": 14,
+    "stoppage": 7,
+    "yellow_card": 2,
+    "save": 7,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    0,
+    3
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 309,
+      "completed_passes": 261,
+      "shots": 3,
+      "shots_on_target": 1,
+      "interceptions": 41,
+      "pressure_events": 797,
+      "possession_seconds": 2202.0,
+      "possession_pct": 37.99,
+      "pass_accuracy_pct": 84.47
+    },
+    "AWAY": {
+      "passes": 490,
+      "completed_passes": 449,
+      "shots": 11,
+      "shots_on_target": 9,
+      "interceptions": 48,
+      "pressure_events": 475,
+      "possession_seconds": 3593.8,
+      "possession_pct": 62.01,
+      "pass_accuracy_pct": 91.63
+    }
+  },
+  "distance_m": {
+    "H01": 3297.6,
+    "H02": 8061.0,
+    "H03": 12079.5,
+    "H04": 12629.3,
+    "H05": 11053.1,
+    "H06": 8644.6,
+    "H07": 14758.9,
+    "H08": 13998.0,
+    "H09": 12055.2,
+    "H10": 12564.2,
+    "H11": 12142.7,
+    "A01": 3184.0,
+    "A02": 10813.0,
+    "A03": 11427.1,
+    "A04": 11165.9,
+    "A05": 9191.1,
+    "A06": 10322.6,
+    "A07": 12771.7,
+    "A08": 12806.6,
+    "A09": 12082.0,
+    "A10": 13433.2,
+    "A11": 8055.3,
+    "H12": 4894.6,
+    "H13": 0.0,
+    "H14": 2548.2,
+    "A12": 2320.5,
+    "A13": 4422.2,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 1123600,
+      "period": 1,
+      "period_ms": 1123600,
+      "team_id": "AWAY",
+      "club_id": "MCI",
+      "club_name": "Manchester City",
+      "player_id": "A10",
+      "player_name": "Erling Haaland",
+      "shirt_number": 9,
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "t_ms": 1831400,
+      "period": 1,
+      "period_ms": 1831400,
+      "team_id": "AWAY",
+      "club_id": "MCI",
+      "club_name": "Manchester City",
+      "player_id": "A06",
+      "player_name": "Elliot Anderson",
+      "shirt_number": 5,
+      "score": [
+        0,
+        2
+      ]
+    },
+    {
+      "t_ms": 4251000,
+      "period": 2,
+      "period_ms": 1251000,
+      "team_id": "AWAY",
+      "club_id": "MCI",
+      "club_name": "Manchester City",
+      "player_id": "A10",
+      "player_name": "Erling Haaland",
+      "shirt_number": 9,
+      "score": [
+        0,
+        3
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 4,
+    "kickoff_local": "2026-11-14T15:00:00",
+    "time_zone": "Europe/London",
+    "venue": "Stadium of Light"
+  },
+  "home_club": {
+    "club_id": "SUN",
+    "name": "Sunderland",
+    "short_name": "Sunderland",
+    "stadium": "Stadium of Light",
+    "colors": {
+      "primary": "#EB172B",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "MCI",
+    "name": "Manchester City",
+    "short_name": "Man City",
+    "stadium": "Etihad Stadium",
+    "colors": {
+      "primary": "#6CABDD",
+      "secondary": "#1C2C5B"
+    },
+    "formation": "4-3-3"
+  }
+}

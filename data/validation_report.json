@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "tracking_frames": 30001,
+  "events": 3521,
+  "state_snapshots": 6001,
+  "final_score": [
+    2,
+    2
+  ],
+  "max_player_speed_mps": 7.201,
+  "max_player_acceleration_mps2": 3.507,
+  "max_ball_speed_mps": 27.604,
+  "checks": [
+    "unique identities and event IDs",
+    "5 Hz frame continuity",
+    "pitch bounds and finite coordinates",
+    "player speed and acceleration limits",
+    "velocity/coordinate agreement",
+    "ball speed and attachment",
+    "event availability and causal references",
+    "goals and scoreboard agreement",
+    "event counts and final statistics",
+    "period clocks and state snapshots"
+  ],
+  "scope": "Internal consistency only; not validation against real football distributions."
+}

@@ -1,0 +1,119 @@
+{
+  "match_id": "PL26-W01-BHA-MUN",
+  "seed": 20262023,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 656012,
+  "state_snapshots": 6001,
+  "event_count": 3624,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 126,
+    "restart": 27,
+    "pressure": 1261,
+    "carry": 1256,
+    "pass": 792,
+    "interception": 103,
+    "shot": 20,
+    "stoppage": 8,
+    "save": 12,
+    "yellow_card": 2,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    0,
+    0
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 429,
+      "completed_passes": 377,
+      "shots": 10,
+      "shots_on_target": 5,
+      "interceptions": 51,
+      "pressure_events": 596,
+      "possession_seconds": 3078.2,
+      "possession_pct": 53.04,
+      "pass_accuracy_pct": 87.88
+    },
+    "AWAY": {
+      "passes": 363,
+      "completed_passes": 312,
+      "shots": 10,
+      "shots_on_target": 7,
+      "interceptions": 52,
+      "pressure_events": 665,
+      "possession_seconds": 2725.6,
+      "possession_pct": 46.96,
+      "pass_accuracy_pct": 85.95
+    }
+  },
+  "distance_m": {
+    "H01": 3214.4,
+    "H02": 8160.1,
+    "H03": 11647.0,
+    "H04": 11701.8,
+    "H05": 10903.8,
+    "H06": 8357.9,
+    "H07": 13803.3,
+    "H08": 13437.4,
+    "H09": 12619.3,
+    "H10": 13465.8,
+    "H11": 12640.8,
+    "A01": 3224.5,
+    "A02": 11070.2,
+    "A03": 11952.7,
+    "A04": 11979.5,
+    "A05": 9500.5,
+    "A06": 10803.6,
+    "A07": 14040.2,
+    "A08": 13719.3,
+    "A09": 12876.4,
+    "A10": 13454.1,
+    "A11": 8748.6,
+    "H12": 4912.9,
+    "H13": 0.0,
+    "H14": 2718.0,
+    "A12": 2614.4,
+    "A13": 4036.9,
+    "A14": 0.0
+  },
+  "goals": [],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 1,
+    "kickoff_local": "2026-10-24T20:00:00",
+    "time_zone": "Europe/London",
+    "venue": "Amex Stadium"
+  },
+  "home_club": {
+    "club_id": "BHA",
+    "name": "Brighton & Hove Albion",
+    "short_name": "Brighton",
+    "stadium": "Amex Stadium",
+    "colors": {
+      "primary": "#0057B8",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "MUN",
+    "name": "Manchester United",
+    "short_name": "Man United",
+    "stadium": "Old Trafford",
+    "colors": {
+      "primary": "#DA291C",
+      "secondary": "#FBE122"
+    },
+    "formation": "4-3-3"
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "match_id": "PL26-W03-EVE-CRY",
+  "seed": 20264028,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 656402,
+  "state_snapshots": 6001,
+  "event_count": 3597,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 123,
+    "restart": 31,
+    "pressure": 1243,
+    "carry": 1252,
+    "pass": 785,
+    "interception": 96,
+    "shot": 24,
+    "save": 9,
+    "stoppage": 15,
+    "yellow_card": 2,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    1,
+    2
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 350,
+      "completed_passes": 301,
+      "shots": 12,
+      "shots_on_target": 5,
+      "interceptions": 47,
+      "pressure_events": 683,
+      "possession_seconds": 2617.8,
+      "possession_pct": 45.74,
+      "pass_accuracy_pct": 86.0
+    },
+    "AWAY": {
+      "passes": 435,
+      "completed_passes": 388,
+      "shots": 12,
+      "shots_on_target": 7,
+      "interceptions": 49,
+      "pressure_events": 560,
+      "possession_seconds": 3106.0,
+      "possession_pct": 54.26,
+      "pass_accuracy_pct": 89.2
+    }
+  },
+  "distance_m": {
+    "H01": 3252.5,
+    "H02": 8247.7,
+    "H03": 12037.4,
+    "H04": 11873.9,
+    "H05": 10858.9,
+    "H06": 8460.2,
+    "H07": 14449.5,
+    "H08": 13403.6,
+    "H09": 12467.2,
+    "H10": 13755.0,
+    "H11": 12704.9,
+    "A01": 3303.7,
+    "A02": 11090.9,
+    "A03": 12071.3,
+    "A04": 11536.5,
+    "A05": 9570.2,
+    "A06": 10668.8,
+    "A07": 13817.7,
+    "A08": 13212.1,
+    "A09": 12613.5,
+    "A10": 13157.4,
+    "A11": 8246.7,
+    "H12": 5352.2,
+    "H13": 0.0,
+    "H14": 2719.1,
+    "A12": 2481.7,
+    "A13": 3971.7,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 310600,
+      "period": 1,
+      "period_ms": 310600,
+      "team_id": "AWAY",
+      "club_id": "CRY",
+      "club_name": "Crystal Palace",
+      "player_id": "A09",
+      "player_name": "Dwight McNeil",
+      "shirt_number": 11,
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "t_ms": 1394200,
+      "period": 1,
+      "period_ms": 1394200,
+      "team_id": "AWAY",
+      "club_id": "CRY",
+      "club_name": "Crystal Palace",
+      "player_id": "A10",
+      "player_name": "Eddie Nketiah",
+      "shirt_number": 9,
+      "score": [
+        0,
+        2
+      ]
+    },
+    {
+      "t_ms": 2375000,
+      "period": 1,
+      "period_ms": 2375000,
+      "team_id": "HOME",
+      "club_id": "EVE",
+      "club_name": "Everton",
+      "player_id": "H09",
+      "player_name": "Tyrique George",
+      "shirt_number": 19,
+      "score": [
+        1,
+        2
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 3,
+    "kickoff_local": "2026-11-08T19:00:00",
+    "time_zone": "Europe/London",
+    "venue": "Hill Dickinson Stadium"
+  },
+  "home_club": {
+    "club_id": "EVE",
+    "name": "Everton",
+    "short_name": "Everton",
+    "stadium": "Hill Dickinson Stadium",
+    "colors": {
+      "primary": "#003399",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "CRY",
+    "name": "Crystal Palace",
+    "short_name": "Crystal Palace",
+    "stadium": "Selhurst Park",
+    "colors": {
+      "primary": "#1B458F",
+      "secondary": "#C4122E"
+    },
+    "formation": "4-3-3"
+  }
+}

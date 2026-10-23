@@ -1,0 +1,165 @@
+{
+  "match_id": "PL26-W02-CRY-HUL",
+  "seed": 20263027,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 655872,
+  "state_snapshots": 6001,
+  "event_count": 3626,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 129,
+    "restart": 36,
+    "pressure": 1231,
+    "carry": 1265,
+    "pass": 790,
+    "interception": 98,
+    "shot": 29,
+    "save": 14,
+    "stoppage": 15,
+    "yellow_card": 2,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    3,
+    0
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 432,
+      "completed_passes": 390,
+      "shots": 21,
+      "shots_on_target": 13,
+      "interceptions": 56,
+      "pressure_events": 537,
+      "possession_seconds": 3183.6,
+      "possession_pct": 55.82,
+      "pass_accuracy_pct": 90.28
+    },
+    "AWAY": {
+      "passes": 358,
+      "completed_passes": 302,
+      "shots": 8,
+      "shots_on_target": 4,
+      "interceptions": 42,
+      "pressure_events": 694,
+      "possession_seconds": 2520.2,
+      "possession_pct": 44.18,
+      "pass_accuracy_pct": 84.36
+    }
+  },
+  "distance_m": {
+    "H01": 3189.4,
+    "H02": 8178.1,
+    "H03": 11734.6,
+    "H04": 11473.9,
+    "H05": 10865.5,
+    "H06": 8541.5,
+    "H07": 13251.5,
+    "H08": 12805.2,
+    "H09": 12757.7,
+    "H10": 13811.0,
+    "H11": 12295.9,
+    "A01": 3346.7,
+    "A02": 11047.5,
+    "A03": 12098.4,
+    "A04": 12160.1,
+    "A05": 9329.4,
+    "A06": 11555.0,
+    "A07": 14885.7,
+    "A08": 13547.9,
+    "A09": 12839.3,
+    "A10": 12555.6,
+    "A11": 7976.8,
+    "H12": 4943.3,
+    "H13": 0.0,
+    "H14": 2795.1,
+    "A12": 2762.9,
+    "A13": 4293.8,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 2232600,
+      "period": 1,
+      "period_ms": 2232600,
+      "team_id": "HOME",
+      "club_id": "CRY",
+      "club_name": "Crystal Palace",
+      "player_id": "H09",
+      "player_name": "Dwight McNeil",
+      "shirt_number": 11,
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "t_ms": 2845200,
+      "period": 1,
+      "period_ms": 2845200,
+      "team_id": "HOME",
+      "club_id": "CRY",
+      "club_name": "Crystal Palace",
+      "player_id": "H10",
+      "player_name": "Eddie Nketiah",
+      "shirt_number": 9,
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "t_ms": 4892600,
+      "period": 2,
+      "period_ms": 1892600,
+      "team_id": "HOME",
+      "club_id": "CRY",
+      "club_name": "Crystal Palace",
+      "player_id": "H11",
+      "player_name": "Ismaila Sarr",
+      "shirt_number": 7,
+      "score": [
+        3,
+        0
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 2,
+    "kickoff_local": "2026-11-01T16:30:00",
+    "time_zone": "Europe/London",
+    "venue": "Selhurst Park"
+  },
+  "home_club": {
+    "club_id": "CRY",
+    "name": "Crystal Palace",
+    "short_name": "Crystal Palace",
+    "stadium": "Selhurst Park",
+    "colors": {
+      "primary": "#1B458F",
+      "secondary": "#C4122E"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "HUL",
+    "name": "Hull City",
+    "short_name": "Hull City",
+    "stadium": "MKM Stadium",
+    "colors": {
+      "primary": "#F5A12D",
+      "secondary": "#000000"
+    },
+    "formation": "4-3-3"
+  }
+}

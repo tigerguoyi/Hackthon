@@ -1,0 +1,135 @@
+{
+  "match_id": "PL26-W03-BOU-LIV",
+  "seed": 20264023,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 655772,
+  "state_snapshots": 6001,
+  "event_count": 3605,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 119,
+    "restart": 29,
+    "pressure": 1256,
+    "carry": 1253,
+    "pass": 791,
+    "interception": 94,
+    "shot": 22,
+    "save": 13,
+    "stoppage": 9,
+    "yellow_card": 2,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    0,
+    1
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 377,
+      "completed_passes": 328,
+      "shots": 10,
+      "shots_on_target": 7,
+      "interceptions": 45,
+      "pressure_events": 657,
+      "possession_seconds": 2810.8,
+      "possession_pct": 48.63,
+      "pass_accuracy_pct": 87.0
+    },
+    "AWAY": {
+      "passes": 414,
+      "completed_passes": 369,
+      "shots": 12,
+      "shots_on_target": 7,
+      "interceptions": 49,
+      "pressure_events": 599,
+      "possession_seconds": 2969.0,
+      "possession_pct": 51.37,
+      "pass_accuracy_pct": 89.13
+    }
+  },
+  "distance_m": {
+    "H01": 3260.4,
+    "H02": 8520.5,
+    "H03": 12219.0,
+    "H04": 11955.7,
+    "H05": 11106.9,
+    "H06": 8542.0,
+    "H07": 13867.7,
+    "H08": 13396.4,
+    "H09": 13268.5,
+    "H10": 13367.5,
+    "H11": 12502.4,
+    "A01": 3227.6,
+    "A02": 11022.4,
+    "A03": 12085.2,
+    "A04": 11676.3,
+    "A05": 9296.2,
+    "A06": 10798.3,
+    "A07": 14228.7,
+    "A08": 13079.2,
+    "A09": 12724.2,
+    "A10": 13343.3,
+    "A11": 8457.1,
+    "H12": 5144.6,
+    "H13": 0.0,
+    "H14": 2624.2,
+    "A12": 2934.2,
+    "A13": 4111.7,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 658000,
+      "period": 1,
+      "period_ms": 658000,
+      "team_id": "AWAY",
+      "club_id": "LIV",
+      "club_name": "Liverpool",
+      "player_id": "A08",
+      "player_name": "Dominik Szoboszlai",
+      "shirt_number": 8,
+      "score": [
+        0,
+        1
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 3,
+    "kickoff_local": "2026-11-07T20:00:00",
+    "time_zone": "Europe/London",
+    "venue": "Vitality Stadium"
+  },
+  "home_club": {
+    "club_id": "BOU",
+    "name": "AFC Bournemouth",
+    "short_name": "Bournemouth",
+    "stadium": "Vitality Stadium",
+    "colors": {
+      "primary": "#DA291C",
+      "secondary": "#000000"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "LIV",
+    "name": "Liverpool",
+    "short_name": "Liverpool",
+    "stadium": "Anfield",
+    "colors": {
+      "primary": "#C8102E",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  }
+}

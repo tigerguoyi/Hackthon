@@ -1,0 +1,400 @@
+{
+  "schema_version": "1.0.0",
+  "match_id": "PL26-W02-CHE-LEE",
+  "synthetic": true,
+  "seed": 20263025,
+  "generator": "generate.py v2.1.0",
+  "duration_ms": 6000000,
+  "tracking_hz": 5,
+  "pitch": {
+    "length_m": 105,
+    "width_m": 68,
+    "origin": "top_left",
+    "x_axis": "right",
+    "y_axis": "down",
+    "z_axis": "up"
+  },
+  "periods": [
+    {
+      "period": 1,
+      "start_ms": 0,
+      "duration_ms": 3000000,
+      "regulation_ms": 2700000,
+      "home_attacks": "positive_x"
+    },
+    {
+      "period": 2,
+      "start_ms": 3000000,
+      "duration_ms": 3000000,
+      "regulation_ms": 2700000,
+      "home_attacks": "negative_x"
+    }
+  ],
+  "clock_note": "Two 45+5 minute periods; halftime break omitted. Use period and period_ms for displayed clock.",
+  "teams": [
+    {
+      "team_id": "HOME",
+      "club_id": "CHE",
+      "name": "Chelsea",
+      "short_name": "Chelsea",
+      "stadium": "Stamford Bridge",
+      "colors": {
+        "primary": "#034694",
+        "secondary": "#FFFFFF"
+      },
+      "formation": "4-3-3"
+    },
+    {
+      "team_id": "AWAY",
+      "club_id": "LEE",
+      "name": "Leeds United",
+      "short_name": "Leeds",
+      "stadium": "Elland Road",
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#1D428A"
+      },
+      "formation": "4-3-3"
+    }
+  ],
+  "players": [
+    {
+      "player_id": "H01",
+      "team_id": "HOME",
+      "jersey_number": 1,
+      "name": "Emiliano Martinez",
+      "position": "GK",
+      "position_detail": "Goalkeeper",
+      "nationality": "Argentina",
+      "starter": true
+    },
+    {
+      "player_id": "H02",
+      "team_id": "HOME",
+      "jersey_number": 21,
+      "name": "Jorrel Hato",
+      "position": "LB",
+      "position_detail": "Left Full Back",
+      "nationality": "Netherlands",
+      "starter": true
+    },
+    {
+      "player_id": "H03",
+      "team_id": "HOME",
+      "jersey_number": 3,
+      "name": "Wesley Fofana",
+      "position": "LCB",
+      "position_detail": "Centre Central Defender",
+      "nationality": "France",
+      "starter": true
+    },
+    {
+      "player_id": "H04",
+      "team_id": "HOME",
+      "jersey_number": 5,
+      "name": "Maxence Lacroix",
+      "position": "RCB",
+      "position_detail": "Central Defender",
+      "nationality": "France",
+      "starter": true
+    },
+    {
+      "player_id": "H05",
+      "team_id": "HOME",
+      "jersey_number": 2,
+      "name": "Marco Palestra",
+      "position": "RB",
+      "position_detail": "Right Full Back",
+      "nationality": "Italy",
+      "starter": true
+    },
+    {
+      "player_id": "H06",
+      "team_id": "HOME",
+      "jersey_number": 4,
+      "name": "Valentin Barco",
+      "position": "LCM",
+      "position_detail": "Left/Centre Central Midfielder",
+      "nationality": "Argentina",
+      "starter": true
+    },
+    {
+      "player_id": "H07",
+      "team_id": "HOME",
+      "jersey_number": 25,
+      "name": "Moises Caicedo",
+      "position": "DM",
+      "position_detail": "Centre Defensive Midfielder",
+      "nationality": "Ecuador",
+      "starter": true
+    },
+    {
+      "player_id": "H08",
+      "team_id": "HOME",
+      "jersey_number": 10,
+      "name": "Cole Palmer",
+      "position": "RCM",
+      "position_detail": "Attacking Midfielder",
+      "nationality": "England",
+      "starter": true
+    },
+    {
+      "player_id": "H09",
+      "team_id": "HOME",
+      "jersey_number": 7,
+      "name": "Pedro Neto",
+      "position": "LW",
+      "position_detail": "Left/Right Winger",
+      "nationality": "Portugal",
+      "starter": true
+    },
+    {
+      "player_id": "H10",
+      "team_id": "HOME",
+      "jersey_number": 9,
+      "name": "Joao Pedro",
+      "position": "ST",
+      "position_detail": "Centre Striker",
+      "nationality": "Brazil",
+      "starter": true
+    },
+    {
+      "player_id": "H11",
+      "team_id": "HOME",
+      "jersey_number": 41,
+      "name": "Estevao",
+      "position": "RW",
+      "position_detail": "Right Winger",
+      "nationality": "Brazil",
+      "starter": true
+    },
+    {
+      "player_id": "A01",
+      "team_id": "AWAY",
+      "jersey_number": 1,
+      "name": "James Trafford",
+      "position": "GK",
+      "position_detail": "Goalkeeper",
+      "nationality": "England",
+      "starter": true
+    },
+    {
+      "player_id": "A02",
+      "team_id": "AWAY",
+      "jersey_number": 3,
+      "name": "Gabriel Gudmundsson",
+      "position": "LB",
+      "position_detail": "Left Full Back",
+      "nationality": "Sweden",
+      "starter": true
+    },
+    {
+      "player_id": "A03",
+      "team_id": "AWAY",
+      "jersey_number": 5,
+      "name": "Tarik Muharemovic",
+      "position": "LCB",
+      "position_detail": "Central Defender",
+      "nationality": "Bosnia & Herzegovina",
+      "starter": true
+    },
+    {
+      "player_id": "A04",
+      "team_id": "AWAY",
+      "jersey_number": 6,
+      "name": "Joe Rodon",
+      "position": "RCB",
+      "position_detail": "Central Defender",
+      "nationality": "Wales",
+      "starter": true
+    },
+    {
+      "player_id": "A05",
+      "team_id": "AWAY",
+      "jersey_number": 2,
+      "name": "Jayden Bogle",
+      "position": "RB",
+      "position_detail": "Right Full Back",
+      "nationality": "England",
+      "starter": true
+    },
+    {
+      "player_id": "A06",
+      "team_id": "AWAY",
+      "jersey_number": 8,
+      "name": "Sean Longstaff",
+      "position": "LCM",
+      "position_detail": "Central Midfielder",
+      "nationality": "England",
+      "starter": true
+    },
+    {
+      "player_id": "A07",
+      "team_id": "AWAY",
+      "jersey_number": 4,
+      "name": "Ethan Ampadu",
+      "position": "DM",
+      "position_detail": "Centre Defensive Midfielder",
+      "nationality": "Wales",
+      "starter": true
+    },
+    {
+      "player_id": "A08",
+      "team_id": "AWAY",
+      "jersey_number": 10,
+      "name": "Harry Wilson",
+      "position": "RCM",
+      "position_detail": "Attacking Midfielder",
+      "nationality": null,
+      "starter": true
+    },
+    {
+      "player_id": "A09",
+      "team_id": "AWAY",
+      "jersey_number": 7,
+      "name": "Daniel James",
+      "position": "LW",
+      "position_detail": "Right Winger",
+      "nationality": null,
+      "starter": true
+    },
+    {
+      "player_id": "A10",
+      "team_id": "AWAY",
+      "jersey_number": 14,
+      "name": "Lukas Nmecha",
+      "position": "ST",
+      "position_detail": "Striker",
+      "nationality": "Germany",
+      "starter": true
+    },
+    {
+      "player_id": "A11",
+      "team_id": "AWAY",
+      "jersey_number": 9,
+      "name": "Dominic Calvert-Lewin",
+      "position": "RW",
+      "position_detail": "Striker",
+      "nationality": "England",
+      "starter": true
+    },
+    {
+      "player_id": "H12",
+      "team_id": "HOME",
+      "jersey_number": 14,
+      "name": "Jordan Henderson",
+      "position": "LCM",
+      "position_detail": "Centre Central Midfielder",
+      "nationality": "England",
+      "starter": false
+    },
+    {
+      "player_id": "H13",
+      "team_id": "HOME",
+      "jersey_number": 11,
+      "name": "Jamie Gittens",
+      "position": "RW",
+      "position_detail": "Left Winger",
+      "nationality": "England",
+      "starter": false
+    },
+    {
+      "player_id": "H14",
+      "team_id": "HOME",
+      "jersey_number": 6,
+      "name": "Levi Colwill",
+      "position": "LB",
+      "position_detail": "Centre Central Defender",
+      "nationality": "England",
+      "starter": false
+    },
+    {
+      "player_id": "A12",
+      "team_id": "AWAY",
+      "jersey_number": 11,
+      "name": "Brenden Aaronson",
+      "position": "LCM",
+      "position_detail": "Centre Attacking Midfielder",
+      "nationality": "United States",
+      "starter": false
+    },
+    {
+      "player_id": "A13",
+      "team_id": "AWAY",
+      "jersey_number": 19,
+      "name": "Noah Okafor",
+      "position": "RW",
+      "position_detail": "Winger",
+      "nationality": "Switzerland",
+      "starter": false
+    },
+    {
+      "player_id": "A14",
+      "team_id": "AWAY",
+      "jersey_number": 15,
+      "name": "Jaka Bijol",
+      "position": "LB",
+      "position_detail": "Central Defender",
+      "nationality": "Slovenia",
+      "starter": false
+    }
+  ],
+  "columns": {
+    "tracking.players": [
+      "player_id",
+      "x_m",
+      "y_m",
+      "vx_mps",
+      "vy_mps"
+    ],
+    "tracking.ball": [
+      "x_m",
+      "y_m",
+      "z_m",
+      "vx_mps",
+      "vy_mps",
+      "vz_mps"
+    ]
+  },
+  "limitations": [
+    "Simplified procedural motion, not a professional football or physics simulator.",
+    "Club names, squad numbers and player names follow the public 2026/27 Premier League squad lists; match events and tracking are synthetic.",
+    "No offsides, physical collisions or realistic fatigue. Cards and tactical substitutions follow a synthetic schedule.",
+    "Incoming substitutes inherit the outgoing formation slot and position; no touchline entrance animation is modeled.",
+    "Pressure is a proximity heuristic; ball transport during restart_setup is non-playing animation.",
+    "Outcomes exist only in resolved events at available_at_ms; do not expose future events during replay."
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 2,
+    "kickoff_local": "2026-11-01T14:00:00",
+    "time_zone": "Europe/London",
+    "venue": "Stamford Bridge"
+  },
+  "home_club": {
+    "club_id": "CHE",
+    "name": "Chelsea",
+    "short_name": "Chelsea",
+    "stadium": "Stamford Bridge",
+    "colors": {
+      "primary": "#034694",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "LEE",
+    "name": "Leeds United",
+    "short_name": "Leeds",
+    "stadium": "Elland Road",
+    "colors": {
+      "primary": "#FFFFFF",
+      "secondary": "#1D428A"
+    },
+    "formation": "4-3-3"
+  },
+  "venue": "Stamford Bridge"
+}

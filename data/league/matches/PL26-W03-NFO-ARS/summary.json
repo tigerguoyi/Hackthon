@@ -1,0 +1,195 @@
+{
+  "match_id": "PL26-W03-NFO-ARS",
+  "seed": 20264019,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 656129,
+  "state_snapshots": 6001,
+  "event_count": 3572,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 129,
+    "restart": 37,
+    "pressure": 1204,
+    "carry": 1239,
+    "pass": 788,
+    "interception": 96,
+    "shot": 30,
+    "stoppage": 17,
+    "save": 13,
+    "yellow_card": 2,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    2,
+    3
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 318,
+      "completed_passes": 269,
+      "shots": 14,
+      "shots_on_target": 11,
+      "interceptions": 47,
+      "pressure_events": 715,
+      "possession_seconds": 2239.4,
+      "possession_pct": 39.51,
+      "pass_accuracy_pct": 84.59
+    },
+    "AWAY": {
+      "passes": 470,
+      "completed_passes": 423,
+      "shots": 16,
+      "shots_on_target": 7,
+      "interceptions": 49,
+      "pressure_events": 489,
+      "possession_seconds": 3428.4,
+      "possession_pct": 60.49,
+      "pass_accuracy_pct": 90.0
+    }
+  },
+  "distance_m": {
+    "H01": 3286.3,
+    "H02": 8598.3,
+    "H03": 12106.2,
+    "H04": 11876.0,
+    "H05": 10958.7,
+    "H06": 9026.9,
+    "H07": 14420.1,
+    "H08": 13658.7,
+    "H09": 13051.0,
+    "H10": 13686.1,
+    "H11": 12727.2,
+    "A01": 3227.9,
+    "A02": 11097.6,
+    "A03": 11774.6,
+    "A04": 11557.5,
+    "A05": 9521.8,
+    "A06": 10216.0,
+    "A07": 13282.7,
+    "A08": 12604.8,
+    "A09": 12705.1,
+    "A10": 13341.3,
+    "A11": 8098.4,
+    "H12": 5091.2,
+    "H13": 0.0,
+    "H14": 2674.3,
+    "A12": 2844.8,
+    "A13": 4288.1,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 310600,
+      "period": 1,
+      "period_ms": 310600,
+      "team_id": "HOME",
+      "club_id": "NFO",
+      "club_name": "Nottingham Forest",
+      "player_id": "H10",
+      "player_name": "Chris Wood",
+      "shirt_number": 9,
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "t_ms": 1839800,
+      "period": 1,
+      "period_ms": 1839800,
+      "team_id": "HOME",
+      "club_id": "NFO",
+      "club_name": "Nottingham Forest",
+      "player_id": "H10",
+      "player_name": "Chris Wood",
+      "shirt_number": 9,
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "t_ms": 3059600,
+      "period": 2,
+      "period_ms": 59600,
+      "team_id": "AWAY",
+      "club_id": "ARS",
+      "club_name": "Arsenal",
+      "player_id": "A10",
+      "player_name": "Viktor Gyokeres",
+      "shirt_number": 14,
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "t_ms": 5692000,
+      "period": 2,
+      "period_ms": 2692000,
+      "team_id": "AWAY",
+      "club_id": "ARS",
+      "club_name": "Arsenal",
+      "player_id": "A10",
+      "player_name": "Viktor Gyokeres",
+      "shirt_number": 14,
+      "score": [
+        2,
+        2
+      ]
+    },
+    {
+      "t_ms": 5789200,
+      "period": 2,
+      "period_ms": 2789200,
+      "team_id": "AWAY",
+      "club_id": "ARS",
+      "club_name": "Arsenal",
+      "player_id": "A08",
+      "player_name": "Eberechi Eze",
+      "shirt_number": 10,
+      "score": [
+        2,
+        3
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 3,
+    "kickoff_local": "2026-11-07T12:30:00",
+    "time_zone": "Europe/London",
+    "venue": "City Ground"
+  },
+  "home_club": {
+    "club_id": "NFO",
+    "name": "Nottingham Forest",
+    "short_name": "Forest",
+    "stadium": "City Ground",
+    "colors": {
+      "primary": "#DD0000",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "ARS",
+    "name": "Arsenal",
+    "short_name": "Arsenal",
+    "stadium": "Emirates Stadium",
+    "colors": {
+      "primary": "#EF0107",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  }
+}

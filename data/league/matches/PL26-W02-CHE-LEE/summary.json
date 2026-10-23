@@ -1,0 +1,150 @@
+{
+  "match_id": "PL26-W02-CHE-LEE",
+  "seed": 20263025,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 656311,
+  "state_snapshots": 6001,
+  "event_count": 3615,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 121,
+    "restart": 24,
+    "carry": 1266,
+    "pass": 808,
+    "pressure": 1241,
+    "shot": 17,
+    "stoppage": 10,
+    "interception": 102,
+    "save": 7,
+    "yellow_card": 2,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    2,
+    0
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 492,
+      "completed_passes": 445,
+      "shots": 12,
+      "shots_on_target": 5,
+      "interceptions": 55,
+      "pressure_events": 493,
+      "possession_seconds": 3526.8,
+      "possession_pct": 60.98,
+      "pass_accuracy_pct": 90.45
+    },
+    "AWAY": {
+      "passes": 316,
+      "completed_passes": 261,
+      "shots": 5,
+      "shots_on_target": 4,
+      "interceptions": 47,
+      "pressure_events": 748,
+      "possession_seconds": 2257.0,
+      "possession_pct": 39.02,
+      "pass_accuracy_pct": 82.59
+    }
+  },
+  "distance_m": {
+    "H01": 3161.3,
+    "H02": 8309.9,
+    "H03": 11452.5,
+    "H04": 11306.1,
+    "H05": 10746.6,
+    "H06": 8538.9,
+    "H07": 12961.9,
+    "H08": 12677.9,
+    "H09": 12473.8,
+    "H10": 13209.3,
+    "H11": 12519.6,
+    "A01": 3288.5,
+    "A02": 10924.1,
+    "A03": 12047.2,
+    "A04": 12080.8,
+    "A05": 9749.8,
+    "A06": 10828.6,
+    "A07": 14762.6,
+    "A08": 13916.9,
+    "A09": 12831.5,
+    "A10": 13200.2,
+    "A11": 8157.9,
+    "H12": 4568.7,
+    "H13": 0.0,
+    "H14": 2488.5,
+    "A12": 2936.1,
+    "A13": 4334.1,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 40800,
+      "period": 1,
+      "period_ms": 40800,
+      "team_id": "HOME",
+      "club_id": "CHE",
+      "club_name": "Chelsea",
+      "player_id": "H10",
+      "player_name": "Joao Pedro",
+      "shirt_number": 9,
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "t_ms": 1461000,
+      "period": 1,
+      "period_ms": 1461000,
+      "team_id": "HOME",
+      "club_id": "CHE",
+      "club_name": "Chelsea",
+      "player_id": "H11",
+      "player_name": "Estevao",
+      "shirt_number": 41,
+      "score": [
+        2,
+        0
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 2,
+    "kickoff_local": "2026-11-01T14:00:00",
+    "time_zone": "Europe/London",
+    "venue": "Stamford Bridge"
+  },
+  "home_club": {
+    "club_id": "CHE",
+    "name": "Chelsea",
+    "short_name": "Chelsea",
+    "stadium": "Stamford Bridge",
+    "colors": {
+      "primary": "#034694",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "LEE",
+    "name": "Leeds United",
+    "short_name": "Leeds",
+    "stadium": "Elland Road",
+    "colors": {
+      "primary": "#FFFFFF",
+      "secondary": "#1D428A"
+    },
+    "formation": "4-3-3"
+  }
+}

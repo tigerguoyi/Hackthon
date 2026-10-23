@@ -1,0 +1,135 @@
+{
+  "match_id": "PL26-W02-MUN-BOU",
+  "seed": 20263022,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 656110,
+  "state_snapshots": 6001,
+  "event_count": 3664,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 135,
+    "restart": 28,
+    "pressure": 1233,
+    "carry": 1282,
+    "pass": 814,
+    "shot": 21,
+    "stoppage": 15,
+    "interception": 111,
+    "save": 6,
+    "yellow_card": 2,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    0,
+    1
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 395,
+      "completed_passes": 342,
+      "shots": 14,
+      "shots_on_target": 4,
+      "interceptions": 58,
+      "pressure_events": 629,
+      "possession_seconds": 2855.4,
+      "possession_pct": 49.57,
+      "pass_accuracy_pct": 86.58
+    },
+    "AWAY": {
+      "passes": 419,
+      "completed_passes": 361,
+      "shots": 7,
+      "shots_on_target": 3,
+      "interceptions": 53,
+      "pressure_events": 604,
+      "possession_seconds": 2904.4,
+      "possession_pct": 50.43,
+      "pass_accuracy_pct": 86.16
+    }
+  },
+  "distance_m": {
+    "H01": 3227.1,
+    "H02": 8273.6,
+    "H03": 12163.1,
+    "H04": 11791.1,
+    "H05": 10908.8,
+    "H06": 8890.9,
+    "H07": 14041.3,
+    "H08": 13426.1,
+    "H09": 13208.2,
+    "H10": 13754.2,
+    "H11": 12892.0,
+    "A01": 3377.3,
+    "A02": 11285.1,
+    "A03": 12436.2,
+    "A04": 12175.5,
+    "A05": 9549.2,
+    "A06": 11221.5,
+    "A07": 13923.7,
+    "A08": 13145.1,
+    "A09": 12934.8,
+    "A10": 12984.5,
+    "A11": 8429.3,
+    "H12": 5010.9,
+    "H13": 0.0,
+    "H14": 2931.9,
+    "A12": 2667.5,
+    "A13": 4044.0,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 3333600,
+      "period": 2,
+      "period_ms": 333600,
+      "team_id": "AWAY",
+      "club_id": "BOU",
+      "club_name": "AFC Bournemouth",
+      "player_id": "A10",
+      "player_name": "Evanilson",
+      "shirt_number": 9,
+      "score": [
+        0,
+        1
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 2,
+    "kickoff_local": "2026-10-31T17:30:00",
+    "time_zone": "Europe/London",
+    "venue": "Old Trafford"
+  },
+  "home_club": {
+    "club_id": "MUN",
+    "name": "Manchester United",
+    "short_name": "Man United",
+    "stadium": "Old Trafford",
+    "colors": {
+      "primary": "#DA291C",
+      "secondary": "#FBE122"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "BOU",
+    "name": "AFC Bournemouth",
+    "short_name": "Bournemouth",
+    "stadium": "Vitality Stadium",
+    "colors": {
+      "primary": "#DA291C",
+      "secondary": "#000000"
+    },
+    "formation": "4-3-3"
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "match_id": "PL26-W03-COV-FUL",
+  "seed": 20264027,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 656148,
+  "state_snapshots": 6001,
+  "event_count": 3635,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 124,
+    "restart": 30,
+    "pressure": 1246,
+    "carry": 1278,
+    "pass": 794,
+    "interception": 98,
+    "shot": 23,
+    "stoppage": 13,
+    "yellow_card": 2,
+    "save": 10,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    0,
+    1
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 374,
+      "completed_passes": 321,
+      "shots": 8,
+      "shots_on_target": 2,
+      "interceptions": 45,
+      "pressure_events": 658,
+      "possession_seconds": 2662.2,
+      "possession_pct": 46.22,
+      "pass_accuracy_pct": 85.83
+    },
+    "AWAY": {
+      "passes": 420,
+      "completed_passes": 375,
+      "shots": 15,
+      "shots_on_target": 9,
+      "interceptions": 53,
+      "pressure_events": 588,
+      "possession_seconds": 3097.6,
+      "possession_pct": 53.78,
+      "pass_accuracy_pct": 89.29
+    }
+  },
+  "distance_m": {
+    "H01": 3348.7,
+    "H02": 8238.3,
+    "H03": 12125.8,
+    "H04": 11902.7,
+    "H05": 10944.0,
+    "H06": 9104.0,
+    "H07": 14167.5,
+    "H08": 13192.6,
+    "H09": 12971.2,
+    "H10": 13470.1,
+    "H11": 12560.1,
+    "A01": 3233.4,
+    "A02": 11229.4,
+    "A03": 11718.6,
+    "A04": 11677.3,
+    "A05": 9625.7,
+    "A06": 10815.0,
+    "A07": 13892.8,
+    "A08": 13066.9,
+    "A09": 12719.2,
+    "A10": 13723.6,
+    "A11": 8392.5,
+    "H12": 4958.4,
+    "H13": 0.0,
+    "H14": 2979.0,
+    "A12": 2680.7,
+    "A13": 4136.7,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 4803400,
+      "period": 2,
+      "period_ms": 1803400,
+      "team_id": "AWAY",
+      "club_id": "FUL",
+      "club_name": "Fulham",
+      "player_id": "A10",
+      "player_name": "Gonzalo Garcia",
+      "shirt_number": 7,
+      "score": [
+        0,
+        1
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 3,
+    "kickoff_local": "2026-11-08T16:30:00",
+    "time_zone": "Europe/London",
+    "venue": "CBS Arena"
+  },
+  "home_club": {
+    "club_id": "COV",
+    "name": "Coventry City",
+    "short_name": "Coventry",
+    "stadium": "CBS Arena",
+    "colors": {
+      "primary": "#6CB4E4",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "FUL",
+    "name": "Fulham",
+    "short_name": "Fulham",
+    "stadium": "Craven Cottage",
+    "colors": {
+      "primary": "#FFFFFF",
+      "secondary": "#000000"
+    },
+    "formation": "4-3-3"
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "match_id": "PL26-W04-IPS-BOU",
+  "seed": 20265024,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 655834,
+  "state_snapshots": 6001,
+  "event_count": 3577,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 115,
+    "restart": 28,
+    "pressure": 1257,
+    "carry": 1247,
+    "pass": 778,
+    "interception": 91,
+    "shot": 21,
+    "stoppage": 13,
+    "save": 8,
+    "yellow_card": 2,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    1,
+    2
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 424,
+      "completed_passes": 377,
+      "shots": 10,
+      "shots_on_target": 6,
+      "interceptions": 44,
+      "pressure_events": 597,
+      "possession_seconds": 3075.6,
+      "possession_pct": 53.55,
+      "pass_accuracy_pct": 88.92
+    },
+    "AWAY": {
+      "passes": 354,
+      "completed_passes": 310,
+      "shots": 11,
+      "shots_on_target": 5,
+      "interceptions": 47,
+      "pressure_events": 660,
+      "possession_seconds": 2668.2,
+      "possession_pct": 46.45,
+      "pass_accuracy_pct": 87.57
+    }
+  },
+  "distance_m": {
+    "H01": 3199.3,
+    "H02": 8130.3,
+    "H03": 11807.4,
+    "H04": 11784.6,
+    "H05": 10656.9,
+    "H06": 8270.7,
+    "H07": 13533.7,
+    "H08": 12965.7,
+    "H09": 12347.7,
+    "H10": 13381.3,
+    "H11": 12705.1,
+    "A01": 3191.0,
+    "A02": 10976.3,
+    "A03": 11904.1,
+    "A04": 11795.0,
+    "A05": 9295.6,
+    "A06": 10845.4,
+    "A07": 14346.2,
+    "A08": 13435.8,
+    "A09": 12509.1,
+    "A10": 13253.2,
+    "A11": 8381.5,
+    "H12": 4613.9,
+    "H13": 0.0,
+    "H14": 2482.2,
+    "A12": 2738.5,
+    "A13": 3756.5,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 1631000,
+      "period": 1,
+      "period_ms": 1631000,
+      "team_id": "HOME",
+      "club_id": "IPS",
+      "club_name": "Ipswich Town",
+      "player_id": "H09",
+      "player_name": "Jaden Philogene",
+      "shirt_number": 11,
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "t_ms": 4137800,
+      "period": 2,
+      "period_ms": 1137800,
+      "team_id": "AWAY",
+      "club_id": "BOU",
+      "club_name": "AFC Bournemouth",
+      "player_id": "A10",
+      "player_name": "Evanilson",
+      "shirt_number": 9,
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "t_ms": 5758600,
+      "period": 2,
+      "period_ms": 2758600,
+      "team_id": "AWAY",
+      "club_id": "BOU",
+      "club_name": "AFC Bournemouth",
+      "player_id": "A13",
+      "player_name": "Amine Adli",
+      "shirt_number": 21,
+      "score": [
+        1,
+        2
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 4,
+    "kickoff_local": "2026-11-15T14:00:00",
+    "time_zone": "Europe/London",
+    "venue": "Portman Road"
+  },
+  "home_club": {
+    "club_id": "IPS",
+    "name": "Ipswich Town",
+    "short_name": "Ipswich Town",
+    "stadium": "Portman Road",
+    "colors": {
+      "primary": "#0044A9",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "BOU",
+    "name": "AFC Bournemouth",
+    "short_name": "Bournemouth",
+    "stadium": "Vitality Stadium",
+    "colors": {
+      "primary": "#DA291C",
+      "secondary": "#000000"
+    },
+    "formation": "4-3-3"
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "match_id": "PL26-W02-IPS-COV",
+  "seed": 20263026,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 656110,
+  "state_snapshots": 6001,
+  "event_count": 3625,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 125,
+    "restart": 32,
+    "pressure": 1231,
+    "carry": 1259,
+    "pass": 811,
+    "interception": 98,
+    "shot": 25,
+    "stoppage": 15,
+    "save": 10,
+    "yellow_card": 2,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    1,
+    2
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 425,
+      "completed_passes": 374,
+      "shots": 11,
+      "shots_on_target": 8,
+      "interceptions": 47,
+      "pressure_events": 576,
+      "possession_seconds": 3009.6,
+      "possession_pct": 52.62,
+      "pass_accuracy_pct": 88.0
+    },
+    "AWAY": {
+      "passes": 386,
+      "completed_passes": 339,
+      "shots": 14,
+      "shots_on_target": 5,
+      "interceptions": 51,
+      "pressure_events": 655,
+      "possession_seconds": 2710.2,
+      "possession_pct": 47.38,
+      "pass_accuracy_pct": 87.82
+    }
+  },
+  "distance_m": {
+    "H01": 3242.8,
+    "H02": 8099.0,
+    "H03": 11692.3,
+    "H04": 11828.8,
+    "H05": 10809.6,
+    "H06": 8298.3,
+    "H07": 13691.2,
+    "H08": 13052.6,
+    "H09": 12544.3,
+    "H10": 13899.6,
+    "H11": 12871.5,
+    "A01": 3229.9,
+    "A02": 11070.5,
+    "A03": 11991.0,
+    "A04": 11976.4,
+    "A05": 9481.3,
+    "A06": 10947.9,
+    "A07": 14426.5,
+    "A08": 13597.2,
+    "A09": 12674.8,
+    "A10": 13209.9,
+    "A11": 8081.3,
+    "H12": 4788.3,
+    "H13": 0.0,
+    "H14": 2647.7,
+    "A12": 2269.1,
+    "A13": 4234.4,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 2344200,
+      "period": 1,
+      "period_ms": 2344200,
+      "team_id": "AWAY",
+      "club_id": "COV",
+      "club_name": "Coventry City",
+      "player_id": "A11",
+      "player_name": "Loum Tchaouna",
+      "shirt_number": 18,
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "t_ms": 2480600,
+      "period": 1,
+      "period_ms": 2480600,
+      "team_id": "AWAY",
+      "club_id": "COV",
+      "club_name": "Coventry City",
+      "player_id": "A10",
+      "player_name": "Ellis Simms",
+      "shirt_number": 9,
+      "score": [
+        0,
+        2
+      ]
+    },
+    {
+      "t_ms": 5573800,
+      "period": 2,
+      "period_ms": 2573800,
+      "team_id": "HOME",
+      "club_id": "IPS",
+      "club_name": "Ipswich Town",
+      "player_id": "H10",
+      "player_name": "Zian Flemming",
+      "shirt_number": 9,
+      "score": [
+        1,
+        2
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 2,
+    "kickoff_local": "2026-11-01T16:30:00",
+    "time_zone": "Europe/London",
+    "venue": "Portman Road"
+  },
+  "home_club": {
+    "club_id": "IPS",
+    "name": "Ipswich Town",
+    "short_name": "Ipswich Town",
+    "stadium": "Portman Road",
+    "colors": {
+      "primary": "#0044A9",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "COV",
+    "name": "Coventry City",
+    "short_name": "Coventry",
+    "stadium": "CBS Arena",
+    "colors": {
+      "primary": "#6CB4E4",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  }
+}

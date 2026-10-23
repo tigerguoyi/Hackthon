@@ -1,0 +1,195 @@
+{
+  "match_id": "PL26-W03-BHA-IPS",
+  "seed": 20264025,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 655633,
+  "state_snapshots": 6001,
+  "event_count": 3591,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 131,
+    "restart": 31,
+    "carry": 1236,
+    "pass": 788,
+    "pressure": 1231,
+    "interception": 105,
+    "shot": 25,
+    "stoppage": 19,
+    "save": 6,
+    "yellow_card": 2,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    3,
+    2
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 448,
+      "completed_passes": 397,
+      "shots": 14,
+      "shots_on_target": 6,
+      "interceptions": 54,
+      "pressure_events": 533,
+      "possession_seconds": 3248.8,
+      "possession_pct": 57.05,
+      "pass_accuracy_pct": 88.62
+    },
+    "AWAY": {
+      "passes": 340,
+      "completed_passes": 286,
+      "shots": 11,
+      "shots_on_target": 5,
+      "interceptions": 51,
+      "pressure_events": 698,
+      "possession_seconds": 2445.6,
+      "possession_pct": 42.95,
+      "pass_accuracy_pct": 84.12
+    }
+  },
+  "distance_m": {
+    "H01": 3229.4,
+    "H02": 8283.0,
+    "H03": 12012.2,
+    "H04": 11868.0,
+    "H05": 10986.8,
+    "H06": 8386.7,
+    "H07": 12937.2,
+    "H08": 13123.0,
+    "H09": 12892.3,
+    "H10": 13630.7,
+    "H11": 12396.8,
+    "A01": 3289.5,
+    "A02": 10943.7,
+    "A03": 12217.5,
+    "A04": 12410.0,
+    "A05": 9276.9,
+    "A06": 10966.1,
+    "A07": 14313.6,
+    "A08": 13653.9,
+    "A09": 12600.3,
+    "A10": 13151.4,
+    "A11": 8430.4,
+    "H12": 4814.0,
+    "H13": 0.0,
+    "H14": 2785.6,
+    "A12": 2830.5,
+    "A13": 4570.2,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 2994400,
+      "period": 1,
+      "period_ms": 2994400,
+      "team_id": "HOME",
+      "club_id": "BHA",
+      "club_name": "Brighton & Hove Albion",
+      "player_id": "H10",
+      "player_name": "Kaoru Mitoma",
+      "shirt_number": 7,
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "t_ms": 3224800,
+      "period": 2,
+      "period_ms": 224800,
+      "team_id": "AWAY",
+      "club_id": "IPS",
+      "club_name": "Ipswich Town",
+      "player_id": "A10",
+      "player_name": "Zian Flemming",
+      "shirt_number": 9,
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "t_ms": 3485400,
+      "period": 2,
+      "period_ms": 485400,
+      "team_id": "HOME",
+      "club_id": "BHA",
+      "club_name": "Brighton & Hove Albion",
+      "player_id": "H09",
+      "player_name": "Yankuba Minteh",
+      "shirt_number": 11,
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "t_ms": 5135000,
+      "period": 2,
+      "period_ms": 2135000,
+      "team_id": "HOME",
+      "club_id": "BHA",
+      "club_name": "Brighton & Hove Albion",
+      "player_id": "H11",
+      "player_name": "Zadok Yohanna",
+      "shirt_number": 36,
+      "score": [
+        3,
+        1
+      ]
+    },
+    {
+      "t_ms": 5749600,
+      "period": 2,
+      "period_ms": 2749600,
+      "team_id": "AWAY",
+      "club_id": "IPS",
+      "club_name": "Ipswich Town",
+      "player_id": "A13",
+      "player_name": "Sindre Egeli",
+      "shirt_number": 8,
+      "score": [
+        3,
+        2
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 3,
+    "kickoff_local": "2026-11-08T14:00:00",
+    "time_zone": "Europe/London",
+    "venue": "Amex Stadium"
+  },
+  "home_club": {
+    "club_id": "BHA",
+    "name": "Brighton & Hove Albion",
+    "short_name": "Brighton",
+    "stadium": "Amex Stadium",
+    "colors": {
+      "primary": "#0057B8",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "IPS",
+    "name": "Ipswich Town",
+    "short_name": "Ipswich Town",
+    "stadium": "Portman Road",
+    "colors": {
+      "primary": "#0044A9",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  }
+}

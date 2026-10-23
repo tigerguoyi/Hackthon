@@ -1,0 +1,381 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:synthetic-football:records:1.0.0",
+  "title": "Synthetic football stream records",
+  "description": "Use #/$defs/tracking, #/$defs/event or #/$defs/state for individual JSONL records. Units and clock semantics are documented in README.md.",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/tracking"
+    },
+    {
+      "$ref": "#/$defs/event"
+    },
+    {
+      "$ref": "#/$defs/state"
+    }
+  ],
+  "$defs": {
+    "score": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "player": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "prefixItems": [
+        {
+          "type": "string",
+          "pattern": "^[HA](0[1-9]|1[0-4])$"
+        },
+        {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 105
+        },
+        {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 68
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "items": false
+    },
+    "tracking": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "frame_id",
+        "t_ms",
+        "period",
+        "period_ms",
+        "in_play",
+        "phase",
+        "action_id",
+        "possession_team_id",
+        "ball_owner_id",
+        "score",
+        "players",
+        "ball"
+      ],
+      "properties": {
+        "frame_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "t_ms": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "period": {
+          "enum": [
+            1,
+            2
+          ]
+        },
+        "period_ms": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "in_play": {
+          "type": "boolean"
+        },
+        "phase": {
+          "enum": [
+            "carry",
+            "pass",
+            "shot",
+            "restart_setup",
+            "ended"
+          ]
+        },
+        "action_id": {
+          "type": "string"
+        },
+        "possession_team_id": {
+          "enum": [
+            "HOME",
+            "AWAY",
+            null
+          ]
+        },
+        "ball_owner_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "score": {
+          "$ref": "#/$defs/score"
+        },
+        "players": {
+          "type": "array",
+          "minItems": 14,
+          "maxItems": 22,
+          "items": {
+            "$ref": "#/$defs/player"
+          }
+        },
+        "ball": {
+          "type": "array",
+          "minItems": 6,
+          "maxItems": 6,
+          "items": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "event": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "event_id",
+        "sequence",
+        "match_id",
+        "type",
+        "period",
+        "period_ms",
+        "start_ms",
+        "end_ms",
+        "available_at_ms",
+        "possession_id"
+      ],
+      "properties": {
+        "event_id": {
+          "type": "string"
+        },
+        "sequence": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "match_id": {
+          "type": "string"
+        },
+        "type": {
+          "enum": [
+            "period_start",
+            "period_end",
+            "match_end",
+            "possession_change",
+            "restart",
+            "pressure",
+            "carry",
+            "pass",
+            "interception",
+            "shot",
+            "save",
+            "stoppage",
+            "action_cancelled",
+            "yellow_card",
+            "red_card",
+            "substitution"
+          ]
+        },
+        "period": {
+          "enum": [
+            1,
+            2
+          ]
+        },
+        "period_ms": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "start_ms": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "end_ms": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "available_at_ms": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "possession_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "related_event_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "player_in_id": {
+          "type": "string"
+        },
+        "player_out_id": {
+          "type": "string"
+        },
+        "dismissal": {
+          "enum": [
+            "straight_red",
+            "second_yellow"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "substitution"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "team_id",
+              "player_in_id",
+              "player_out_id"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "enum": [
+                  "yellow_card",
+                  "red_card"
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "team_id",
+              "player_id",
+              "reason"
+            ]
+          }
+        }
+      ]
+    },
+    "state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "t_ms",
+        "period",
+        "score",
+        "in_play",
+        "last_event_sequence",
+        "stats"
+      ],
+      "properties": {
+        "t_ms": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "period": {
+          "enum": [
+            1,
+            2
+          ]
+        },
+        "score": {
+          "$ref": "#/$defs/score"
+        },
+        "in_play": {
+          "type": "boolean"
+        },
+        "last_event_sequence": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "stats": {
+          "type": "object",
+          "required": [
+            "HOME",
+            "AWAY"
+          ],
+          "properties": {
+            "HOME": {
+              "$ref": "#/$defs/stats"
+            },
+            "AWAY": {
+              "$ref": "#/$defs/stats"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    "stats": {
+      "type": "object",
+      "required": [
+        "passes",
+        "completed_passes",
+        "shots",
+        "shots_on_target",
+        "interceptions",
+        "pressure_events",
+        "possession_seconds",
+        "possession_pct",
+        "pass_accuracy_pct"
+      ],
+      "properties": {
+        "passes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "completed_passes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "shots": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "shots_on_target": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "interceptions": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "pressure_events": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "possession_seconds": {
+          "type": "number",
+          "minimum": 0
+        },
+        "possession_pct": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 100
+        },
+        "pass_accuracy_pct": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 100
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

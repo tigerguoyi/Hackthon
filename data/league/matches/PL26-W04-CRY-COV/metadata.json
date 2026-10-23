@@ -1,0 +1,400 @@
+{
+  "schema_version": "1.0.0",
+  "match_id": "PL26-W04-CRY-COV",
+  "synthetic": true,
+  "seed": 20265028,
+  "generator": "generate.py v2.1.0",
+  "duration_ms": 6000000,
+  "tracking_hz": 5,
+  "pitch": {
+    "length_m": 105,
+    "width_m": 68,
+    "origin": "top_left",
+    "x_axis": "right",
+    "y_axis": "down",
+    "z_axis": "up"
+  },
+  "periods": [
+    {
+      "period": 1,
+      "start_ms": 0,
+      "duration_ms": 3000000,
+      "regulation_ms": 2700000,
+      "home_attacks": "positive_x"
+    },
+    {
+      "period": 2,
+      "start_ms": 3000000,
+      "duration_ms": 3000000,
+      "regulation_ms": 2700000,
+      "home_attacks": "negative_x"
+    }
+  ],
+  "clock_note": "Two 45+5 minute periods; halftime break omitted. Use period and period_ms for displayed clock.",
+  "teams": [
+    {
+      "team_id": "HOME",
+      "club_id": "CRY",
+      "name": "Crystal Palace",
+      "short_name": "Crystal Palace",
+      "stadium": "Selhurst Park",
+      "colors": {
+        "primary": "#1B458F",
+        "secondary": "#C4122E"
+      },
+      "formation": "4-3-3"
+    },
+    {
+      "team_id": "AWAY",
+      "club_id": "COV",
+      "name": "Coventry City",
+      "short_name": "Coventry",
+      "stadium": "CBS Arena",
+      "colors": {
+        "primary": "#6CB4E4",
+        "secondary": "#FFFFFF"
+      },
+      "formation": "4-3-3"
+    }
+  ],
+  "players": [
+    {
+      "player_id": "H01",
+      "team_id": "HOME",
+      "jersey_number": 1,
+      "name": "Dean Henderson",
+      "position": "GK",
+      "position_detail": "Goalkeeper",
+      "nationality": null,
+      "starter": true
+    },
+    {
+      "player_id": "H02",
+      "team_id": "HOME",
+      "jersey_number": 3,
+      "name": "Tyrick Mitchell",
+      "position": "LB",
+      "position_detail": "Left Full Back",
+      "nationality": "England",
+      "starter": true
+    },
+    {
+      "player_id": "H03",
+      "team_id": "HOME",
+      "jersey_number": 4,
+      "name": "Chadi Riad",
+      "position": "LCB",
+      "position_detail": "Centre Central Defender",
+      "nationality": "Morocco",
+      "starter": true
+    },
+    {
+      "player_id": "H04",
+      "team_id": "HOME",
+      "jersey_number": 5,
+      "name": "Axel Disasi",
+      "position": "RCB",
+      "position_detail": "Centre Central Defender",
+      "nationality": "France",
+      "starter": true
+    },
+    {
+      "player_id": "H05",
+      "team_id": "HOME",
+      "jersey_number": 25,
+      "name": "Anan Khalaili",
+      "position": "RB",
+      "position_detail": "Right Full Back",
+      "nationality": "Israel",
+      "starter": true
+    },
+    {
+      "player_id": "H06",
+      "team_id": "HOME",
+      "jersey_number": 8,
+      "name": "Jefferson Lerma",
+      "position": "LCM",
+      "position_detail": "Centre Central Midfielder",
+      "nationality": "Colombia",
+      "starter": true
+    },
+    {
+      "player_id": "H07",
+      "team_id": "HOME",
+      "jersey_number": 28,
+      "name": "Cheick Doucoure",
+      "position": "DM",
+      "position_detail": "Centre Defensive Midfielder",
+      "nationality": "Mali",
+      "starter": true
+    },
+    {
+      "player_id": "H08",
+      "team_id": "HOME",
+      "jersey_number": 10,
+      "name": "Yeremy Pino",
+      "position": "RCM",
+      "position_detail": "Right Winger",
+      "nationality": "Spain",
+      "starter": true
+    },
+    {
+      "player_id": "H09",
+      "team_id": "HOME",
+      "jersey_number": 11,
+      "name": "Dwight McNeil",
+      "position": "LW",
+      "position_detail": "Left Winger",
+      "nationality": "England",
+      "starter": true
+    },
+    {
+      "player_id": "H10",
+      "team_id": "HOME",
+      "jersey_number": 9,
+      "name": "Eddie Nketiah",
+      "position": "ST",
+      "position_detail": "Centre Striker",
+      "nationality": "England",
+      "starter": true
+    },
+    {
+      "player_id": "H11",
+      "team_id": "HOME",
+      "jersey_number": 7,
+      "name": "Ismaila Sarr",
+      "position": "RW",
+      "position_detail": "Right Winger",
+      "nationality": null,
+      "starter": true
+    },
+    {
+      "player_id": "A01",
+      "team_id": "AWAY",
+      "jersey_number": 13,
+      "name": "Ben Wilson",
+      "position": "GK",
+      "position_detail": "Goalkeeper",
+      "nationality": null,
+      "starter": true
+    },
+    {
+      "player_id": "A02",
+      "team_id": "AWAY",
+      "jersey_number": 21,
+      "name": "Jake Bidwell",
+      "position": "LB",
+      "position_detail": "Left Full Back",
+      "nationality": "England",
+      "starter": true
+    },
+    {
+      "player_id": "A03",
+      "team_id": "AWAY",
+      "jersey_number": 2,
+      "name": "Ethan Pinnock",
+      "position": "LCB",
+      "position_detail": "Centre Central Defender",
+      "nationality": "Jamaica",
+      "starter": true
+    },
+    {
+      "player_id": "A04",
+      "team_id": "AWAY",
+      "jersey_number": 4,
+      "name": "Bobby Thomas",
+      "position": "RCB",
+      "position_detail": "Centre Central Defender",
+      "nationality": "England",
+      "starter": true
+    },
+    {
+      "player_id": "A05",
+      "team_id": "AWAY",
+      "jersey_number": 20,
+      "name": "Kaine Kesler-Hayden",
+      "position": "RB",
+      "position_detail": "Right Full Back",
+      "nationality": "England",
+      "starter": true
+    },
+    {
+      "player_id": "A06",
+      "team_id": "AWAY",
+      "jersey_number": 3,
+      "name": "Jay Dasilva",
+      "position": "LCM",
+      "position_detail": "Centre Central Midfielder",
+      "nationality": "England",
+      "starter": true
+    },
+    {
+      "player_id": "A07",
+      "team_id": "AWAY",
+      "jersey_number": 6,
+      "name": "Matt Grimes",
+      "position": "DM",
+      "position_detail": "Defensive Midfielder",
+      "nationality": "England",
+      "starter": true
+    },
+    {
+      "player_id": "A08",
+      "team_id": "AWAY",
+      "jersey_number": 5,
+      "name": "Jack Rudoni",
+      "position": "RCM",
+      "position_detail": "Centre Central Midfielder",
+      "nationality": "England",
+      "starter": true
+    },
+    {
+      "player_id": "A09",
+      "team_id": "AWAY",
+      "jersey_number": 10,
+      "name": "Ephron Mason-Clark",
+      "position": "LW",
+      "position_detail": "Left/Centre/Right Striker",
+      "nationality": "Jamaica",
+      "starter": true
+    },
+    {
+      "player_id": "A10",
+      "team_id": "AWAY",
+      "jersey_number": 9,
+      "name": "Ellis Simms",
+      "position": "ST",
+      "position_detail": "Centre Striker",
+      "nationality": "England",
+      "starter": true
+    },
+    {
+      "player_id": "A11",
+      "team_id": "AWAY",
+      "jersey_number": 18,
+      "name": "Loum Tchaouna",
+      "position": "RW",
+      "position_detail": "Right Winger",
+      "nationality": "France",
+      "starter": true
+    },
+    {
+      "player_id": "H12",
+      "team_id": "HOME",
+      "jersey_number": 18,
+      "name": "Daichi Kamada",
+      "position": "LCM",
+      "position_detail": "Centre Attacking Midfielder",
+      "nationality": "Japan",
+      "starter": false
+    },
+    {
+      "player_id": "H13",
+      "team_id": "HOME",
+      "jersey_number": 12,
+      "name": "Zavier Gozo",
+      "position": "RW",
+      "position_detail": "Right Winger",
+      "nationality": "United States",
+      "starter": false
+    },
+    {
+      "player_id": "H14",
+      "team_id": "HOME",
+      "jersey_number": 6,
+      "name": "Jaydee Canvot",
+      "position": "LB",
+      "position_detail": "Centre Central Defender",
+      "nationality": "France",
+      "starter": false
+    },
+    {
+      "player_id": "A12",
+      "team_id": "AWAY",
+      "jersey_number": 7,
+      "name": "Tatsuhiro Sakamoto",
+      "position": "LCM",
+      "position_detail": "Left/Centre/Right Attacking Midfielder",
+      "nationality": "Japan",
+      "starter": false
+    },
+    {
+      "player_id": "A13",
+      "team_id": "AWAY",
+      "jersey_number": 11,
+      "name": "Haji Wright",
+      "position": "RW",
+      "position_detail": "Centre Striker",
+      "nationality": null,
+      "starter": false
+    },
+    {
+      "player_id": "A14",
+      "team_id": "AWAY",
+      "jersey_number": 12,
+      "name": "Stephen Mfuni",
+      "position": "LB",
+      "position_detail": "Central Defender",
+      "nationality": "England",
+      "starter": false
+    }
+  ],
+  "columns": {
+    "tracking.players": [
+      "player_id",
+      "x_m",
+      "y_m",
+      "vx_mps",
+      "vy_mps"
+    ],
+    "tracking.ball": [
+      "x_m",
+      "y_m",
+      "z_m",
+      "vx_mps",
+      "vy_mps",
+      "vz_mps"
+    ]
+  },
+  "limitations": [
+    "Simplified procedural motion, not a professional football or physics simulator.",
+    "Club names, squad numbers and player names follow the public 2026/27 Premier League squad lists; match events and tracking are synthetic.",
+    "No offsides, physical collisions or realistic fatigue. Cards and tactical substitutions follow a synthetic schedule.",
+    "Incoming substitutes inherit the outgoing formation slot and position; no touchline entrance animation is modeled.",
+    "Pressure is a proximity heuristic; ball transport during restart_setup is non-playing animation.",
+    "Outcomes exist only in resolved events at available_at_ms; do not expose future events during replay."
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 4,
+    "kickoff_local": "2026-11-15T19:00:00",
+    "time_zone": "Europe/London",
+    "venue": "Selhurst Park"
+  },
+  "home_club": {
+    "club_id": "CRY",
+    "name": "Crystal Palace",
+    "short_name": "Crystal Palace",
+    "stadium": "Selhurst Park",
+    "colors": {
+      "primary": "#1B458F",
+      "secondary": "#C4122E"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "COV",
+    "name": "Coventry City",
+    "short_name": "Coventry",
+    "stadium": "CBS Arena",
+    "colors": {
+      "primary": "#6CB4E4",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  },
+  "venue": "Selhurst Park"
+}

@@ -1,0 +1,119 @@
+{
+  "match_id": "PL26-W02-NFO-TOT",
+  "seed": 20263020,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 655964,
+  "state_snapshots": 6001,
+  "event_count": 3594,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 115,
+    "restart": 30,
+    "carry": 1265,
+    "pass": 782,
+    "pressure": 1247,
+    "interception": 90,
+    "shot": 23,
+    "stoppage": 13,
+    "save": 10,
+    "yellow_card": 2,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    0,
+    0
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 338,
+      "completed_passes": 288,
+      "shots": 7,
+      "shots_on_target": 5,
+      "interceptions": 40,
+      "pressure_events": 705,
+      "possession_seconds": 2486.0,
+      "possession_pct": 43.07,
+      "pass_accuracy_pct": 85.21
+    },
+    "AWAY": {
+      "passes": 444,
+      "completed_passes": 404,
+      "shots": 16,
+      "shots_on_target": 5,
+      "interceptions": 50,
+      "pressure_events": 542,
+      "possession_seconds": 3285.8,
+      "possession_pct": 56.93,
+      "pass_accuracy_pct": 90.99
+    }
+  },
+  "distance_m": {
+    "H01": 3421.1,
+    "H02": 7883.2,
+    "H03": 11863.4,
+    "H04": 12180.5,
+    "H05": 10893.9,
+    "H06": 8488.3,
+    "H07": 14527.3,
+    "H08": 13857.8,
+    "H09": 12846.4,
+    "H10": 13523.5,
+    "H11": 12955.0,
+    "A01": 3262.3,
+    "A02": 10930.2,
+    "A03": 11999.6,
+    "A04": 11825.3,
+    "A05": 9265.9,
+    "A06": 10194.8,
+    "A07": 13354.7,
+    "A08": 13370.2,
+    "A09": 12567.4,
+    "A10": 13240.9,
+    "A11": 7750.9,
+    "H12": 5022.4,
+    "H13": 0.0,
+    "H14": 2933.3,
+    "A12": 3059.1,
+    "A13": 4799.9,
+    "A14": 0.0
+  },
+  "goals": [],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 2,
+    "kickoff_local": "2026-10-31T15:00:00",
+    "time_zone": "Europe/London",
+    "venue": "City Ground"
+  },
+  "home_club": {
+    "club_id": "NFO",
+    "name": "Nottingham Forest",
+    "short_name": "Forest",
+    "stadium": "City Ground",
+    "colors": {
+      "primary": "#DD0000",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "TOT",
+    "name": "Tottenham Hotspur",
+    "short_name": "Tottenham",
+    "stadium": "Tottenham Hotspur Stadium",
+    "colors": {
+      "primary": "#FFFFFF",
+      "secondary": "#132257"
+    },
+    "formation": "4-3-3"
+  }
+}

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f9">
+  <meta name="description" content="Touchline football intelligence: match replay, live statistics, events and 2026/27 Premier League squads.">
+  <title>Touchline · Football Intelligence</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='11' fill='%23ed713d'/%3E%3Cpath d='M9 12h22M20 12v19' stroke='white' stroke-width='5'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css?v=3.0.2">
+  <script type="module" src="app.js?v=3.0.2"></script>
+</head>
+<body>
+  <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+    <symbol id="i-pitch" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M12 4v16M2 9h4v6H2m20-6h-4v6h4"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 3v17h17M9 15V9m5 6V5m5 10v-4"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3m2-16a3 3 0 0 1 0 6m1 3a5 5 0 0 1 3 4v3"/></symbol>
+    <symbol id="i-shirt" viewBox="0 0 24 24"><path d="m8 4-4 3 2 4 2-1v10h8V10l2 1 2-4-4-3-2 2h-4Z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+    <symbol id="i-ball" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m12 8 4 3-1.5 4h-5L8 11Zm0-5v5m8 1-4 2m2 8-3.5-4M6 19l3.5-4M4 9l4 2"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-back" viewBox="0 0 24 24"><path d="M4 4v16m16-16L7 12l13 8Z"/></symbol>
+    <symbol id="i-forward" viewBox="0 0 24 24"><path d="M20 4v16M4 4l13 8-13 8Z"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 4 13 8-13 8Z"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14m8-14v14"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-4-4 4 4 4-4M4 16v5h16v-5"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="2" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-swap" viewBox="0 0 24 24"><path d="M3 7h17m-4-4 4 4-4 4M21 17H4m4-4-4 4 4 4"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></symbol>
+  </defs></svg>
+  <aside class="sidebar">
+    <a class="brand" href="./"><span class="brand-mark">t<span>.</span></span><span>touchline<span class="brand-sub">FOOTBALL INTELLIGENCE</span></span></a>
+    <div class="workspace"><span class="workspace-icon">F</span><div>Football Ops<small>Personal workspace</small></div><span class="workspace-arrow">⌄</span></div>
+    <div class="nav-caption">Workspace</div>
+    <nav aria-label="Main navigation">
+      <button class="nav-item active" data-view="home"><svg><use href="#i-grid"/></svg>Home</button>
+      <button class="nav-item" data-view="overview"><svg><use href="#i-grid"/></svg>Overview<span class="nav-dot"></span></button>
+      <button class="nav-item" data-view="replay"><svg><use href="#i-pitch"/></svg>Replay</button>
+      <button class="nav-item" data-view="stats"><svg><use href="#i-chart"/></svg>Analysis</button>
+      <button class="nav-item" data-view="lineup"><svg><use href="#i-users"/></svg>Lineups</button>
+      <button class="nav-item" data-view="squads"><svg><use href="#i-shirt"/></svg>Squads</button>
+      <button class="nav-item" data-view="settings"><svg><use href="#i-grid"/></svg>Settings</button>
+    </nav>
+    <div class="sidebar-bottom"><div class="dataset-card"><span class="tiny-label">Current dataset</span><strong><span class="status-dot"></span><span id="dataset-title">Premier League 2026/27</span></strong><p id="dataset-summary">20 clubs · 40 matches · 5 Hz</p><div class="dataset-line"></div><span>Local data <span class="version" id="dataset-version">v2.2</span></span></div><div class="profile"><div class="avatar">F</div><div>Football Lab<small>Every run leaves a trace</small></div></div></div>
+  </aside>
+  <div class="app-shell">
+    <header class="topbar"><div class="breadcrumb">Workspace<span>/</span><strong id="breadcrumb">Overview</strong></div><div class="topbar-right"><label class="dataset-switch">Dataset<select id="dataset-select" aria-label="Dataset"><option value="enriched-v1">Enriched analysis</option><option value="original">Original demo</option></select></label><span class="local-indicator"><i></i>Local data connected</span><span class="top-avatar">FL</span></div></header>
+    <main>
+      <section class="page-heading"><div><div class="eyebrow">MATCH CENTER <span id="eyebrow-code">/ W01</span></div><h1 id="page-title">Every moment, on the pitch.</h1><p id="page-description">Explore every pass, run and goal.</p></div><a class="button export-button" id="export-summary" href="data/league/league.json" download="football-summary.json"><svg><use href="#i-download"/></svg>Export summary</a></section>
+      <section id="home-view" aria-label="My club homepage">
+        <div class="card home-selector"><div><span class="tiny-label">YOUR CLUB, YOUR SEASON</span><h2>Choose your home club</h2><p>Follow your club’s results and see who comes next.</p></div>
+          <form id="home-club-form"><label for="home-club-select">Home club</label><div><select id="home-club-select" required disabled><option value="">Loading clubs…</option></select><button class="button" id="save-home-club" disabled>Set home club</button></div></form>
+        </div>
+        <p id="home-club-status" role="status" aria-live="polite"></p>
+        <div id="home-content"><p class="empty">Loading your club dashboard…</p></div>
+      </section>
+      <section class="match-picker card" id="match-picker" aria-label="Select match" hidden>
+        <div class="match-picker-summary">
+          <span class="tiny-label">PREMIER LEAGUE · 2026/27</span>
+          <strong>Select match</strong>
+          <p id="match-picker-meta">Loading league schedule…</p>
+        </div>
+        <div class="match-picker-controls">
+          <label class="picker-field"><span>Matchweek</span><select id="week-select" aria-label="Select matchweek" disabled></select></label>
+          <label class="picker-field picker-field-match"><span>Match</span><select id="match-select" aria-label="Select match" disabled></select></label>
+          <div class="match-stepper" aria-label="Previous or next match">
+            <button class="match-nav-button" id="prev-match" type="button" aria-label="Previous match" title="Previous match" disabled><svg><use href="#i-back"/></svg></button>
+            <button class="match-nav-button" id="next-match" type="button" aria-label="Next match" title="Next match" disabled><svg><use href="#i-forward"/></svg></button>
+          </div>
+        </div>
+      </section>
+      <div id="load-status" class="load-status" role="status">Loading league schedule…</div>
+      <div id="error" class="error-box" role="alert" hidden></div>
+      <section class="match-card card" id="match-summary-card" aria-label="Match score">
+        <div class="match-meta"><span><span class="orange-dot"></span><span id="match-competition">Premier League (sim)</span><span class="meta-divider">/</span><span id="match-week">Matchweek 1</span><span class="meta-divider meta-divider-id">/</span><span id="match-id">PL26-W01</span></span><span class="subtle-badge">Simulated</span></div>
+        <div class="scoreboard"><div class="team home-team"><div class="crest home-crest"><svg viewBox="0 0 40 44" aria-hidden="true"><path d="M5 4h30v23L20 40 5 27Z"/><path d="M12 26V15h16v11M16 15v-4m8 4v-4M12 21h16M20 15v16"/></svg></div><div><h2 id="home-name">Home</h2><p><span id="home-en">HOME</span> <span>Home</span></p></div></div><div class="score-center"><div class="score"><span id="home-score">–</span><span class="score-dash">:</span><span id="away-score">–</span></div><div class="match-clock"><span id="period-label">Replay</span><strong id="clock">--:--</strong></div></div><div class="team away-team"><div><h2 id="away-name">Away</h2><p><span>Away</span> <span id="away-en">AWAY</span></p></div><div class="crest away-crest"><svg viewBox="0 0 40 44" aria-hidden="true"><path d="M5 4h30v23L20 40 5 27Z"/><path d="m9 28 9-15 5 8 3-5 7 12ZM18 13l3 15"/></svg></div></div></div>
+        <div class="match-bottom"><span><svg><use href="#i-clock"/></svg><span id="match-kickoff">Kick-off</span></span><span id="score-context">Score synced to replay</span><span><svg><use href="#i-users"/></svg>22 starters</span></div>
+      </section>
+      <div class="section-tabs" role="tablist" aria-label="Match views"><button role="tab" aria-selected="true" data-view="overview" class="active">Overview</button><button role="tab" aria-selected="false" data-view="replay">Replay</button><button role="tab" aria-selected="false" data-view="stats">Analysis</button><button role="tab" aria-selected="false" data-view="lineup">Lineups</button><button role="tab" aria-selected="false" data-view="squads">Squads</button></div>
+      <section id="live-view">
+        <div id="post-match-banner" class="post-match-banner" role="status" hidden><div><strong>Full time. The match report is ready.</strong><p>Review the match story and discover the Player of the Match.</p></div><button class="button" data-view="stats">Read match report →</button></div>
+        <div class="metric-grid" id="metrics"></div>
+        <div class="live-grid">
+          <section class="card pitch-card"><div class="card-heading"><div><h3><svg><use href="#i-pitch"/></svg>Pitch replay <span class="replay-badge">REPLAY</span></h3><p>Follow the match and every movement</p></div><div class="legend"><span><i class="home-dot"></i><span id="legend-home">Home</span></span><span><i class="away-dot"></i><span id="legend-away">Away</span></span></div></div>
+            <div class="pitch-wrap"><canvas id="pitch" aria-label="Football pitch tracking; use the player selector below" role="img"></canvas><div class="pitch-top"><span id="pitch-phase">Waiting for data</span><span>105 × 68 m</span></div><div class="pitch-bottom"><span id="attack-direction">Home attack →</span><span>POSITIONAL TRACKING · 5 Hz</span></div></div>
+            <div class="playback"><div class="timeline-label"><strong id="timeline-clock">--:--</strong><span id="timeline-caption">Full timeline</span><span id="timeline-end-label">90+5:00</span></div><div class="scrubber"><div id="goal-markers"></div><input id="timeline" type="range" min="0" max="6000000" value="0" step="200" aria-label="Replay time" disabled></div><div class="period-ticks"><span id="tick-start">Kick-off</span><span id="tick-mid">Half-time</span><span id="tick-end">Full-time</span></div><div class="playback-buttons"><div class="transport"><button class="icon-button" id="back" aria-label="Back 10 seconds" title="Back 10 seconds"><svg><use href="#i-back"/></svg></button><button class="play-button" id="play" aria-label="Play" disabled><svg><use href="#i-play"/></svg></button><button class="icon-button" id="forward" aria-label="Forward 10 seconds" title="Forward 10 seconds"><svg><use href="#i-forward"/></svg></button><span class="playback-hint">Space to play / pause</span></div><div class="speed-control"><label for="speed">Speed</label><select id="speed" aria-label="Playback speed"><option value="1">1×</option><option value="4">4×</option><option value="10">10×</option></select><button class="text-button" id="restart">Back to clip start ↺</button></div></div></div>
+          </section>
+          <section class="card stats-card"><div class="card-heading"><div><h3>Match stats</h3><p>At current replay time</p></div><svg class="muted-icon"><use href="#i-chart"/></svg></div><div class="possession-heading"><span>Possession</span><svg><use href="#i-ball"/></svg></div><div class="possession-values"><strong id="home-possession">—</strong><span>POSSESSION</span><strong id="away-possession">—</strong></div><div class="possession-bar"><span id="possession-home"></span><span id="possession-away"></span></div><div class="stats-team-label"><span><i class="home-dot"></i><span id="stats-home-label">Home</span></span><span><span id="stats-away-label">Away</span><i class="away-dot"></i></span></div><div id="live-stats"></div><div id="discipline-strip" class="discipline-strip" aria-label="Cards and substitutions"></div><div class="stats-note"><svg><use href="#i-clock"/></svg>1-second snapshots · updated with replay</div></section>
+        </div>
+        <div class="bottom-grid"><section class="card events-card"><div class="card-heading"><div><h3>Match events <span id="event-count" class="count-badge">0</span></h3><p id="event-help">Click an event to jump to the moment</p></div><div class="event-controls"><select id="event-scope" aria-label="Event time range"><option value="replay">At replay time</option><option value="full">Full match</option></select><select id="event-filter" aria-label="Filter match events"><option value="key">Key events</option><option value="all">All events</option><option value="goal">Goals</option><option value="pass">Passes</option><option value="shot">Shots</option><option value="interception">Interceptions</option><option value="yellow_card">Yellow cards</option><option value="red_card">Red cards</option><option value="substitution">Substitutions</option></select></div></div><div id="event-list" class="event-list"></div></section><section class="card player-card"><div class="card-heading"><div><h3>Player focus</h3><p>Click a player on the pitch for live details</p></div><svg class="muted-icon"><use href="#i-users"/></svg></div><label class="sr-only" for="player-select">Select player</label><select id="player-select"></select><div id="player-detail"></div></section></div>
+      </section>
+      <section id="settings-view" hidden class="card model-settings">
+        <h2>Match summary model</h2>
+        <p>Connect an independent model service to write the match summary and half-by-half review. Match statistics and Player of the Match remain evidence-based.</p>
+        <form id="model-settings-form">
+          <label>Service URL<input id="model-base-url" type="url" required value="https://api.openai.com/v1" placeholder="https://api.openai.com/v1"></label>
+          <small>Use an HTTPS service that supports the Responses API and structured JSON output. Include /v1 if required by your provider.</small>
+          <label>Model<input id="model-name" type="text" required maxlength="200" placeholder="Enter your provider’s model ID" autocomplete="off"></label>
+          <label>API Key<input id="model-api-key" type="password" autocomplete="new-password" placeholder="Enter API key"></label>
+          <small id="model-key-state">Keys are stored privately on this computer, outside public report data.</small>
+          <label class="clear-key"><input id="model-clear-key" type="checkbox"> Remove saved API key</label>
+          <button class="button" type="submit" id="save-model-settings">Save settings</button>
+        </form>
+        <p id="model-settings-status" role="status" aria-live="polite"></p>
+      </section>
+      <section id="stats-view" hidden><div class="analysis-subtabs" role="tablist" aria-label="Analysis sections"><button class="active" role="tab" aria-selected="true" id="report-tab">Match report</button><button role="tab" aria-selected="false" id="decisions-tab">Decision analysis</button></div><div id="report-panel"><div class="model-summary-controls"><button class="button" id="generate-model-summary">Generate model summary</button><span id="model-summary-status" role="status" aria-live="polite">Configure your model in Settings, then generate a summary for this match.</span></div><section id="match-report" class="card match-report" aria-label="Post-match analysis"><p class="empty" role="status">Loading post-match analysis…</p></section><div class="analysis-heading"><div><h2>Read the match in numbers.</h2><p>Final match statistics, independent of replay time.</p></div><span class="subtle-badge">FULL TIME</span></div><div id="full-metrics" class="metric-grid"></div><div class="analysis-grid"><section class="card"><div class="card-heading"><h3>Team comparison</h3><div class="legend"><span><i class="home-dot"></i><span id="full-legend-home">Home</span></span><span><i class="away-dot"></i><span id="full-legend-away">Away</span></span></div></div><div id="full-stats" class="full-stats"></div></section><section class="card"><div class="card-heading"><h3>Key events</h3><span class="subtle-badge">Full time</span></div><div id="all-goals" class="goal-list"></div></section></div></div><section id="decision-view" aria-label="Decision analysis" hidden></section></section>
+      <section id="lineup-view" hidden><div class="analysis-heading"><div><h2>Twenty-two starting coordinates.</h2><p>Starting lineups and substitutes · final appearance status · distances are simulated</p></div></div><div class="roster-grid" id="rosters"></div></section>
+      <section id="squads-view" hidden>
+        <div class="analysis-heading"><div><h2>Club rosters.</h2><p>Official squad numbers and player details from the Premier League. Select a club and explore its full roster.</p></div><span class="subtle-badge" id="squad-season">2026/27</span></div>
+        <section class="card squad-toolbar">
+          <div class="squad-toolbar-fields">
+            <label class="picker-field"><span>Club</span><select id="squad-club-select" aria-label="Select club"></select></label>
+            <label class="picker-field squad-search-field"><span>Search player</span><input id="squad-search" type="search" placeholder="Name, position or nationality" autocomplete="off"></label>
+            <div class="squad-count" id="squad-count"></div>
+          </div>
+          <p class="squad-source">Source: <a id="squad-source" href="https://www.premierleague.com/en/news/4706139/see-all-the-202627-premier-league-squad-lists" target="_blank" rel="noreferrer">Premier League 2026/27 squad lists</a> · shirt numbers from the <a href="https://www.premierleague.com/en/news/4725682/all-20-premier-league-clubs-squad-numbers-for-202627-season" target="_blank" rel="noreferrer">2026/27 squad-number list</a>.</p>
+        </section>
+        <div id="squad-content"></div>
+      </section>
+      <footer><span><span class="footer-mark">t.</span> TOUCHLINE <span class="footer-divider">/</span> Football data, made clear.</span><span>Simulated match data · real 2026/27 squad lists</span></footer>
+    </main>
+  </div>
+</body>
+</html>

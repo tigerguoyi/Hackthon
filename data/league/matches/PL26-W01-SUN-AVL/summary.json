@@ -1,0 +1,165 @@
+{
+  "match_id": "PL26-W01-SUN-AVL",
+  "seed": 20262020,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 655793,
+  "state_snapshots": 6001,
+  "event_count": 3625,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 124,
+    "restart": 35,
+    "pressure": 1246,
+    "carry": 1274,
+    "pass": 777,
+    "interception": 94,
+    "shot": 28,
+    "stoppage": 16,
+    "save": 12,
+    "yellow_card": 2,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    1,
+    2
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 409,
+      "completed_passes": 358,
+      "shots": 10,
+      "shots_on_target": 3,
+      "interceptions": 43,
+      "pressure_events": 596,
+      "possession_seconds": 2966.4,
+      "possession_pct": 52.01,
+      "pass_accuracy_pct": 87.53
+    },
+    "AWAY": {
+      "passes": 368,
+      "completed_passes": 325,
+      "shots": 18,
+      "shots_on_target": 12,
+      "interceptions": 51,
+      "pressure_events": 650,
+      "possession_seconds": 2737.4,
+      "possession_pct": 47.99,
+      "pass_accuracy_pct": 88.32
+    }
+  },
+  "distance_m": {
+    "H01": 3322.4,
+    "H02": 8043.7,
+    "H03": 11767.3,
+    "H04": 11690.7,
+    "H05": 11295.9,
+    "H06": 8437.2,
+    "H07": 13475.7,
+    "H08": 13499.5,
+    "H09": 12755.3,
+    "H10": 12820.7,
+    "H11": 12380.7,
+    "A01": 3227.4,
+    "A02": 11332.5,
+    "A03": 12177.6,
+    "A04": 11960.4,
+    "A05": 9478.5,
+    "A06": 11054.3,
+    "A07": 13588.7,
+    "A08": 13205.7,
+    "A09": 12604.3,
+    "A10": 13399.9,
+    "A11": 8333.2,
+    "H12": 5024.6,
+    "H13": 0.0,
+    "H14": 2870.4,
+    "A12": 2708.5,
+    "A13": 4572.3,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 1004000,
+      "period": 1,
+      "period_ms": 1004000,
+      "team_id": "HOME",
+      "club_id": "SUN",
+      "club_name": "Sunderland",
+      "player_id": "H11",
+      "player_name": "Romaine Mundle",
+      "shirt_number": 14,
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "t_ms": 1423400,
+      "period": 1,
+      "period_ms": 1423400,
+      "team_id": "AWAY",
+      "club_id": "AVL",
+      "club_name": "Aston Villa",
+      "player_id": "A11",
+      "player_name": "Alysson",
+      "shirt_number": 47,
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "t_ms": 4918400,
+      "period": 2,
+      "period_ms": 1918400,
+      "team_id": "AWAY",
+      "club_id": "AVL",
+      "club_name": "Aston Villa",
+      "player_id": "A10",
+      "player_name": "Nicolas Jackson",
+      "shirt_number": 11,
+      "score": [
+        1,
+        2
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 1,
+    "kickoff_local": "2026-10-24T15:00:00",
+    "time_zone": "Europe/London",
+    "venue": "Stadium of Light"
+  },
+  "home_club": {
+    "club_id": "SUN",
+    "name": "Sunderland",
+    "short_name": "Sunderland",
+    "stadium": "Stadium of Light",
+    "colors": {
+      "primary": "#EB172B",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "AVL",
+    "name": "Aston Villa",
+    "short_name": "Aston Villa",
+    "stadium": "Villa Park",
+    "colors": {
+      "primary": "#670E36",
+      "secondary": "#95BFE5"
+    },
+    "formation": "4-3-3"
+  }
+}

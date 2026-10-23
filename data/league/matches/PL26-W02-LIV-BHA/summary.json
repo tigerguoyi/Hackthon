@@ -1,0 +1,135 @@
+{
+  "match_id": "PL26-W02-LIV-BHA",
+  "seed": 20263024,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 656021,
+  "state_snapshots": 6001,
+  "event_count": 3604,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 127,
+    "restart": 30,
+    "pressure": 1245,
+    "carry": 1253,
+    "pass": 782,
+    "interception": 102,
+    "shot": 23,
+    "stoppage": 16,
+    "save": 7,
+    "yellow_card": 2,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    1,
+    0
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 377,
+      "completed_passes": 330,
+      "shots": 15,
+      "shots_on_target": 7,
+      "interceptions": 55,
+      "pressure_events": 629,
+      "possession_seconds": 2796.2,
+      "possession_pct": 48.65,
+      "pass_accuracy_pct": 87.53
+    },
+    "AWAY": {
+      "passes": 405,
+      "completed_passes": 350,
+      "shots": 8,
+      "shots_on_target": 1,
+      "interceptions": 47,
+      "pressure_events": 616,
+      "possession_seconds": 2951.6,
+      "possession_pct": 51.35,
+      "pass_accuracy_pct": 86.42
+    }
+  },
+  "distance_m": {
+    "H01": 3166.4,
+    "H02": 8094.6,
+    "H03": 12067.4,
+    "H04": 12182.7,
+    "H05": 10905.2,
+    "H06": 8412.6,
+    "H07": 14133.8,
+    "H08": 13397.7,
+    "H09": 12412.6,
+    "H10": 13255.3,
+    "H11": 12553.2,
+    "A01": 3282.5,
+    "A02": 10937.9,
+    "A03": 11734.2,
+    "A04": 11592.2,
+    "A05": 9281.9,
+    "A06": 10624.0,
+    "A07": 13647.1,
+    "A08": 12967.4,
+    "A09": 12612.7,
+    "A10": 13502.6,
+    "A11": 8676.2,
+    "H12": 4999.3,
+    "H13": 0.0,
+    "H14": 2751.4,
+    "A12": 2910.2,
+    "A13": 4160.0,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 321400,
+      "period": 1,
+      "period_ms": 321400,
+      "team_id": "HOME",
+      "club_id": "LIV",
+      "club_name": "Liverpool",
+      "player_id": "H10",
+      "player_name": "Alexander Isak",
+      "shirt_number": 9,
+      "score": [
+        1,
+        0
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 2,
+    "kickoff_local": "2026-11-01T14:00:00",
+    "time_zone": "Europe/London",
+    "venue": "Anfield"
+  },
+  "home_club": {
+    "club_id": "LIV",
+    "name": "Liverpool",
+    "short_name": "Liverpool",
+    "stadium": "Anfield",
+    "colors": {
+      "primary": "#C8102E",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "BHA",
+    "name": "Brighton & Hove Albion",
+    "short_name": "Brighton",
+    "stadium": "Amex Stadium",
+    "colors": {
+      "primary": "#0057B8",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  }
+}

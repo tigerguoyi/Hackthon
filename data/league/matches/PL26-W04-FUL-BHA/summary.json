@@ -1,0 +1,150 @@
+{
+  "match_id": "PL26-W04-FUL-BHA",
+  "seed": 20265026,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 656268,
+  "state_snapshots": 6001,
+  "event_count": 3621,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 119,
+    "restart": 33,
+    "pressure": 1259,
+    "carry": 1249,
+    "pass": 797,
+    "interception": 91,
+    "shot": 27,
+    "stoppage": 14,
+    "yellow_card": 2,
+    "save": 13,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    1,
+    1
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 388,
+      "completed_passes": 337,
+      "shots": 9,
+      "shots_on_target": 5,
+      "interceptions": 40,
+      "pressure_events": 668,
+      "possession_seconds": 2774.2,
+      "possession_pct": 48.4,
+      "pass_accuracy_pct": 86.86
+    },
+    "AWAY": {
+      "passes": 409,
+      "completed_passes": 369,
+      "shots": 18,
+      "shots_on_target": 10,
+      "interceptions": 51,
+      "pressure_events": 591,
+      "possession_seconds": 2957.2,
+      "possession_pct": 51.6,
+      "pass_accuracy_pct": 90.22
+    }
+  },
+  "distance_m": {
+    "H01": 3400.0,
+    "H02": 8331.8,
+    "H03": 11834.5,
+    "H04": 12179.4,
+    "H05": 11165.5,
+    "H06": 8506.3,
+    "H07": 14061.1,
+    "H08": 13709.6,
+    "H09": 12687.0,
+    "H10": 13126.4,
+    "H11": 12194.6,
+    "A01": 3174.9,
+    "A02": 10926.5,
+    "A03": 11720.1,
+    "A04": 11553.8,
+    "A05": 9474.5,
+    "A06": 11141.6,
+    "A07": 13952.7,
+    "A08": 13335.6,
+    "A09": 12801.8,
+    "A10": 13091.4,
+    "A11": 8618.9,
+    "H12": 4838.4,
+    "H13": 0.0,
+    "H14": 2726.9,
+    "A12": 2614.8,
+    "A13": 3965.7,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 3447800,
+      "period": 2,
+      "period_ms": 447800,
+      "team_id": "HOME",
+      "club_id": "FUL",
+      "club_name": "Fulham",
+      "player_id": "H10",
+      "player_name": "Gonzalo Garcia",
+      "shirt_number": 7,
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "t_ms": 4734200,
+      "period": 2,
+      "period_ms": 1734200,
+      "team_id": "AWAY",
+      "club_id": "BHA",
+      "club_name": "Brighton & Hove Albion",
+      "player_id": "A09",
+      "player_name": "Yankuba Minteh",
+      "shirt_number": 11,
+      "score": [
+        1,
+        1
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 4,
+    "kickoff_local": "2026-11-15T16:30:00",
+    "time_zone": "Europe/London",
+    "venue": "Craven Cottage"
+  },
+  "home_club": {
+    "club_id": "FUL",
+    "name": "Fulham",
+    "short_name": "Fulham",
+    "stadium": "Craven Cottage",
+    "colors": {
+      "primary": "#FFFFFF",
+      "secondary": "#000000"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "BHA",
+    "name": "Brighton & Hove Albion",
+    "short_name": "Brighton",
+    "stadium": "Amex Stadium",
+    "colors": {
+      "primary": "#0057B8",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  }
+}

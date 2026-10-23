@@ -1,0 +1,135 @@
+{
+  "match_id": "PL26-W01-HUL-FUL",
+  "seed": 20262028,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 656013,
+  "state_snapshots": 6001,
+  "event_count": 3618,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 114,
+    "restart": 32,
+    "pressure": 1257,
+    "carry": 1267,
+    "pass": 792,
+    "interception": 87,
+    "shot": 25,
+    "stoppage": 10,
+    "save": 15,
+    "yellow_card": 2,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    1,
+    0
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 359,
+      "completed_passes": 318,
+      "shots": 15,
+      "shots_on_target": 9,
+      "interceptions": 46,
+      "pressure_events": 688,
+      "possession_seconds": 2590.4,
+      "possession_pct": 44.94,
+      "pass_accuracy_pct": 88.58
+    },
+    "AWAY": {
+      "passes": 433,
+      "completed_passes": 387,
+      "shots": 10,
+      "shots_on_target": 7,
+      "interceptions": 41,
+      "pressure_events": 569,
+      "possession_seconds": 3173.4,
+      "possession_pct": 55.06,
+      "pass_accuracy_pct": 89.38
+    }
+  },
+  "distance_m": {
+    "H01": 3222.0,
+    "H02": 7911.4,
+    "H03": 12018.5,
+    "H04": 12039.1,
+    "H05": 10779.7,
+    "H06": 8331.4,
+    "H07": 14218.5,
+    "H08": 13412.3,
+    "H09": 12302.1,
+    "H10": 13406.8,
+    "H11": 12643.0,
+    "A01": 3300.5,
+    "A02": 10746.3,
+    "A03": 11580.3,
+    "A04": 11847.0,
+    "A05": 9504.1,
+    "A06": 10581.9,
+    "A07": 13798.3,
+    "A08": 12907.1,
+    "A09": 12028.3,
+    "A10": 13157.3,
+    "A11": 8337.3,
+    "H12": 4757.7,
+    "H13": 0.0,
+    "H14": 2845.9,
+    "A12": 2400.0,
+    "A13": 4264.0,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 5908400,
+      "period": 2,
+      "period_ms": 2908400,
+      "team_id": "HOME",
+      "club_id": "HUL",
+      "club_name": "Hull City",
+      "player_id": "H10",
+      "player_name": "Oliver McBurnie",
+      "shirt_number": 9,
+      "score": [
+        1,
+        0
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 1,
+    "kickoff_local": "2026-10-25T19:00:00",
+    "time_zone": "Europe/London",
+    "venue": "MKM Stadium"
+  },
+  "home_club": {
+    "club_id": "HUL",
+    "name": "Hull City",
+    "short_name": "Hull City",
+    "stadium": "MKM Stadium",
+    "colors": {
+      "primary": "#F5A12D",
+      "secondary": "#000000"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "FUL",
+    "name": "Fulham",
+    "short_name": "Fulham",
+    "stadium": "Craven Cottage",
+    "colors": {
+      "primary": "#FFFFFF",
+      "secondary": "#000000"
+    },
+    "formation": "4-3-3"
+  }
+}

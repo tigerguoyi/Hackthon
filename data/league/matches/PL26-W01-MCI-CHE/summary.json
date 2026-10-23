@@ -1,0 +1,150 @@
+{
+  "match_id": "PL26-W01-MCI-CHE",
+  "seed": 20262024,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 656035,
+  "state_snapshots": 6001,
+  "event_count": 3596,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 123,
+    "restart": 34,
+    "pressure": 1234,
+    "carry": 1258,
+    "pass": 780,
+    "shot": 27,
+    "save": 16,
+    "interception": 94,
+    "stoppage": 11,
+    "yellow_card": 2,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    1,
+    1
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 386,
+      "completed_passes": 339,
+      "shots": 13,
+      "shots_on_target": 8,
+      "interceptions": 47,
+      "pressure_events": 631,
+      "possession_seconds": 2849.0,
+      "possession_pct": 49.64,
+      "pass_accuracy_pct": 87.82
+    },
+    "AWAY": {
+      "passes": 394,
+      "completed_passes": 347,
+      "shots": 14,
+      "shots_on_target": 10,
+      "interceptions": 47,
+      "pressure_events": 603,
+      "possession_seconds": 2890.8,
+      "possession_pct": 50.36,
+      "pass_accuracy_pct": 88.07
+    }
+  },
+  "distance_m": {
+    "H01": 3249.6,
+    "H02": 8283.9,
+    "H03": 11740.7,
+    "H04": 11801.1,
+    "H05": 10854.6,
+    "H06": 8759.0,
+    "H07": 14166.5,
+    "H08": 13145.0,
+    "H09": 12560.9,
+    "H10": 13104.5,
+    "H11": 12358.3,
+    "A01": 3230.2,
+    "A02": 10959.0,
+    "A03": 12044.2,
+    "A04": 12039.1,
+    "A05": 9455.6,
+    "A06": 10862.9,
+    "A07": 13797.1,
+    "A08": 13255.6,
+    "A09": 12470.5,
+    "A10": 13203.3,
+    "A11": 8311.2,
+    "H12": 5081.0,
+    "H13": 0.0,
+    "H14": 2886.9,
+    "A12": 2442.6,
+    "A13": 4223.6,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 653800,
+      "period": 1,
+      "period_ms": 653800,
+      "team_id": "HOME",
+      "club_id": "MCI",
+      "club_name": "Manchester City",
+      "player_id": "H11",
+      "player_name": "Jeremy Doku",
+      "shirt_number": 11,
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "t_ms": 4511800,
+      "period": 2,
+      "period_ms": 1511800,
+      "team_id": "AWAY",
+      "club_id": "CHE",
+      "club_name": "Chelsea",
+      "player_id": "A10",
+      "player_name": "Joao Pedro",
+      "shirt_number": 9,
+      "score": [
+        1,
+        1
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 1,
+    "kickoff_local": "2026-10-25T14:00:00",
+    "time_zone": "Europe/London",
+    "venue": "Etihad Stadium"
+  },
+  "home_club": {
+    "club_id": "MCI",
+    "name": "Manchester City",
+    "short_name": "Man City",
+    "stadium": "Etihad Stadium",
+    "colors": {
+      "primary": "#6CABDD",
+      "secondary": "#1C2C5B"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "CHE",
+    "name": "Chelsea",
+    "short_name": "Chelsea",
+    "stadium": "Stamford Bridge",
+    "colors": {
+      "primary": "#034694",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  }
+}

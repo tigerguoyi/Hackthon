@@ -1,0 +1,165 @@
+{
+  "match_id": "PL26-W04-BRE-HUL",
+  "seed": 20265025,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 655522,
+  "state_snapshots": 6001,
+  "event_count": 3609,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 116,
+    "restart": 31,
+    "pressure": 1240,
+    "carry": 1263,
+    "pass": 802,
+    "shot": 24,
+    "save": 10,
+    "interception": 90,
+    "stoppage": 14,
+    "yellow_card": 2,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    1,
+    2
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 421,
+      "completed_passes": 379,
+      "shots": 15,
+      "shots_on_target": 7,
+      "interceptions": 48,
+      "pressure_events": 553,
+      "possession_seconds": 3097.2,
+      "possession_pct": 54.07,
+      "pass_accuracy_pct": 90.02
+    },
+    "AWAY": {
+      "passes": 381,
+      "completed_passes": 333,
+      "shots": 9,
+      "shots_on_target": 6,
+      "interceptions": 42,
+      "pressure_events": 687,
+      "possession_seconds": 2630.6,
+      "possession_pct": 45.93,
+      "pass_accuracy_pct": 87.4
+    }
+  },
+  "distance_m": {
+    "H01": 3257.2,
+    "H02": 8230.0,
+    "H03": 11607.2,
+    "H04": 11994.6,
+    "H05": 11144.6,
+    "H06": 8171.9,
+    "H07": 13715.7,
+    "H08": 13538.0,
+    "H09": 12737.8,
+    "H10": 13368.6,
+    "H11": 12807.5,
+    "A01": 3396.6,
+    "A02": 10979.8,
+    "A03": 12244.9,
+    "A04": 12375.9,
+    "A05": 9473.9,
+    "A06": 10828.7,
+    "A07": 14432.1,
+    "A08": 14489.4,
+    "A09": 12059.3,
+    "A10": 12835.6,
+    "A11": 8428.6,
+    "H12": 5093.7,
+    "H13": 0.0,
+    "H14": 2780.5,
+    "A12": 2730.4,
+    "A13": 4183.0,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 1711000,
+      "period": 1,
+      "period_ms": 1711000,
+      "team_id": "AWAY",
+      "club_id": "HUL",
+      "club_name": "Hull City",
+      "player_id": "A11",
+      "player_name": "Mohamed-Ali Cho",
+      "shirt_number": 50,
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "t_ms": 2439400,
+      "period": 1,
+      "period_ms": 2439400,
+      "team_id": "AWAY",
+      "club_id": "HUL",
+      "club_name": "Hull City",
+      "player_id": "A09",
+      "player_name": "Sorba Thomas",
+      "shirt_number": 7,
+      "score": [
+        0,
+        2
+      ]
+    },
+    {
+      "t_ms": 3393600,
+      "period": 2,
+      "period_ms": 393600,
+      "team_id": "HOME",
+      "club_id": "BRE",
+      "club_name": "Brentford",
+      "player_id": "H10",
+      "player_name": "Callum Wilson",
+      "shirt_number": 13,
+      "score": [
+        1,
+        2
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 4,
+    "kickoff_local": "2026-11-15T14:00:00",
+    "time_zone": "Europe/London",
+    "venue": "Gtech Community Stadium"
+  },
+  "home_club": {
+    "club_id": "BRE",
+    "name": "Brentford",
+    "short_name": "Brentford",
+    "stadium": "Gtech Community Stadium",
+    "colors": {
+      "primary": "#E30613",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "HUL",
+    "name": "Hull City",
+    "short_name": "Hull City",
+    "stadium": "MKM Stadium",
+    "colors": {
+      "primary": "#F5A12D",
+      "secondary": "#000000"
+    },
+    "formation": "4-3-3"
+  }
+}

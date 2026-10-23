@@ -1,0 +1,135 @@
+{
+  "match_id": "PL26-W04-LIV-TOT",
+  "seed": 20265022,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 656368,
+  "state_snapshots": 6001,
+  "event_count": 3601,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 128,
+    "restart": 35,
+    "carry": 1258,
+    "pass": 774,
+    "pressure": 1234,
+    "interception": 97,
+    "shot": 28,
+    "stoppage": 8,
+    "save": 20,
+    "yellow_card": 2,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    0,
+    1
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 381,
+      "completed_passes": 335,
+      "shots": 17,
+      "shots_on_target": 12,
+      "interceptions": 51,
+      "pressure_events": 622,
+      "possession_seconds": 2862.8,
+      "possession_pct": 49.7,
+      "pass_accuracy_pct": 87.93
+    },
+    "AWAY": {
+      "passes": 393,
+      "completed_passes": 342,
+      "shots": 11,
+      "shots_on_target": 9,
+      "interceptions": 46,
+      "pressure_events": 612,
+      "possession_seconds": 2897.0,
+      "possession_pct": 50.3,
+      "pass_accuracy_pct": 87.02
+    }
+  },
+  "distance_m": {
+    "H01": 3194.9,
+    "H02": 8400.1,
+    "H03": 11637.4,
+    "H04": 11696.2,
+    "H05": 10774.7,
+    "H06": 8985.9,
+    "H07": 14193.3,
+    "H08": 13113.9,
+    "H09": 12616.7,
+    "H10": 13560.8,
+    "H11": 13133.5,
+    "A01": 3310.0,
+    "A02": 11037.1,
+    "A03": 12045.7,
+    "A04": 11939.9,
+    "A05": 9669.3,
+    "A06": 10837.0,
+    "A07": 14349.2,
+    "A08": 13567.8,
+    "A09": 12400.2,
+    "A10": 13137.1,
+    "A11": 7877.9,
+    "H12": 4313.9,
+    "H13": 0.0,
+    "H14": 2560.6,
+    "A12": 2752.3,
+    "A13": 4390.2,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 1511600,
+      "period": 1,
+      "period_ms": 1511600,
+      "team_id": "AWAY",
+      "club_id": "TOT",
+      "club_name": "Tottenham Hotspur",
+      "player_id": "A10",
+      "player_name": "Dominic Solanke",
+      "shirt_number": 19,
+      "score": [
+        0,
+        1
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 4,
+    "kickoff_local": "2026-11-14T17:30:00",
+    "time_zone": "Europe/London",
+    "venue": "Anfield"
+  },
+  "home_club": {
+    "club_id": "LIV",
+    "name": "Liverpool",
+    "short_name": "Liverpool",
+    "stadium": "Anfield",
+    "colors": {
+      "primary": "#C8102E",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "TOT",
+    "name": "Tottenham Hotspur",
+    "short_name": "Tottenham",
+    "stadium": "Tottenham Hotspur Stadium",
+    "colors": {
+      "primary": "#FFFFFF",
+      "secondary": "#132257"
+    },
+    "formation": "4-3-3"
+  }
+}

@@ -1,0 +1,400 @@
+{
+  "schema_version": "1.0.0",
+  "match_id": "PL26-W01-TOT-ARS",
+  "synthetic": true,
+  "seed": 20262019,
+  "generator": "generate.py v2.1.0",
+  "duration_ms": 6000000,
+  "tracking_hz": 5,
+  "pitch": {
+    "length_m": 105,
+    "width_m": 68,
+    "origin": "top_left",
+    "x_axis": "right",
+    "y_axis": "down",
+    "z_axis": "up"
+  },
+  "periods": [
+    {
+      "period": 1,
+      "start_ms": 0,
+      "duration_ms": 3000000,
+      "regulation_ms": 2700000,
+      "home_attacks": "positive_x"
+    },
+    {
+      "period": 2,
+      "start_ms": 3000000,
+      "duration_ms": 3000000,
+      "regulation_ms": 2700000,
+      "home_attacks": "negative_x"
+    }
+  ],
+  "clock_note": "Two 45+5 minute periods; halftime break omitted. Use period and period_ms for displayed clock.",
+  "teams": [
+    {
+      "team_id": "HOME",
+      "club_id": "TOT",
+      "name": "Tottenham Hotspur",
+      "short_name": "Tottenham",
+      "stadium": "Tottenham Hotspur Stadium",
+      "colors": {
+        "primary": "#FFFFFF",
+        "secondary": "#132257"
+      },
+      "formation": "4-3-3"
+    },
+    {
+      "team_id": "AWAY",
+      "club_id": "ARS",
+      "name": "Arsenal",
+      "short_name": "Arsenal",
+      "stadium": "Emirates Stadium",
+      "colors": {
+        "primary": "#EF0107",
+        "secondary": "#FFFFFF"
+      },
+      "formation": "4-3-3"
+    }
+  ],
+  "players": [
+    {
+      "player_id": "H01",
+      "team_id": "HOME",
+      "jersey_number": 31,
+      "name": "Antonin Kinsky",
+      "position": "GK",
+      "position_detail": "Goalkeeper",
+      "nationality": "Czech Republic",
+      "starter": true
+    },
+    {
+      "player_id": "H02",
+      "team_id": "HOME",
+      "jersey_number": 3,
+      "name": "Andy Robertson",
+      "position": "LB",
+      "position_detail": "Left-Back",
+      "nationality": null,
+      "starter": true
+    },
+    {
+      "player_id": "H03",
+      "team_id": "HOME",
+      "jersey_number": 4,
+      "name": "Tosin Adarabioyo",
+      "position": "LCB",
+      "position_detail": "Centre Central Defender",
+      "nationality": "England",
+      "starter": true
+    },
+    {
+      "player_id": "H04",
+      "team_id": "HOME",
+      "jersey_number": 5,
+      "name": "Marcos Senesi",
+      "position": "RCB",
+      "position_detail": "Centre Central Defender",
+      "nationality": "Argentina",
+      "starter": true
+    },
+    {
+      "player_id": "H05",
+      "team_id": "HOME",
+      "jersey_number": 13,
+      "name": "Destiny Udogie",
+      "position": "RB",
+      "position_detail": "Right Full Back",
+      "nationality": "Italy",
+      "starter": true
+    },
+    {
+      "player_id": "H06",
+      "team_id": "HOME",
+      "jersey_number": 7,
+      "name": "Xavi Simons",
+      "position": "LCM",
+      "position_detail": "Attacking Midfielder",
+      "nationality": "Netherlands",
+      "starter": true
+    },
+    {
+      "player_id": "H07",
+      "team_id": "HOME",
+      "jersey_number": 16,
+      "name": "Sandro Tonali",
+      "position": "DM",
+      "position_detail": "Centre Defensive Midfielder",
+      "nationality": "Italy",
+      "starter": true
+    },
+    {
+      "player_id": "H08",
+      "team_id": "HOME",
+      "jersey_number": 8,
+      "name": "Conor Gallagher",
+      "position": "RCM",
+      "position_detail": "Central Midfielder",
+      "nationality": "England",
+      "starter": true
+    },
+    {
+      "player_id": "H09",
+      "team_id": "HOME",
+      "jersey_number": 11,
+      "name": "Mathys Tel",
+      "position": "LW",
+      "position_detail": "Left Winger",
+      "nationality": "France",
+      "starter": true
+    },
+    {
+      "player_id": "H10",
+      "team_id": "HOME",
+      "jersey_number": 19,
+      "name": "Dominic Solanke",
+      "position": "ST",
+      "position_detail": "Striker",
+      "nationality": "England",
+      "starter": true
+    },
+    {
+      "player_id": "H11",
+      "team_id": "HOME",
+      "jersey_number": 17,
+      "name": "Savio",
+      "position": "RW",
+      "position_detail": "Right Winger",
+      "nationality": "Brazil",
+      "starter": true
+    },
+    {
+      "player_id": "A01",
+      "team_id": "AWAY",
+      "jersey_number": 1,
+      "name": "David Raya",
+      "position": "GK",
+      "position_detail": "Goalkeeper",
+      "nationality": "Spain",
+      "starter": true
+    },
+    {
+      "player_id": "A02",
+      "team_id": "AWAY",
+      "jersey_number": 33,
+      "name": "Riccardo Calafiori",
+      "position": "LB",
+      "position_detail": "Left Full Back",
+      "nationality": "Italy",
+      "starter": true
+    },
+    {
+      "player_id": "A03",
+      "team_id": "AWAY",
+      "jersey_number": 2,
+      "name": "William Saliba",
+      "position": "LCB",
+      "position_detail": "Central Defender",
+      "nationality": "France",
+      "starter": true
+    },
+    {
+      "player_id": "A04",
+      "team_id": "AWAY",
+      "jersey_number": 3,
+      "name": "Cristhian Mosquera",
+      "position": "RCB",
+      "position_detail": "Central Defender",
+      "nationality": "Spain",
+      "starter": true
+    },
+    {
+      "player_id": "A05",
+      "team_id": "AWAY",
+      "jersey_number": 4,
+      "name": "Ben White",
+      "position": "RB",
+      "position_detail": "Centre/Right Central Defender",
+      "nationality": "England",
+      "starter": true
+    },
+    {
+      "player_id": "A06",
+      "team_id": "AWAY",
+      "jersey_number": 8,
+      "name": "Martin Odegaard",
+      "position": "LCM",
+      "position_detail": "Left/Centre/Right Attacking Midfielder",
+      "nationality": "Norway",
+      "starter": true
+    },
+    {
+      "player_id": "A07",
+      "team_id": "AWAY",
+      "jersey_number": 36,
+      "name": "Martin Zubimendi",
+      "position": "DM",
+      "position_detail": "Defensive Midfielder",
+      "nationality": "Spain",
+      "starter": true
+    },
+    {
+      "player_id": "A08",
+      "team_id": "AWAY",
+      "jersey_number": 10,
+      "name": "Eberechi Eze",
+      "position": "RCM",
+      "position_detail": "Centre Attacking Midfielder",
+      "nationality": "England",
+      "starter": true
+    },
+    {
+      "player_id": "A09",
+      "team_id": "AWAY",
+      "jersey_number": 7,
+      "name": "Bukayo Saka",
+      "position": "LW",
+      "position_detail": "Left Winger",
+      "nationality": "England",
+      "starter": true
+    },
+    {
+      "player_id": "A10",
+      "team_id": "AWAY",
+      "jersey_number": 14,
+      "name": "Viktor Gyokeres",
+      "position": "ST",
+      "position_detail": "Striker",
+      "nationality": "Sweden",
+      "starter": true
+    },
+    {
+      "player_id": "A11",
+      "team_id": "AWAY",
+      "jersey_number": 20,
+      "name": "Noni Madueke",
+      "position": "RW",
+      "position_detail": "Right Winger",
+      "nationality": "England",
+      "starter": true
+    },
+    {
+      "player_id": "H12",
+      "team_id": "HOME",
+      "jersey_number": 10,
+      "name": "James Maddison",
+      "position": "LCM",
+      "position_detail": "Left/Centre/Right Attacking Midfielder",
+      "nationality": "England",
+      "starter": false
+    },
+    {
+      "player_id": "H13",
+      "team_id": "HOME",
+      "jersey_number": 22,
+      "name": "Omar Marmoush",
+      "position": "RW",
+      "position_detail": "Striker",
+      "nationality": "Egypt",
+      "starter": false
+    },
+    {
+      "player_id": "H14",
+      "team_id": "HOME",
+      "jersey_number": 6,
+      "name": "Jan Paul van Hecke",
+      "position": "LB",
+      "position_detail": "Central Defender",
+      "nationality": "Netherlands",
+      "starter": false
+    },
+    {
+      "player_id": "A12",
+      "team_id": "AWAY",
+      "jersey_number": 22,
+      "name": "Ethan Nwaneri",
+      "position": "LCM",
+      "position_detail": "Left/Centre Attacking Midfielder",
+      "nationality": "England",
+      "starter": false
+    },
+    {
+      "player_id": "A13",
+      "team_id": "AWAY",
+      "jersey_number": 17,
+      "name": "Christos Tzolis",
+      "position": "RW",
+      "position_detail": "Left Winger",
+      "nationality": "Greece",
+      "starter": false
+    },
+    {
+      "player_id": "A14",
+      "team_id": "AWAY",
+      "jersey_number": 5,
+      "name": "Piero Hincapie",
+      "position": "LB",
+      "position_detail": "Centre Central Defender",
+      "nationality": "Ecuador",
+      "starter": false
+    }
+  ],
+  "columns": {
+    "tracking.players": [
+      "player_id",
+      "x_m",
+      "y_m",
+      "vx_mps",
+      "vy_mps"
+    ],
+    "tracking.ball": [
+      "x_m",
+      "y_m",
+      "z_m",
+      "vx_mps",
+      "vy_mps",
+      "vz_mps"
+    ]
+  },
+  "limitations": [
+    "Simplified procedural motion, not a professional football or physics simulator.",
+    "Club names, squad numbers and player names follow the public 2026/27 Premier League squad lists; match events and tracking are synthetic.",
+    "No offsides, physical collisions or realistic fatigue. Cards and tactical substitutions follow a synthetic schedule.",
+    "Incoming substitutes inherit the outgoing formation slot and position; no touchline entrance animation is modeled.",
+    "Pressure is a proximity heuristic; ball transport during restart_setup is non-playing animation.",
+    "Outcomes exist only in resolved events at available_at_ms; do not expose future events during replay."
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 1,
+    "kickoff_local": "2026-10-24T12:30:00",
+    "time_zone": "Europe/London",
+    "venue": "Tottenham Hotspur Stadium"
+  },
+  "home_club": {
+    "club_id": "TOT",
+    "name": "Tottenham Hotspur",
+    "short_name": "Tottenham",
+    "stadium": "Tottenham Hotspur Stadium",
+    "colors": {
+      "primary": "#FFFFFF",
+      "secondary": "#132257"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "ARS",
+    "name": "Arsenal",
+    "short_name": "Arsenal",
+    "stadium": "Emirates Stadium",
+    "colors": {
+      "primary": "#EF0107",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  },
+  "venue": "Tottenham Hotspur Stadium"
+}

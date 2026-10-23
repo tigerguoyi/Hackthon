@@ -1,0 +1,150 @@
+{
+  "match_id": "PL26-W04-CHE-EVE",
+  "seed": 20265027,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 655959,
+  "state_snapshots": 6001,
+  "event_count": 3564,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 108,
+    "restart": 34,
+    "carry": 1241,
+    "pass": 797,
+    "pressure": 1230,
+    "shot": 28,
+    "save": 11,
+    "interception": 79,
+    "stoppage": 17,
+    "yellow_card": 2,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    1,
+    1
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 390,
+      "completed_passes": 355,
+      "shots": 18,
+      "shots_on_target": 11,
+      "interceptions": 44,
+      "pressure_events": 629,
+      "possession_seconds": 2798.4,
+      "possession_pct": 48.97,
+      "pass_accuracy_pct": 91.03
+    },
+    "AWAY": {
+      "passes": 407,
+      "completed_passes": 363,
+      "shots": 10,
+      "shots_on_target": 2,
+      "interceptions": 35,
+      "pressure_events": 601,
+      "possession_seconds": 2916.6,
+      "possession_pct": 51.03,
+      "pass_accuracy_pct": 89.19
+    }
+  },
+  "distance_m": {
+    "H01": 3281.3,
+    "H02": 8159.1,
+    "H03": 11706.0,
+    "H04": 11762.2,
+    "H05": 11055.1,
+    "H06": 8502.7,
+    "H07": 13822.9,
+    "H08": 13353.8,
+    "H09": 12857.9,
+    "H10": 13708.3,
+    "H11": 12821.8,
+    "A01": 3368.3,
+    "A02": 10832.8,
+    "A03": 11977.6,
+    "A04": 11953.9,
+    "A05": 9568.5,
+    "A06": 10505.4,
+    "A07": 13986.3,
+    "A08": 13840.4,
+    "A09": 12550.3,
+    "A10": 13097.2,
+    "A11": 8252.5,
+    "H12": 4813.8,
+    "H13": 0.0,
+    "H14": 2773.5,
+    "A12": 2978.7,
+    "A13": 4321.8,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 3692200,
+      "period": 2,
+      "period_ms": 692200,
+      "team_id": "AWAY",
+      "club_id": "EVE",
+      "club_name": "Everton",
+      "player_id": "A10",
+      "player_name": "Thierno Barry",
+      "shirt_number": 11,
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "t_ms": 5369400,
+      "period": 2,
+      "period_ms": 2369400,
+      "team_id": "HOME",
+      "club_id": "CHE",
+      "club_name": "Chelsea",
+      "player_id": "H10",
+      "player_name": "Joao Pedro",
+      "shirt_number": 9,
+      "score": [
+        1,
+        1
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 4,
+    "kickoff_local": "2026-11-15T16:30:00",
+    "time_zone": "Europe/London",
+    "venue": "Stamford Bridge"
+  },
+  "home_club": {
+    "club_id": "CHE",
+    "name": "Chelsea",
+    "short_name": "Chelsea",
+    "stadium": "Stamford Bridge",
+    "colors": {
+      "primary": "#034694",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "EVE",
+    "name": "Everton",
+    "short_name": "Everton",
+    "stadium": "Hill Dickinson Stadium",
+    "colors": {
+      "primary": "#003399",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  }
+}

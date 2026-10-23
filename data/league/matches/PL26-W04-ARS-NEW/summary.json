@@ -1,0 +1,119 @@
+{
+  "match_id": "PL26-W04-ARS-NEW",
+  "seed": 20265019,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 655671,
+  "state_snapshots": 6001,
+  "event_count": 3591,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 118,
+    "restart": 31,
+    "pressure": 1241,
+    "carry": 1274,
+    "pass": 768,
+    "interception": 92,
+    "shot": 24,
+    "save": 9,
+    "stoppage": 15,
+    "yellow_card": 2,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    0,
+    0
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 409,
+      "completed_passes": 360,
+      "shots": 9,
+      "shots_on_target": 4,
+      "interceptions": 43,
+      "pressure_events": 567,
+      "possession_seconds": 3087.2,
+      "possession_pct": 53.6,
+      "pass_accuracy_pct": 88.02
+    },
+    "AWAY": {
+      "passes": 359,
+      "completed_passes": 316,
+      "shots": 15,
+      "shots_on_target": 5,
+      "interceptions": 49,
+      "pressure_events": 674,
+      "possession_seconds": 2672.6,
+      "possession_pct": 46.4,
+      "pass_accuracy_pct": 88.02
+    }
+  },
+  "distance_m": {
+    "H01": 3357.3,
+    "H02": 8039.2,
+    "H03": 11770.2,
+    "H04": 11677.1,
+    "H05": 10647.2,
+    "H06": 7947.6,
+    "H07": 13681.1,
+    "H08": 13409.7,
+    "H09": 12086.0,
+    "H10": 13815.1,
+    "H11": 12737.3,
+    "A01": 3212.4,
+    "A02": 10829.6,
+    "A03": 11778.8,
+    "A04": 12255.3,
+    "A05": 9551.1,
+    "A06": 10396.4,
+    "A07": 14230.9,
+    "A08": 13644.3,
+    "A09": 12322.4,
+    "A10": 13188.6,
+    "A11": 8368.1,
+    "H12": 4775.4,
+    "H13": 0.0,
+    "H14": 2738.9,
+    "A12": 2567.2,
+    "A13": 4015.3,
+    "A14": 0.0
+  },
+  "goals": [],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 4,
+    "kickoff_local": "2026-11-14T12:30:00",
+    "time_zone": "Europe/London",
+    "venue": "Emirates Stadium"
+  },
+  "home_club": {
+    "club_id": "ARS",
+    "name": "Arsenal",
+    "short_name": "Arsenal",
+    "stadium": "Emirates Stadium",
+    "colors": {
+      "primary": "#EF0107",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "NEW",
+    "name": "Newcastle United",
+    "short_name": "Newcastle",
+    "stadium": "St James' Park",
+    "colors": {
+      "primary": "#241F20",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  }
+}

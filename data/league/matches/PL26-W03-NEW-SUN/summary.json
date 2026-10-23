@@ -1,0 +1,150 @@
+{
+  "match_id": "PL26-W03-NEW-SUN",
+  "seed": 20264020,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 655643,
+  "state_snapshots": 6001,
+  "event_count": 3660,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 128,
+    "restart": 28,
+    "carry": 1277,
+    "pass": 787,
+    "interception": 105,
+    "pressure": 1274,
+    "shot": 21,
+    "save": 11,
+    "yellow_card": 2,
+    "stoppage": 10,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    0,
+    2
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 404,
+      "completed_passes": 354,
+      "shots": 13,
+      "shots_on_target": 8,
+      "interceptions": 55,
+      "pressure_events": 602,
+      "possession_seconds": 3006.2,
+      "possession_pct": 52.12,
+      "pass_accuracy_pct": 87.62
+    },
+    "AWAY": {
+      "passes": 383,
+      "completed_passes": 328,
+      "shots": 8,
+      "shots_on_target": 5,
+      "interceptions": 50,
+      "pressure_events": 672,
+      "possession_seconds": 2761.6,
+      "possession_pct": 47.88,
+      "pass_accuracy_pct": 85.64
+    }
+  },
+  "distance_m": {
+    "H01": 3107.2,
+    "H02": 8096.8,
+    "H03": 11838.7,
+    "H04": 11806.3,
+    "H05": 11009.8,
+    "H06": 8872.0,
+    "H07": 13996.3,
+    "H08": 13078.1,
+    "H09": 12685.8,
+    "H10": 13510.3,
+    "H11": 12572.7,
+    "A01": 3218.4,
+    "A02": 11086.9,
+    "A03": 12210.1,
+    "A04": 12088.0,
+    "A05": 9527.8,
+    "A06": 11080.1,
+    "A07": 14035.8,
+    "A08": 13447.3,
+    "A09": 12611.0,
+    "A10": 13077.1,
+    "A11": 7885.8,
+    "H12": 4781.9,
+    "H13": 0.0,
+    "H14": 2904.6,
+    "A12": 2674.3,
+    "A13": 4264.9,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 3542200,
+      "period": 2,
+      "period_ms": 542200,
+      "team_id": "AWAY",
+      "club_id": "SUN",
+      "club_name": "Sunderland",
+      "player_id": "A10",
+      "player_name": "Brian Brobbey",
+      "shirt_number": 9,
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "t_ms": 4318800,
+      "period": 2,
+      "period_ms": 1318800,
+      "team_id": "AWAY",
+      "club_id": "SUN",
+      "club_name": "Sunderland",
+      "player_id": "A13",
+      "player_name": "Nilson Angulo",
+      "shirt_number": 10,
+      "score": [
+        0,
+        2
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 3,
+    "kickoff_local": "2026-11-07T15:00:00",
+    "time_zone": "Europe/London",
+    "venue": "St James' Park"
+  },
+  "home_club": {
+    "club_id": "NEW",
+    "name": "Newcastle United",
+    "short_name": "Newcastle",
+    "stadium": "St James' Park",
+    "colors": {
+      "primary": "#241F20",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "SUN",
+    "name": "Sunderland",
+    "short_name": "Sunderland",
+    "stadium": "Stadium of Light",
+    "colors": {
+      "primary": "#EB172B",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  }
+}

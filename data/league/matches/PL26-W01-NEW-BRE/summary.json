@@ -1,0 +1,165 @@
+{
+  "match_id": "PL26-W01-NEW-BRE",
+  "seed": 20262022,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 655564,
+  "state_snapshots": 6001,
+  "event_count": 3632,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 129,
+    "restart": 31,
+    "carry": 1262,
+    "pressure": 1258,
+    "pass": 782,
+    "interception": 103,
+    "shot": 24,
+    "save": 13,
+    "stoppage": 11,
+    "yellow_card": 2,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    2,
+    1
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 336,
+      "completed_passes": 287,
+      "shots": 14,
+      "shots_on_target": 9,
+      "interceptions": 54,
+      "pressure_events": 709,
+      "possession_seconds": 2482.0,
+      "possession_pct": 43.24,
+      "pass_accuracy_pct": 85.42
+    },
+    "AWAY": {
+      "passes": 446,
+      "completed_passes": 392,
+      "shots": 10,
+      "shots_on_target": 7,
+      "interceptions": 49,
+      "pressure_events": 549,
+      "possession_seconds": 3257.8,
+      "possession_pct": 56.76,
+      "pass_accuracy_pct": 87.89
+    }
+  },
+  "distance_m": {
+    "H01": 3152.9,
+    "H02": 8385.5,
+    "H03": 12108.3,
+    "H04": 12418.4,
+    "H05": 11461.5,
+    "H06": 8278.6,
+    "H07": 14691.3,
+    "H08": 13766.9,
+    "H09": 12304.2,
+    "H10": 13145.4,
+    "H11": 12595.4,
+    "A01": 3212.5,
+    "A02": 10759.6,
+    "A03": 11666.9,
+    "A04": 11815.1,
+    "A05": 9303.6,
+    "A06": 10089.3,
+    "A07": 13262.1,
+    "A08": 13375.9,
+    "A09": 12755.2,
+    "A10": 13690.9,
+    "A11": 8706.7,
+    "H12": 5317.4,
+    "H13": 0.0,
+    "H14": 2928.4,
+    "A12": 2646.0,
+    "A13": 4202.0,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 3775600,
+      "period": 2,
+      "period_ms": 775600,
+      "team_id": "HOME",
+      "club_id": "NEW",
+      "club_name": "Newcastle United",
+      "player_id": "H11",
+      "player_name": "Jacob Murphy",
+      "shirt_number": 23,
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "t_ms": 4860400,
+      "period": 2,
+      "period_ms": 1860400,
+      "team_id": "HOME",
+      "club_id": "NEW",
+      "club_name": "Newcastle United",
+      "player_id": "H10",
+      "player_name": "Yoane Wissa",
+      "shirt_number": 9,
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "t_ms": 5589600,
+      "period": 2,
+      "period_ms": 2589600,
+      "team_id": "AWAY",
+      "club_id": "BRE",
+      "club_name": "Brentford",
+      "player_id": "A13",
+      "player_name": "Jaidon Anthony",
+      "shirt_number": 19,
+      "score": [
+        2,
+        1
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 1,
+    "kickoff_local": "2026-10-24T17:30:00",
+    "time_zone": "Europe/London",
+    "venue": "St James' Park"
+  },
+  "home_club": {
+    "club_id": "NEW",
+    "name": "Newcastle United",
+    "short_name": "Newcastle",
+    "stadium": "St James' Park",
+    "colors": {
+      "primary": "#241F20",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "BRE",
+    "name": "Brentford",
+    "short_name": "Brentford",
+    "stadium": "Gtech Community Stadium",
+    "colors": {
+      "primary": "#E30613",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  }
+}

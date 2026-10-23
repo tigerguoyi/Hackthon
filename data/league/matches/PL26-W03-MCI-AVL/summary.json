@@ -1,0 +1,135 @@
+{
+  "match_id": "PL26-W03-MCI-AVL",
+  "seed": 20264022,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 656081,
+  "state_snapshots": 6001,
+  "event_count": 3523,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 102,
+    "restart": 33,
+    "pressure": 1224,
+    "carry": 1244,
+    "pass": 776,
+    "interception": 73,
+    "shot": 26,
+    "stoppage": 16,
+    "save": 10,
+    "yellow_card": 2,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    1,
+    0
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 360,
+      "completed_passes": 324,
+      "shots": 14,
+      "shots_on_target": 6,
+      "interceptions": 37,
+      "pressure_events": 641,
+      "possession_seconds": 2708.4,
+      "possession_pct": 47.22,
+      "pass_accuracy_pct": 90.0
+    },
+    "AWAY": {
+      "passes": 416,
+      "completed_passes": 379,
+      "shots": 12,
+      "shots_on_target": 5,
+      "interceptions": 36,
+      "pressure_events": 583,
+      "possession_seconds": 3027.4,
+      "possession_pct": 52.78,
+      "pass_accuracy_pct": 91.11
+    }
+  },
+  "distance_m": {
+    "H01": 3311.0,
+    "H02": 8542.2,
+    "H03": 11726.4,
+    "H04": 11972.0,
+    "H05": 10968.2,
+    "H06": 9184.8,
+    "H07": 14530.2,
+    "H08": 13139.9,
+    "H09": 12603.6,
+    "H10": 13686.3,
+    "H11": 12510.2,
+    "A01": 3277.6,
+    "A02": 10892.2,
+    "A03": 11710.8,
+    "A04": 12142.5,
+    "A05": 9551.7,
+    "A06": 9942.2,
+    "A07": 14209.0,
+    "A08": 13322.9,
+    "A09": 12265.2,
+    "A10": 13415.5,
+    "A11": 8504.4,
+    "H12": 4650.4,
+    "H13": 0.0,
+    "H14": 2569.2,
+    "A12": 2901.1,
+    "A13": 4302.6,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 244000,
+      "period": 1,
+      "period_ms": 244000,
+      "team_id": "HOME",
+      "club_id": "MCI",
+      "club_name": "Manchester City",
+      "player_id": "H09",
+      "player_name": "Iliman Ndiaye",
+      "shirt_number": 7,
+      "score": [
+        1,
+        0
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 3,
+    "kickoff_local": "2026-11-07T17:30:00",
+    "time_zone": "Europe/London",
+    "venue": "Etihad Stadium"
+  },
+  "home_club": {
+    "club_id": "MCI",
+    "name": "Manchester City",
+    "short_name": "Man City",
+    "stadium": "Etihad Stadium",
+    "colors": {
+      "primary": "#6CABDD",
+      "secondary": "#1C2C5B"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "AVL",
+    "name": "Aston Villa",
+    "short_name": "Aston Villa",
+    "stadium": "Villa Park",
+    "colors": {
+      "primary": "#670E36",
+      "secondary": "#95BFE5"
+    },
+    "formation": "4-3-3"
+  }
+}

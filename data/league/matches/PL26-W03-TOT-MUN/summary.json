@@ -1,0 +1,225 @@
+{
+  "match_id": "PL26-W03-TOT-MUN",
+  "seed": 20264021,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 656361,
+  "state_snapshots": 6001,
+  "event_count": 3644,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 143,
+    "restart": 33,
+    "pressure": 1223,
+    "carry": 1255,
+    "pass": 800,
+    "interception": 115,
+    "shot": 28,
+    "stoppage": 15,
+    "save": 13,
+    "yellow_card": 2,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    4,
+    3
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 361,
+      "completed_passes": 305,
+      "shots": 16,
+      "shots_on_target": 12,
+      "interceptions": 59,
+      "pressure_events": 669,
+      "possession_seconds": 2645.2,
+      "possession_pct": 46.51,
+      "pass_accuracy_pct": 84.49
+    },
+    "AWAY": {
+      "passes": 439,
+      "completed_passes": 380,
+      "shots": 12,
+      "shots_on_target": 8,
+      "interceptions": 56,
+      "pressure_events": 554,
+      "possession_seconds": 3041.8,
+      "possession_pct": 53.49,
+      "pass_accuracy_pct": 86.56
+    }
+  },
+  "distance_m": {
+    "H01": 3195.9,
+    "H02": 8154.8,
+    "H03": 11984.6,
+    "H04": 12058.7,
+    "H05": 11194.9,
+    "H06": 8177.5,
+    "H07": 14194.5,
+    "H08": 13416.1,
+    "H09": 12611.8,
+    "H10": 13726.0,
+    "H11": 13150.1,
+    "A01": 3237.1,
+    "A02": 11078.2,
+    "A03": 11823.3,
+    "A04": 12274.8,
+    "A05": 9719.0,
+    "A06": 10025.0,
+    "A07": 13608.4,
+    "A08": 13381.7,
+    "A09": 12642.9,
+    "A10": 13488.3,
+    "A11": 8539.7,
+    "H12": 5018.7,
+    "H13": 0.0,
+    "H14": 2865.3,
+    "A12": 2863.4,
+    "A13": 4072.7,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 753600,
+      "period": 1,
+      "period_ms": 753600,
+      "team_id": "AWAY",
+      "club_id": "MUN",
+      "club_name": "Manchester United",
+      "player_id": "A11",
+      "player_name": "Bryan Mbeumo",
+      "shirt_number": 19,
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "t_ms": 1336800,
+      "period": 1,
+      "period_ms": 1336800,
+      "team_id": "HOME",
+      "club_id": "TOT",
+      "club_name": "Tottenham Hotspur",
+      "player_id": "H11",
+      "player_name": "Savio",
+      "shirt_number": 17,
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "t_ms": 2991600,
+      "period": 1,
+      "period_ms": 2991600,
+      "team_id": "HOME",
+      "club_id": "TOT",
+      "club_name": "Tottenham Hotspur",
+      "player_id": "H11",
+      "player_name": "Savio",
+      "shirt_number": 17,
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "t_ms": 5135000,
+      "period": 2,
+      "period_ms": 2135000,
+      "team_id": "AWAY",
+      "club_id": "MUN",
+      "club_name": "Manchester United",
+      "player_id": "A13",
+      "player_name": "Joshua Zirkzee",
+      "shirt_number": 11,
+      "score": [
+        2,
+        2
+      ]
+    },
+    {
+      "t_ms": 5560600,
+      "period": 2,
+      "period_ms": 2560600,
+      "team_id": "AWAY",
+      "club_id": "MUN",
+      "club_name": "Manchester United",
+      "player_id": "A10",
+      "player_name": "Matheus Cunha",
+      "shirt_number": 10,
+      "score": [
+        2,
+        3
+      ]
+    },
+    {
+      "t_ms": 5864800,
+      "period": 2,
+      "period_ms": 2864800,
+      "team_id": "HOME",
+      "club_id": "TOT",
+      "club_name": "Tottenham Hotspur",
+      "player_id": "H10",
+      "player_name": "Dominic Solanke",
+      "shirt_number": 19,
+      "score": [
+        3,
+        3
+      ]
+    },
+    {
+      "t_ms": 5995400,
+      "period": 2,
+      "period_ms": 2995400,
+      "team_id": "HOME",
+      "club_id": "TOT",
+      "club_name": "Tottenham Hotspur",
+      "player_id": "H09",
+      "player_name": "Mathys Tel",
+      "shirt_number": 11,
+      "score": [
+        4,
+        3
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 3,
+    "kickoff_local": "2026-11-07T15:00:00",
+    "time_zone": "Europe/London",
+    "venue": "Tottenham Hotspur Stadium"
+  },
+  "home_club": {
+    "club_id": "TOT",
+    "name": "Tottenham Hotspur",
+    "short_name": "Tottenham",
+    "stadium": "Tottenham Hotspur Stadium",
+    "colors": {
+      "primary": "#FFFFFF",
+      "secondary": "#132257"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "MUN",
+    "name": "Manchester United",
+    "short_name": "Man United",
+    "stadium": "Old Trafford",
+    "colors": {
+      "primary": "#DA291C",
+      "secondary": "#FBE122"
+    },
+    "formation": "4-3-3"
+  }
+}

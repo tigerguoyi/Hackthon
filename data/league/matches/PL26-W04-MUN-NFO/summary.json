@@ -1,0 +1,135 @@
+{
+  "match_id": "PL26-W04-MUN-NFO",
+  "seed": 20265020,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 656420,
+  "state_snapshots": 6001,
+  "event_count": 3604,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 132,
+    "restart": 25,
+    "pressure": 1240,
+    "carry": 1254,
+    "pass": 786,
+    "interception": 112,
+    "shot": 18,
+    "save": 5,
+    "stoppage": 13,
+    "yellow_card": 2,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    1,
+    0
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 404,
+      "completed_passes": 349,
+      "shots": 10,
+      "shots_on_target": 4,
+      "interceptions": 57,
+      "pressure_events": 600,
+      "possession_seconds": 2990.8,
+      "possession_pct": 51.75,
+      "pass_accuracy_pct": 86.39
+    },
+    "AWAY": {
+      "passes": 382,
+      "completed_passes": 325,
+      "shots": 8,
+      "shots_on_target": 2,
+      "interceptions": 55,
+      "pressure_events": 640,
+      "possession_seconds": 2789.0,
+      "possession_pct": 48.25,
+      "pass_accuracy_pct": 85.08
+    }
+  },
+  "distance_m": {
+    "H01": 3195.2,
+    "H02": 8411.2,
+    "H03": 11832.3,
+    "H04": 11749.3,
+    "H05": 11091.5,
+    "H06": 8808.0,
+    "H07": 14025.7,
+    "H08": 13362.8,
+    "H09": 13268.5,
+    "H10": 13478.6,
+    "H11": 12410.1,
+    "A01": 3196.8,
+    "A02": 11151.2,
+    "A03": 12167.2,
+    "A04": 12210.2,
+    "A05": 9771.4,
+    "A06": 11269.0,
+    "A07": 14144.1,
+    "A08": 13797.2,
+    "A09": 12487.8,
+    "A10": 12863.1,
+    "A11": 8328.2,
+    "H12": 4833.9,
+    "H13": 0.0,
+    "H14": 2661.8,
+    "A12": 2685.6,
+    "A13": 4105.1,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 2507800,
+      "period": 1,
+      "period_ms": 2507800,
+      "team_id": "HOME",
+      "club_id": "MUN",
+      "club_name": "Manchester United",
+      "player_id": "H10",
+      "player_name": "Matheus Cunha",
+      "shirt_number": 10,
+      "score": [
+        1,
+        0
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 4,
+    "kickoff_local": "2026-11-14T15:00:00",
+    "time_zone": "Europe/London",
+    "venue": "Old Trafford"
+  },
+  "home_club": {
+    "club_id": "MUN",
+    "name": "Manchester United",
+    "short_name": "Man United",
+    "stadium": "Old Trafford",
+    "colors": {
+      "primary": "#DA291C",
+      "secondary": "#FBE122"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "NFO",
+    "name": "Nottingham Forest",
+    "short_name": "Forest",
+    "stadium": "City Ground",
+    "colors": {
+      "primary": "#DD0000",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  }
+}

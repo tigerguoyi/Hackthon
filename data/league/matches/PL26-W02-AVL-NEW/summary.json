@@ -1,0 +1,210 @@
+{
+  "match_id": "PL26-W02-AVL-NEW",
+  "seed": 20263021,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 655696,
+  "state_snapshots": 6001,
+  "event_count": 3578,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 116,
+    "restart": 31,
+    "pressure": 1236,
+    "carry": 1261,
+    "pass": 777,
+    "interception": 90,
+    "shot": 24,
+    "stoppage": 17,
+    "save": 7,
+    "yellow_card": 2,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    4,
+    2
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 389,
+      "completed_passes": 346,
+      "shots": 14,
+      "shots_on_target": 8,
+      "interceptions": 47,
+      "pressure_events": 571,
+      "possession_seconds": 2988.8,
+      "possession_pct": 52.62,
+      "pass_accuracy_pct": 88.95
+    },
+    "AWAY": {
+      "passes": 388,
+      "completed_passes": 341,
+      "shots": 10,
+      "shots_on_target": 5,
+      "interceptions": 43,
+      "pressure_events": 665,
+      "possession_seconds": 2691.0,
+      "possession_pct": 47.38,
+      "pass_accuracy_pct": 87.89
+    }
+  },
+  "distance_m": {
+    "H01": 3125.1,
+    "H02": 7960.2,
+    "H03": 11633.6,
+    "H04": 11750.0,
+    "H05": 10705.3,
+    "H06": 8105.0,
+    "H07": 13546.6,
+    "H08": 13544.5,
+    "H09": 11864.6,
+    "H10": 12549.5,
+    "H11": 12309.5,
+    "A01": 3174.3,
+    "A02": 10706.8,
+    "A03": 11489.3,
+    "A04": 11606.6,
+    "A05": 8969.1,
+    "A06": 10345.4,
+    "A07": 13383.8,
+    "A08": 13283.5,
+    "A09": 12765.7,
+    "A10": 13020.0,
+    "A11": 8211.6,
+    "H12": 4987.1,
+    "H13": 0.0,
+    "H14": 2628.8,
+    "A12": 2456.9,
+    "A13": 4489.7,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 166000,
+      "period": 1,
+      "period_ms": 166000,
+      "team_id": "HOME",
+      "club_id": "AVL",
+      "club_name": "Aston Villa",
+      "player_id": "H10",
+      "player_name": "Nicolas Jackson",
+      "shirt_number": 11,
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "t_ms": 678200,
+      "period": 1,
+      "period_ms": 678200,
+      "team_id": "HOME",
+      "club_id": "AVL",
+      "club_name": "Aston Villa",
+      "player_id": "H10",
+      "player_name": "Nicolas Jackson",
+      "shirt_number": 11,
+      "score": [
+        2,
+        0
+      ]
+    },
+    {
+      "t_ms": 877600,
+      "period": 1,
+      "period_ms": 877600,
+      "team_id": "AWAY",
+      "club_id": "NEW",
+      "club_name": "Newcastle United",
+      "player_id": "A07",
+      "player_name": "Aladji Bamba",
+      "shirt_number": 8,
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "t_ms": 3466800,
+      "period": 2,
+      "period_ms": 466800,
+      "team_id": "AWAY",
+      "club_id": "NEW",
+      "club_name": "Newcastle United",
+      "player_id": "A10",
+      "player_name": "Yoane Wissa",
+      "shirt_number": 9,
+      "score": [
+        2,
+        2
+      ]
+    },
+    {
+      "t_ms": 5147000,
+      "period": 2,
+      "period_ms": 2147000,
+      "team_id": "HOME",
+      "club_id": "AVL",
+      "club_name": "Aston Villa",
+      "player_id": "H10",
+      "player_name": "Nicolas Jackson",
+      "shirt_number": 11,
+      "score": [
+        3,
+        2
+      ]
+    },
+    {
+      "t_ms": 5606800,
+      "period": 2,
+      "period_ms": 2606800,
+      "team_id": "HOME",
+      "club_id": "AVL",
+      "club_name": "Aston Villa",
+      "player_id": "H11",
+      "player_name": "Alysson",
+      "shirt_number": 47,
+      "score": [
+        4,
+        2
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 2,
+    "kickoff_local": "2026-10-31T15:00:00",
+    "time_zone": "Europe/London",
+    "venue": "Villa Park"
+  },
+  "home_club": {
+    "club_id": "AVL",
+    "name": "Aston Villa",
+    "short_name": "Aston Villa",
+    "stadium": "Villa Park",
+    "colors": {
+      "primary": "#670E36",
+      "secondary": "#95BFE5"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "NEW",
+    "name": "Newcastle United",
+    "short_name": "Newcastle",
+    "stadium": "St James' Park",
+    "colors": {
+      "primary": "#241F20",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  }
+}

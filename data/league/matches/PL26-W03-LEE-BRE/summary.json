@@ -1,0 +1,135 @@
+{
+  "match_id": "PL26-W03-LEE-BRE",
+  "seed": 20264024,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 655870,
+  "state_snapshots": 6001,
+  "event_count": 3591,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 120,
+    "restart": 26,
+    "pressure": 1218,
+    "carry": 1271,
+    "pass": 801,
+    "interception": 98,
+    "shot": 19,
+    "save": 9,
+    "stoppage": 10,
+    "yellow_card": 2,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    0,
+    1
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 381,
+      "completed_passes": 332,
+      "shots": 10,
+      "shots_on_target": 4,
+      "interceptions": 49,
+      "pressure_events": 641,
+      "possession_seconds": 2736.0,
+      "possession_pct": 47.27,
+      "pass_accuracy_pct": 87.14
+    },
+    "AWAY": {
+      "passes": 420,
+      "completed_passes": 371,
+      "shots": 9,
+      "shots_on_target": 6,
+      "interceptions": 49,
+      "pressure_events": 577,
+      "possession_seconds": 3051.8,
+      "possession_pct": 52.73,
+      "pass_accuracy_pct": 88.33
+    }
+  },
+  "distance_m": {
+    "H01": 3236.3,
+    "H02": 8284.9,
+    "H03": 11934.6,
+    "H04": 12330.6,
+    "H05": 10945.8,
+    "H06": 8846.2,
+    "H07": 13995.5,
+    "H08": 13282.9,
+    "H09": 13039.3,
+    "H10": 13322.1,
+    "H11": 12614.7,
+    "A01": 3283.9,
+    "A02": 11006.4,
+    "A03": 11945.2,
+    "A04": 12138.7,
+    "A05": 9535.3,
+    "A06": 11182.2,
+    "A07": 13897.3,
+    "A08": 13159.3,
+    "A09": 12958.1,
+    "A10": 13520.2,
+    "A11": 8445.1,
+    "H12": 5239.9,
+    "H13": 0.0,
+    "H14": 2835.3,
+    "A12": 2665.9,
+    "A13": 4328.7,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 4952600,
+      "period": 2,
+      "period_ms": 1952600,
+      "team_id": "AWAY",
+      "club_id": "BRE",
+      "club_name": "Brentford",
+      "player_id": "A10",
+      "player_name": "Callum Wilson",
+      "shirt_number": 13,
+      "score": [
+        0,
+        1
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 3,
+    "kickoff_local": "2026-11-08T14:00:00",
+    "time_zone": "Europe/London",
+    "venue": "Elland Road"
+  },
+  "home_club": {
+    "club_id": "LEE",
+    "name": "Leeds United",
+    "short_name": "Leeds",
+    "stadium": "Elland Road",
+    "colors": {
+      "primary": "#FFFFFF",
+      "secondary": "#1D428A"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "BRE",
+    "name": "Brentford",
+    "short_name": "Brentford",
+    "stadium": "Gtech Community Stadium",
+    "colors": {
+      "primary": "#E30613",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  }
+}

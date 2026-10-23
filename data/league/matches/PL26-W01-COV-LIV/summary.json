@@ -1,0 +1,165 @@
+{
+  "match_id": "PL26-W01-COV-LIV",
+  "seed": 20262025,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 656027,
+  "state_snapshots": 6001,
+  "event_count": 3584,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 108,
+    "restart": 26,
+    "pressure": 1239,
+    "carry": 1258,
+    "pass": 809,
+    "interception": 87,
+    "shot": 19,
+    "stoppage": 10,
+    "save": 9,
+    "yellow_card": 2,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    1,
+    2
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 380,
+      "completed_passes": 335,
+      "shots": 8,
+      "shots_on_target": 4,
+      "interceptions": 42,
+      "pressure_events": 641,
+      "possession_seconds": 2761.2,
+      "possession_pct": 47.91,
+      "pass_accuracy_pct": 88.16
+    },
+    "AWAY": {
+      "passes": 429,
+      "completed_passes": 387,
+      "shots": 11,
+      "shots_on_target": 8,
+      "interceptions": 45,
+      "pressure_events": 598,
+      "possession_seconds": 3002.6,
+      "possession_pct": 52.09,
+      "pass_accuracy_pct": 90.21
+    }
+  },
+  "distance_m": {
+    "H01": 3254.5,
+    "H02": 8197.3,
+    "H03": 11838.7,
+    "H04": 11623.9,
+    "H05": 10753.5,
+    "H06": 8718.4,
+    "H07": 13487.1,
+    "H08": 13006.5,
+    "H09": 12789.6,
+    "H10": 13185.7,
+    "H11": 12670.5,
+    "A01": 3207.5,
+    "A02": 10983.3,
+    "A03": 11841.8,
+    "A04": 11544.3,
+    "A05": 9493.3,
+    "A06": 10457.7,
+    "A07": 14144.5,
+    "A08": 13398.4,
+    "A09": 12787.8,
+    "A10": 13081.2,
+    "A11": 8130.8,
+    "H12": 4785.8,
+    "H13": 0.0,
+    "H14": 2717.6,
+    "A12": 2548.3,
+    "A13": 3709.0,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 729400,
+      "period": 1,
+      "period_ms": 729400,
+      "team_id": "AWAY",
+      "club_id": "LIV",
+      "club_name": "Liverpool",
+      "player_id": "A10",
+      "player_name": "Alexander Isak",
+      "shirt_number": 9,
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "t_ms": 2333800,
+      "period": 1,
+      "period_ms": 2333800,
+      "team_id": "AWAY",
+      "club_id": "LIV",
+      "club_name": "Liverpool",
+      "player_id": "A11",
+      "player_name": "Bradley Barcola",
+      "shirt_number": 29,
+      "score": [
+        0,
+        2
+      ]
+    },
+    {
+      "t_ms": 5370000,
+      "period": 2,
+      "period_ms": 2370000,
+      "team_id": "HOME",
+      "club_id": "COV",
+      "club_name": "Coventry City",
+      "player_id": "H10",
+      "player_name": "Ellis Simms",
+      "shirt_number": 9,
+      "score": [
+        1,
+        2
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 1,
+    "kickoff_local": "2026-10-25T14:00:00",
+    "time_zone": "Europe/London",
+    "venue": "CBS Arena"
+  },
+  "home_club": {
+    "club_id": "COV",
+    "name": "Coventry City",
+    "short_name": "Coventry",
+    "stadium": "CBS Arena",
+    "colors": {
+      "primary": "#6CB4E4",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "LIV",
+    "name": "Liverpool",
+    "short_name": "Liverpool",
+    "stadium": "Anfield",
+    "colors": {
+      "primary": "#C8102E",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  }
+}

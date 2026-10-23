@@ -1,0 +1,139 @@
+{
+  "match_id": "SYN-20261019-001",
+  "seed": 20261019,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 660022,
+  "state_snapshots": 6001,
+  "event_count": 3521,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 104,
+    "restart": 27,
+    "pressure": 1216,
+    "carry": 1258,
+    "pass": 782,
+    "interception": 77,
+    "shot": 25,
+    "save": 14,
+    "stoppage": 11,
+    "action_cancelled": 2,
+    "period_end": 2,
+    "match_end": 1
+  },
+  "final_score": [
+    2,
+    2
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 368,
+      "completed_passes": 332,
+      "shots": 15,
+      "shots_on_target": 10,
+      "interceptions": 41,
+      "pressure_events": 624,
+      "possession_seconds": 2820.2,
+      "possession_pct": 48.93,
+      "pass_accuracy_pct": 90.22
+    },
+    "AWAY": {
+      "passes": 414,
+      "completed_passes": 373,
+      "shots": 10,
+      "shots_on_target": 8,
+      "interceptions": 36,
+      "pressure_events": 592,
+      "possession_seconds": 2943.6,
+      "possession_pct": 51.07,
+      "pass_accuracy_pct": 90.1
+    }
+  },
+  "distance_m": {
+    "H01": 3078.6,
+    "H02": 11175.7,
+    "H03": 12135.7,
+    "H04": 11907.0,
+    "H05": 11054.8,
+    "H06": 13222.3,
+    "H07": 14147.4,
+    "H08": 13875.6,
+    "H09": 12482.2,
+    "H10": 13429.2,
+    "H11": 12448.6,
+    "A01": 3228.9,
+    "A02": 10726.9,
+    "A03": 11671.8,
+    "A04": 11887.0,
+    "A05": 10774.4,
+    "A06": 13351.0,
+    "A07": 13649.4,
+    "A08": 13219.8,
+    "A09": 12662.4,
+    "A10": 13289.3,
+    "A11": 12836.5
+  },
+  "goals": [
+    {
+      "t_ms": 1320200,
+      "period": 1,
+      "period_ms": 1320200,
+      "team_id": "AWAY",
+      "club_id": "AWAY",
+      "club_name": "Mountain FC",
+      "player_id": "A10",
+      "player_name": "Mountain Player 10",
+      "shirt_number": 10,
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "t_ms": 3220600,
+      "period": 2,
+      "period_ms": 220600,
+      "team_id": "AWAY",
+      "club_id": "AWAY",
+      "club_name": "Mountain FC",
+      "player_id": "A10",
+      "player_name": "Mountain Player 10",
+      "shirt_number": 10,
+      "score": [
+        0,
+        2
+      ]
+    },
+    {
+      "t_ms": 3945600,
+      "period": 2,
+      "period_ms": 945600,
+      "team_id": "HOME",
+      "club_id": "HOME",
+      "club_name": "Harbor FC",
+      "player_id": "H10",
+      "player_name": "Harbor Player 10",
+      "shirt_number": 10,
+      "score": [
+        1,
+        2
+      ]
+    },
+    {
+      "t_ms": 5932000,
+      "period": 2,
+      "period_ms": 2932000,
+      "team_id": "HOME",
+      "club_id": "HOME",
+      "club_name": "Harbor FC",
+      "player_id": "H10",
+      "player_name": "Harbor Player 10",
+      "shirt_number": 10,
+      "score": [
+        2,
+        2
+      ]
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "match_id": "PL26-W02-FUL-EVE",
+  "seed": 20263028,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 655580,
+  "state_snapshots": 6001,
+  "event_count": 3611,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 122,
+    "restart": 23,
+    "carry": 1264,
+    "pass": 810,
+    "pressure": 1237,
+    "interception": 104,
+    "shot": 16,
+    "stoppage": 9,
+    "save": 7,
+    "yellow_card": 2,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    1,
+    1
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 460,
+      "completed_passes": 407,
+      "shots": 7,
+      "shots_on_target": 4,
+      "interceptions": 51,
+      "pressure_events": 544,
+      "possession_seconds": 3245.6,
+      "possession_pct": 56.04,
+      "pass_accuracy_pct": 88.48
+    },
+    "AWAY": {
+      "passes": 350,
+      "completed_passes": 299,
+      "shots": 9,
+      "shots_on_target": 5,
+      "interceptions": 53,
+      "pressure_events": 693,
+      "possession_seconds": 2546.2,
+      "possession_pct": 43.96,
+      "pass_accuracy_pct": 85.43
+    }
+  },
+  "distance_m": {
+    "H01": 3262.7,
+    "H02": 8455.8,
+    "H03": 11960.7,
+    "H04": 11923.3,
+    "H05": 11272.1,
+    "H06": 8643.5,
+    "H07": 13794.9,
+    "H08": 13723.9,
+    "H09": 12508.3,
+    "H10": 13170.7,
+    "H11": 13029.6,
+    "A01": 3256.9,
+    "A02": 11386.9,
+    "A03": 12209.3,
+    "A04": 12364.8,
+    "A05": 9829.4,
+    "A06": 10809.1,
+    "A07": 14275.5,
+    "A08": 14213.3,
+    "A09": 12941.2,
+    "A10": 13478.7,
+    "A11": 9080.3,
+    "H12": 4681.9,
+    "H13": 0.0,
+    "H14": 2759.8,
+    "A12": 2806.2,
+    "A13": 4110.4,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 1120000,
+      "period": 1,
+      "period_ms": 1120000,
+      "team_id": "AWAY",
+      "club_id": "EVE",
+      "club_name": "Everton",
+      "player_id": "A10",
+      "player_name": "Thierno Barry",
+      "shirt_number": 11,
+      "score": [
+        0,
+        1
+      ]
+    },
+    {
+      "t_ms": 1547800,
+      "period": 1,
+      "period_ms": 1547800,
+      "team_id": "HOME",
+      "club_id": "FUL",
+      "club_name": "Fulham",
+      "player_id": "H06",
+      "player_name": "Harrison Reed",
+      "shirt_number": 6,
+      "score": [
+        1,
+        1
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 2,
+    "kickoff_local": "2026-11-01T19:00:00",
+    "time_zone": "Europe/London",
+    "venue": "Craven Cottage"
+  },
+  "home_club": {
+    "club_id": "FUL",
+    "name": "Fulham",
+    "short_name": "Fulham",
+    "stadium": "Craven Cottage",
+    "colors": {
+      "primary": "#FFFFFF",
+      "secondary": "#000000"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "EVE",
+    "name": "Everton",
+    "short_name": "Everton",
+    "stadium": "Hill Dickinson Stadium",
+    "colors": {
+      "primary": "#003399",
+      "secondary": "#FFFFFF"
+    },
+    "formation": "4-3-3"
+  }
+}

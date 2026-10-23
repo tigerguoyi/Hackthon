@@ -1,0 +1,180 @@
+{
+  "match_id": "PL26-W01-LEE-CRY",
+  "seed": 20262026,
+  "duration_seconds": 6000,
+  "tracking_hz": 5,
+  "tracking_frames": 30001,
+  "player_position_records": 656054,
+  "state_snapshots": 6001,
+  "event_count": 3631,
+  "event_counts": {
+    "period_start": 2,
+    "possession_change": 125,
+    "restart": 26,
+    "pressure": 1260,
+    "carry": 1243,
+    "pass": 816,
+    "interception": 104,
+    "shot": 19,
+    "stoppage": 14,
+    "save": 5,
+    "yellow_card": 2,
+    "action_cancelled": 7,
+    "period_end": 2,
+    "substitution": 4,
+    "red_card": 1,
+    "match_end": 1
+  },
+  "final_score": [
+    2,
+    2
+  ],
+  "final_stats": {
+    "HOME": {
+      "passes": 433,
+      "completed_passes": 381,
+      "shots": 10,
+      "shots_on_target": 4,
+      "interceptions": 52,
+      "pressure_events": 565,
+      "possession_seconds": 3110.8,
+      "possession_pct": 54.23,
+      "pass_accuracy_pct": 87.99
+    },
+    "AWAY": {
+      "passes": 383,
+      "completed_passes": 331,
+      "shots": 9,
+      "shots_on_target": 5,
+      "interceptions": 52,
+      "pressure_events": 695,
+      "possession_seconds": 2625.0,
+      "possession_pct": 45.77,
+      "pass_accuracy_pct": 86.42
+    }
+  },
+  "distance_m": {
+    "H01": 3259.0,
+    "H02": 8219.8,
+    "H03": 11885.1,
+    "H04": 12448.9,
+    "H05": 11437.8,
+    "H06": 8756.3,
+    "H07": 14067.0,
+    "H08": 13895.7,
+    "H09": 12236.6,
+    "H10": 13294.7,
+    "H11": 12800.7,
+    "A01": 3305.5,
+    "A02": 11019.3,
+    "A03": 11880.0,
+    "A04": 12498.7,
+    "A05": 9550.2,
+    "A06": 10468.4,
+    "A07": 14390.7,
+    "A08": 14297.0,
+    "A09": 12503.1,
+    "A10": 13568.9,
+    "A11": 9009.4,
+    "H12": 4801.1,
+    "H13": 0.0,
+    "H14": 2875.7,
+    "A12": 2899.0,
+    "A13": 4080.6,
+    "A14": 0.0
+  },
+  "goals": [
+    {
+      "t_ms": 2659800,
+      "period": 1,
+      "period_ms": 2659800,
+      "team_id": "HOME",
+      "club_id": "LEE",
+      "club_name": "Leeds United",
+      "player_id": "H11",
+      "player_name": "Dominic Calvert-Lewin",
+      "shirt_number": 9,
+      "score": [
+        1,
+        0
+      ]
+    },
+    {
+      "t_ms": 3644000,
+      "period": 2,
+      "period_ms": 644000,
+      "team_id": "AWAY",
+      "club_id": "CRY",
+      "club_name": "Crystal Palace",
+      "player_id": "A10",
+      "player_name": "Eddie Nketiah",
+      "shirt_number": 9,
+      "score": [
+        1,
+        1
+      ]
+    },
+    {
+      "t_ms": 4304200,
+      "period": 2,
+      "period_ms": 1304200,
+      "team_id": "HOME",
+      "club_id": "LEE",
+      "club_name": "Leeds United",
+      "player_id": "H10",
+      "player_name": "Lukas Nmecha",
+      "shirt_number": 14,
+      "score": [
+        2,
+        1
+      ]
+    },
+    {
+      "t_ms": 5878200,
+      "period": 2,
+      "period_ms": 2878200,
+      "team_id": "AWAY",
+      "club_id": "CRY",
+      "club_name": "Crystal Palace",
+      "player_id": "A10",
+      "player_name": "Eddie Nketiah",
+      "shirt_number": 9,
+      "score": [
+        2,
+        2
+      ]
+    }
+  ],
+  "competition": {
+    "id": "PL-SYN-2026",
+    "name": "Premier League (synthetic)",
+    "season": "2026/27",
+    "synthetic": true,
+    "matchweek": 1,
+    "kickoff_local": "2026-10-25T16:30:00",
+    "time_zone": "Europe/London",
+    "venue": "Elland Road"
+  },
+  "home_club": {
+    "club_id": "LEE",
+    "name": "Leeds United",
+    "short_name": "Leeds",
+    "stadium": "Elland Road",
+    "colors": {
+      "primary": "#FFFFFF",
+      "secondary": "#1D428A"
+    },
+    "formation": "4-3-3"
+  },
+  "away_club": {
+    "club_id": "CRY",
+    "name": "Crystal Palace",
+    "short_name": "Crystal Palace",
+    "stadium": "Selhurst Park",
+    "colors": {
+      "primary": "#1B458F",
+      "secondary": "#C4122E"
+    },
+    "formation": "4-3-3"
+  }
+}
