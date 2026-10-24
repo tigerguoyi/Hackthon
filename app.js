@@ -1,5 +1,5 @@
 import { DATASETS, datasetFrom } from './datasets.js';
-import { createDecisionView } from './decision-view.js?v=enriched-1.0';
+import { createDecisionView } from './decision-view.js?v=enriched-1.1-motion';
 import { CURRENT_MATCHWEEK, HOME_CLUB_KEY, clubDashboard } from './club-home.js';
 import { formatClock, sampleFrames, samplePacked, lastAtOrBefore, releasedEvents, rosterStatus } from './core.js?v=2.2.0';
 

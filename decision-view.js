@@ -2,6 +2,27 @@
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt=(x,n=3)=>x==null?'—':Number(x).toFixed(n);
 export const preferenceText=x=>x==null?'—':x<.1?'<0.1':fmt(x,1);
+// Snapshot facts only: do not use candidate features, outcomes or projected states.
+export function playerActionConditions(state, playerId=state?.actor){
+  const player=state?.players?.find(p=>p.id===playerId);
+  if(!player)return null;
+  const hasPosition=p=>Number.isFinite(p?.x)&&Number.isFinite(p?.y);
+  const speed=Number.isFinite(player.vx)&&Number.isFinite(player.vy)?Math.hypot(player.vx,player.vy):null;
+  const moving=speed!==null&&speed>.2;
+  const heading=moving?(Math.atan2(player.vy,player.vx)*180/Math.PI+360)%360:null;
+  const attackDirection=(player.team===0)===(state.period===1)?1:-1;
+  const relativeHeading=moving?(Math.atan2(player.vy*attackDirection,player.vx*attackDirection)*180/Math.PI+360)%360:null;
+  const directions=['Forward','Forward-right','Right','Backward-right','Backward','Backward-left','Left','Forward-left'];
+  const opponents=hasPosition(player)?state.players.filter(p=>p.team!==player.team&&hasPosition(p))
+    .map(p=>({id:p.id,distance:Math.hypot(p.x-player.x,p.y-player.y)})).sort((a,b)=>a.distance-b.distance||a.id.localeCompare(b.id)):[];
+  const nearest=opponents[0]??null;
+  const ball=state.ball;
+  return {playerId:player.id,speedMps:speed,speedKmh:speed===null?null:speed*3.6,headingDeg:heading,
+    movementLabel:speed===null?'Unavailable':moving?directions[Math.round(relativeHeading/45)%8]:'Stationary / slow',
+    nearestOpponent:nearest,underPressure:nearest?nearest.distance<3:null,
+    opponentsWithin5m:hasPosition(player)?opponents.filter(p=>p.distance<5).length:null,
+    ballDistance:hasPosition(player)&&Number.isFinite(ball?.[0])&&Number.isFinite(ball?.[1])?Math.hypot(ball[0]-player.x,ball[1]-player.y):null};
+}
 export function filterDecisions(rows,filters,representative,largest){
   const selected=new Set(filters.scope==='representative'?representative:largest);
   return rows.filter(r=>(!filters.team||String(r.team)===filters.team)&&(!filters.player||r.actor===filters.player)&&
@@ -22,6 +43,22 @@ export function createDecisionView(container,jump){
   const clock=r=>context.clock(r.t,r.period);
   const filters=()=>Object.fromEntries(['team','player','kind','scope'].map(k=>[k,$('#decision-'+k).value]));
   const optionLabel=a=>a.kind==='pass'?`Pass to ${label(a.recipient)}`:a.kind==='carry'?`Carry ${a.key.split(':')[1]}`:'Shoot';
+  function actionConditions(playerId){
+    const conditions=playerActionConditions(detail.state,playerId);
+    if(!conditions)return '<section class="action-conditions"><h3>Player action conditions</h3><p>Player tracking is unavailable at this moment.</p></section>';
+    const c=conditions,nearest=c.nearestOpponent;
+    const opponentLabel=$('#decision-mode').value==='defense'?'Nearest attacker':'Nearest defender';
+    const pressure=c.underPressure===null?'Unavailable':c.underPressure?'Opponent within 3 m':'No opponent within 3 m';
+    return `<section class="action-conditions" aria-labelledby="action-conditions-title"><div class="action-conditions-heading"><div><span class="tiny-label">DECISION-TIME TRACKING</span><h3 id="action-conditions-title">Player action conditions</h3><p>${esc(label(playerId))} · ${esc(clock(detail))}</p></div><span class="action-conditions-badge">Original snapshot</span></div>
+      <dl class="action-conditions-grid">
+        <div><dt>Movement speed</dt><dd>${fmt(c.speedMps,2)} <span>m/s</span></dd><small>${fmt(c.speedKmh,1)} km/h</small></div>
+        <div><dt>Movement direction</dt><dd>${c.headingDeg===null?'—':`<span class="movement-arrow" aria-hidden="true" style="transform:rotate(${c.headingDeg.toFixed(1)}deg)">→</span> ${fmt(c.headingDeg,1)}<span>°</span>`}</dd><small>${esc(c.movementLabel)}${c.headingDeg===null?'':' · relative to attack'}</small></div>
+        <div><dt>${opponentLabel}</dt><dd>${fmt(nearest?.distance,2)} <span>m</span></dd><small>${nearest?esc(label(nearest.id)):'Unavailable'}</small></div>
+        <div class="${c.underPressure?'condition-under-pressure':''}"><dt>3 m proximity</dt><dd class="condition-status">${c.underPressure===null?'Unknown':c.underPressure?'Under pressure':'Space available'}</dd><small>${pressure}</small></div>
+        <div><dt>Opponents within 5 m</dt><dd>${c.opponentsWithin5m??'—'}</dd><small>All on-pitch opponents, including the goalkeeper</small></div>
+        <div><dt>Distance to ball</dt><dd>${fmt(c.ballDistance,2)} <span>m</span></dd><small>Player position to ball position</small></div>
+      </dl><p class="action-conditions-note">Movement follows the velocity vector, not body orientation. Pitch angles: 0° right, 90° down; forward/left/right follow this player's attacking direction. Direction is hidden at ≤0.2 m/s. Body orientation, preferred foot and touch quality are not recorded. Proximity is a distance indicator, not a measured tackling threat.</p></section>`;
+  }
   async function fetchData(url){
     const response=await fetch(url,{signal:controller.signal});
     if(!response.ok)throw new Error(`Analysis unavailable (${response.status}).`);
@@ -71,7 +108,7 @@ export function createDecisionView(container,jump){
       const f=chosen.features;
       explanation=`<h3>${detail.assumption_sensitive?'Assumption-sensitive ranking':detail.category==='similar'?'Several options have similar value':'Why this option ranks here'}</h3><p>Highest estimate: <strong>${esc(optionLabel(best))}</strong>. Historical choice: <strong>${esc(optionLabel(opts.find(a=>a.key===detail.chosen)||{kind:detail.kind,key:detail.chosen,recipient:detail.retrospective.recipient}))}</strong>. ${actual?'Value loss '+fmt(detail.loss,4)+'.':'No supported actual-action score is available.'}</p>${f?`<p>Selected: ${esc(optionLabel(chosen))}; ${fmt(f.distance,1)} m, source pressure ${fmt(f.source_pressure,2)}, target pressure ${fmt(f.receiver_pressure,2)}, nearest receiver defender ${fmt(f.receiver_nearest_defender,1)} m. These are geometry-derived heuristics.</p><p>Immediate goal contribution ${fmt(chosen.immediate,4)} + own continuation ${fmt(chosen.continuation,4)} − opponent risk contribution ${fmt(chosen.risk,4)} = Q ${fmt(chosen.q,4)}. One-step Q ${fmt(chosen.one_step_q,4)}.</p><p>Result branches: ${Object.entries(chosen.probabilities).map(([k,v])=>esc(k)+' '+fmt(v*100,1)+'%').join(' · ')}.</p><p>Risk coefficients ±20% give Q ${chosen.sensitivity_q.map(x=>fmt(x,4)).join(' / ')}. This is assumption sensitivity, not a confidence interval.</p>`:`<p>${esc(chosen.reason)}</p>`}<p>${supported.length} supported options · equal-choice share ${fmt(100/Math.max(1,supported.length),1)} · preference weights total ${fmt(supported.reduce((n,a)=>n+a.relative_score,0),1)} · temperature ${fmt(detail.temperature,4)}. ${supported.length===1?'Only one supported option: no meaningful comparison.':''}</p>`;
     }
-    $('#decision-detail').innerHTML=`<section class="card decision-detail-card"><div class="decision-detail-heading"><div><span class="tiny-label">${esc(clock(detail))} · ${mode==='defense'?'DEFENSIVE DIAGNOSTIC':'EXACT ORIGINAL SNAPSHOT'}</span><h2>${esc(label(mode==='defense'?defender:detail.actor))}</h2></div><div class="decision-grade"><strong>${mode==='defense'?'1s':preferenceText(detail.relative_score)}</strong><small>${mode==='defense'?'local horizon':'preference share /100'}</small></div></div><canvas id="decision-pitch" role="img" aria-label="Original decision-time positions with actual and hypothetical targets"></canvas><p class="decision-legend"><span>● Home</span><span>● Away</span><span>Solid: standardised actual choice</span><span>Dashed: selected hypothesis</span></p><div class="decision-jump"><button class="button" id="decision-jump" ${canJump?'':'disabled'}>Open in replay</button><span>${canJump?'Jump to original replay.':context.fixture.tracking==='full'?'Full replay is still loading.':'Original preview does not include this moment.'}</span></div>${table}<div class="decision-reason">${explanation}<details><summary>Source and constraints</summary><p>Observed original: ${esc(detail.source_frame.file)} · exact time ${detail.source_frame.t_ms} ms · alignment ${detail.source_frame.alignment_ms} ms. Event ${esc(detail.event_id)}; possession ${detail.possession_id}.</p><p>Choice resolution: ${esc(detail.choice_resolution)}. Planned duration and carry direction were not fully recorded as original predecision intention.</p><p>${detail.conflicts.length?detail.conflicts.map(esc).join('<br>'):'No additional constraint conflict detected.'}</p><p>Positions: observed_original; geometry: derived; target and duration: candidate_derived; probability and Q: model_prediction. No latent states generated.</p></details><details><summary>Actual outcome · retrospective only</summary><p>${esc(detail.retrospective.outcome)}; end ${esc(JSON.stringify(detail.retrospective.end_location))}. These future values were not inputs to candidate scoring.</p></details><small>${esc(detail.model_version)} · fold ${index.model_fold+1}/4 · match excluded from fitting/calibration · ${index.full_tracking?'full tracking':'outcome-selected preview; descriptive inference only'}.</small></div></section>`;
+    $('#decision-detail').innerHTML=`<section class="card decision-detail-card"><div class="decision-detail-heading"><div><span class="tiny-label">${esc(clock(detail))} · ${mode==='defense'?'DEFENSIVE DIAGNOSTIC':'EXACT ORIGINAL SNAPSHOT'}</span><h2>${esc(label(mode==='defense'?defender:detail.actor))}</h2></div><div class="decision-grade"><strong>${mode==='defense'?'1s':preferenceText(detail.relative_score)}</strong><small>${mode==='defense'?'local horizon':'preference share /100'}</small></div></div><canvas id="decision-pitch" role="img" aria-label="Original decision-time positions with actual and hypothetical targets"></canvas><p class="decision-legend"><span>● Home</span><span>● Away</span><span>Solid: standardised actual choice</span><span>Dashed: selected hypothesis</span></p>${actionConditions(mode==='defense'?defender:detail.actor)}<div class="decision-jump"><button class="button" id="decision-jump" ${canJump?'':'disabled'}>Open in replay</button><span>${canJump?'Jump to original replay.':context.fixture.tracking==='full'?'Full replay is still loading.':'Original preview does not include this moment.'}</span></div>${table}<div class="decision-reason">${explanation}<details><summary>Source and constraints</summary><p>Observed original: ${esc(detail.source_frame.file)} · exact time ${detail.source_frame.t_ms} ms · alignment ${detail.source_frame.alignment_ms} ms. Event ${esc(detail.event_id)}; possession ${detail.possession_id}.</p><p>Choice resolution: ${esc(detail.choice_resolution)}. Planned duration and carry direction were not fully recorded as original predecision intention.</p><p>${detail.conflicts.length?detail.conflicts.map(esc).join('<br>'):'No additional constraint conflict detected.'}</p><p>Positions: observed_original; geometry: derived; target and duration: candidate_derived; probability and Q: model_prediction. No latent states generated.</p></details><details><summary>Actual outcome · retrospective only</summary><p>${esc(detail.retrospective.outcome)}; end ${esc(JSON.stringify(detail.retrospective.end_location))}. These future values were not inputs to candidate scoring.</p></details><small>${esc(detail.model_version)} · fold ${index.model_fold+1}/4 · match excluded from fitting/calibration · ${index.full_tracking?'full tracking':'outcome-selected preview; descriptive inference only'}.</small></div></section>`;
     $('#decision-jump').onclick=()=>jump(detail.t);
     $('#diagnostic-player')?.addEventListener('change',e=>{defender=e.target.value;defenseTarget=null;renderDetail();});
     draw();
