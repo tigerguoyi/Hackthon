@@ -1,0 +1,727 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:nextplay:contracts:1.0.0",
+  "title": "NextPlay hackathon data and analysis contracts",
+  "description": "Validate individual definitions; see README.md for hashing and cross-record invariants.",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/match"
+    },
+    {
+      "$ref": "#/$defs/snapshot"
+    },
+    {
+      "$ref": "#/$defs/analysis_request"
+    },
+    {
+      "$ref": "#/$defs/analysis_response"
+    }
+  ],
+  "$defs": {
+    "hash16": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{16}$"
+    },
+    "data_version": {
+      "type": "string",
+      "pattern": "^gen-[a-f0-9]{16}$"
+    },
+    "candidate_set_id": {
+      "type": "string",
+      "pattern": "^outcome-[0-9]+\\.[0-9]+(?:\\.[0-9]+)?:[a-f0-9]{16}$"
+    },
+    "mode": {
+      "enum": [
+        "fan",
+        "analyst"
+      ]
+    },
+    "language": {
+      "enum": [
+        "en",
+        "zh"
+      ]
+    },
+    "simulated_profile": {
+      "type": "object",
+      "properties": {
+        "profile_version": {
+          "const": "sim-1"
+        },
+        "kind": {
+          "const": "simulated"
+        },
+        "preferred_foot": {
+          "$ref": "urn:synthetic-football:records:1.0.0#/$defs/foot"
+        },
+        "weak_foot": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 5
+        }
+      },
+      "required": [
+        "profile_version",
+        "kind",
+        "preferred_foot",
+        "weak_foot"
+      ],
+      "additionalProperties": false
+    },
+    "attacking_direction": {
+      "type": "object",
+      "properties": {
+        "HOME": {
+          "enum": [
+            "positive_x",
+            "negative_x"
+          ]
+        },
+        "AWAY": {
+          "enum": [
+            "positive_x",
+            "negative_x"
+          ]
+        }
+      },
+      "required": [
+        "HOME",
+        "AWAY"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "HOME": {
+                "enum": [
+                  "positive_x"
+                ]
+              }
+            },
+            "required": [
+              "HOME"
+            ]
+          },
+          "then": {
+            "properties": {
+              "AWAY": {
+                "const": "negative_x"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "HOME": {
+                "enum": [
+                  "negative_x"
+                ]
+              }
+            },
+            "required": [
+              "HOME"
+            ]
+          },
+          "then": {
+            "properties": {
+              "AWAY": {
+                "const": "positive_x"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "match": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "contract-1"
+        },
+        "data_version": {
+          "$ref": "#/$defs/data_version"
+        },
+        "metadata": {
+          "$ref": "urn:synthetic-football:records:1.0.0#/$defs/match"
+        }
+      },
+      "required": [
+        "schema_version",
+        "data_version",
+        "metadata"
+      ],
+      "additionalProperties": false
+    },
+    "snapshot": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "contract-1"
+        },
+        "snapshot_id": {
+          "$ref": "#/$defs/hash16"
+        },
+        "match_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "data_version": {
+          "$ref": "#/$defs/data_version"
+        },
+        "seed": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "t_ms": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "period": {
+          "enum": [
+            1,
+            2
+          ]
+        },
+        "attacking_direction": {
+          "$ref": "#/$defs/attacking_direction"
+        },
+        "frame": {
+          "$ref": "urn:synthetic-football:records:1.0.0#/$defs/tracking"
+        }
+      },
+      "required": [
+        "schema_version",
+        "snapshot_id",
+        "match_id",
+        "data_version",
+        "seed",
+        "t_ms",
+        "period",
+        "attacking_direction",
+        "frame"
+      ],
+      "additionalProperties": false
+    },
+    "analysis_request": {
+      "type": "object",
+      "properties": {
+        "match_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "snapshot_id": {
+          "$ref": "#/$defs/hash16"
+        },
+        "t_ms": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "actor_id": {
+          "$ref": "urn:synthetic-football:records:1.0.0#/$defs/player_id"
+        },
+        "question": {
+          "type": "string",
+          "minLength": 1
+        },
+        "mode": {
+          "$ref": "#/$defs/mode"
+        },
+        "language": {
+          "$ref": "#/$defs/language"
+        },
+        "profile": {
+          "$ref": "#/$defs/simulated_profile"
+        }
+      },
+      "required": [
+        "match_id",
+        "snapshot_id",
+        "t_ms",
+        "actor_id",
+        "question",
+        "mode",
+        "language",
+        "profile"
+      ],
+      "additionalProperties": false
+    },
+    "action_id": {
+      "type": "string",
+      "pattern": "^(pass:[HA](0[1-9]|1[0-4])|carry:(forward|left|right)|shot:goal|hold:1s)$"
+    },
+    "candidate": {
+      "type": "object",
+      "properties": {
+        "action_id": {
+          "$ref": "#/$defs/action_id"
+        },
+        "type": {
+          "enum": [
+            "pass",
+            "carry",
+            "shot",
+            "hold"
+          ]
+        },
+        "is_actual": {
+          "type": "boolean"
+        },
+        "eligible": {
+          "type": "boolean"
+        },
+        "opportunity": {
+          "type": "string",
+          "minLength": 1
+        },
+        "main_risk": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rank": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "assumptions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "rollout_supported": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "action_id",
+        "type",
+        "is_actual",
+        "eligible",
+        "opportunity",
+        "main_risk",
+        "rank",
+        "evidence_ids",
+        "assumptions",
+        "rollout_supported"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "enum": [
+                  "pass"
+                ]
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "action_id": {
+                "pattern": "^pass:",
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "enum": [
+                  "carry"
+                ]
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "action_id": {
+                "pattern": "^carry:",
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "enum": [
+                  "shot"
+                ]
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "action_id": {
+                "pattern": "^shot:",
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "enum": [
+                  "hold"
+                ]
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "action_id": {
+                "pattern": "^hold:",
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "enum": [
+                  "carry",
+                  "shot",
+                  "hold"
+                ]
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "rollout_supported": {
+                "const": false
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "eligible": {
+                "enum": [
+                  false
+                ]
+              }
+            },
+            "required": [
+              "eligible"
+            ]
+          },
+          "then": {
+            "properties": {
+              "rank": {
+                "type": "null"
+              },
+              "rollout_supported": {
+                "const": false
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "eligible": {
+                "enum": [
+                  true
+                ]
+              }
+            },
+            "required": [
+              "eligible"
+            ]
+          },
+          "then": {
+            "properties": {
+              "rank": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "evidence": {
+      "type": "object",
+      "properties": {
+        "evidence_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "computed",
+            "observed",
+            "assumed"
+          ]
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "value": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "evidence_id",
+        "kind",
+        "source",
+        "value"
+      ],
+      "additionalProperties": false
+    },
+    "explanation": {
+      "type": "object",
+      "properties": {
+        "mode": {
+          "$ref": "#/$defs/mode"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "cited_evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "mode",
+        "text",
+        "cited_evidence_ids"
+      ],
+      "additionalProperties": false
+    },
+    "agent_trace": {
+      "type": "object",
+      "properties": {
+        "agent": {
+          "enum": [
+            "coordinator",
+            "attack",
+            "defense",
+            "reviewer"
+          ]
+        },
+        "tool": {
+          "type": "string",
+          "minLength": 1
+        },
+        "ms": {
+          "type": "number",
+          "minimum": 0
+        },
+        "ok": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "agent",
+        "tool",
+        "ms",
+        "ok"
+      ],
+      "additionalProperties": false
+    },
+    "analysis_response": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum": [
+            "ready",
+            "partial",
+            "unknown",
+            "model_unavailable",
+            "error"
+          ]
+        },
+        "snapshot_id": {
+          "$ref": "#/$defs/hash16"
+        },
+        "candidate_set_id": {
+          "$ref": "#/$defs/candidate_set_id"
+        },
+        "data_version": {
+          "$ref": "#/$defs/data_version"
+        },
+        "profile_version": {
+          "const": "sim-1"
+        },
+        "candidates": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/candidate"
+          },
+          "uniqueItems": true
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/evidence"
+          },
+          "uniqueItems": true
+        },
+        "explanation": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/explanation"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "agent_trace": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/agent_trace"
+          }
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "status",
+        "snapshot_id",
+        "candidate_set_id",
+        "data_version",
+        "profile_version",
+        "candidates",
+        "evidence",
+        "explanation",
+        "agent_trace",
+        "limitations"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "ready",
+                  "partial",
+                  "model_unavailable"
+                ]
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "candidates": {
+                "minItems": 1,
+                "type": "array"
+              },
+              "evidence": {
+                "minItems": 1,
+                "type": "array"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "ready"
+                ]
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "explanation": {
+                "$ref": "#/$defs/explanation"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "model_unavailable",
+                  "unknown",
+                  "error"
+                ]
+              }
+            },
+            "required": [
+              "status"
+            ]
+          },
+          "then": {
+            "properties": {
+              "explanation": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,6 @@
+# Offline fitting / validation only; the demo runtime uses Python's standard library.
+numpy==2.3.5
+scikit-learn==1.9.1
+joblib==1.6.0
+threadpoolctl==3.7.0
+jsonschema==4.26.0

@@ -1,0 +1,15 @@
+{
+  "match_id": "SYN-20261019-001",
+  "snapshot_id": "b92721932c4b7255",
+  "t_ms": 83200,
+  "actor_id": "A10",
+  "question": "Why pass backward instead of forward under pressure?",
+  "mode": "fan",
+  "language": "en",
+  "profile": {
+    "profile_version": "sim-1",
+    "kind": "simulated",
+    "preferred_foot": null,
+    "weak_foot": null
+  }
+}

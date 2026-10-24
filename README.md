@@ -1,5 +1,121 @@
 # Touchline — Premier League 2026/27 replay and squad explorer
 
+## Ne_Generator: A-generator integration with B's two-step model
+
+This integration is based on B commit `61aefb91602d4e1236383ce7dfede3cd64bb1d3b`
+and the read-only A source `96d13a377e98602c9998e3ebb82186843762febf`.
+It does not replace B's generator, original league, enriched-v1 results or Q2
+function bodies. See [the compatibility audit](docs/role-b-compat-audit.md).
+
+Double-click **启动Ne_Generator.command**, or run `python3 server.py` and open
+`http://127.0.0.1:5173/team-integration.html`. A free port is selected by the
+launcher. The page includes the three pinned A/B/C cases, every registered new
+match's decision snapshots, editable **neutral** simulated foot settings,
+structured evidence, a separately revealed historical choice and a separate
+counterfactual pass timeline. Python 3.9+ standard library is sufficient at runtime;
+no API key, training package or external model is needed.
+
+The primary ranking remains **B Q2**: tactical outcome assumptions, two geometric
+action steps and newly fitted 12×8 xT tail value. Internally:
+`Q = immediate goal contribution + own continuation - opponent continuation risk`.
+The next decision takes a maximum and can be optimistic. Counterfactual outcomes
+are unobserved; no rank is asserted to be the real optimal football action.
+Pass/shot model priors are not player-specific calibrated success probabilities.
+
+New A data contains 40 matches and 91,031 generator decision snapshots. All are
+indexed independently in `data/league-enriched-gen-96d13a37/`; only four matches
+have full animation. The new snapshot coverage must not be confused with B's old
+5,377 covered event-derived states. Dataset/model manifests and snapshot/candidate
+IDs prevent mixing these versions. No missing full trajectory is invented.
+
+The public contract publishes ranks, textual opportunities/risks and citations,
+not Q2, value gain, scenario weights or Softmax numbers. The legacy numerical
+dashboard remains an explicitly separate **internal research** view. New numerical
+diagnostics are local CLI output only:
+
+```sh
+python3 -m role_b.diagnostics --case a
+```
+
+Source-data Sofascore indices are descriptive observations with collection time,
+radar kind and identity conflicts, not simulated player profiles or action
+probabilities. Generator style multipliers model **choice preference**, not
+execution success or Q2; this integration never multiplies them into success.
+Unknown foot/weak-foot values remain null. Even a supplied simulated foot setting
+is kept neutral until a defensible execution-window model is validated. Source
+observations are never rewritten, and collection time is not historical evidence.
+
+Current public support: legal ground passes, three standard carries and ordinary
+non-goalkeeper shots. High balls and hold remain explicitly unsupported, unranked
+and non-rolloutable. Offside is checked at release, using active IDs and explicit
+directions. A's existing four-case pass rollout receives the **exact B ranked
+target**, ball origin and 14 m/s template. Four scenarios are not probability
+samples and never update the ranking. Actual carry intent is unknown when the
+generator draws its target only after logging the action-type choice.
+
+### Team interfaces
+
+- `POST /api/role-b/analysis` (aliases `/api/decision`, `/api/compare-actions`): exact
+  `contracts/schema.json` analysis request, resolving a registered snapshot.
+- `POST /api/role-b/routes`, `/actual`, `/agents`: `{request,candidate_set_id}`.
+- `POST /api/role-b/rollout` (alias `/api/rollout`):
+  `{request,candidate_set_id,action_id}`. Only eligible passes are accepted.
+- `GET /api/role-b/catalog`, `/decisions?match_id=...`,
+  `/snapshot?match_id=...&snapshot_id=...`: observed source lookup.
+- Python `role_b.comparison.compare_actions` is C's common tool entry; the second
+  return value is private diagnostics and must never be forwarded as a public
+  response. `accept_agent_response` rejects a mismatched candidate set. No actual
+  Foundry/model agent is configured: computed candidates remain available with
+  `model_unavailable`, null explanation and an empty trace, never fabricated prose.
+
+Canonical JSON and candidate-set hashing reuse A's `contracts/model.py` unchanged.
+Only `is_actual` may change without invalidating the candidate set. Profile,
+model/parameter binding, candidates or evidence changes invalidate it. Future
+events, endpoints, outcomes and historical selection are excluded from the
+comparison signature and only enter the separate post-computation display path.
+
+### Independent offline pipeline
+
+The existing `enriched_pipeline.py` is deliberately legacy-only. Use Python 3.12
+for offline fitting (the viewer still needs only Python 3.9+). Use the new
+parameterised pipeline for A's different inputs; never point the old pipeline at
+new data or reuse its xT/teacher/cache as if they were new-source results.
+
+```sh
+python3.12 -m venv .venv-role-b
+. .venv-role-b/bin/activate
+python -m pip install -r requirements-role-b.txt
+python -m role_b.pipeline audit --source /path/to/pinned-A/data/league
+python -m role_b.pipeline train --source /path/to/pinned-A/data/league
+python -m role_b.pipeline score --all-decisions
+python -m role_b.pipeline validate
+
+# Development schema/tests (npm ci, or pnpm install, in B only)
+npm ci
+npm run test:contract
+npm run validate:schema
+npm run validate:role-b
+npm run validate:legacy
+npm test
+```
+
+Four matchweek folds retain 20 fit / 10 calibration / 10 test matches. Every xT
+table and pass baseline is newly fitted; the main tactical probabilities remain
+B's explicit assumptions. Pass teacher probabilities are A's pre-sampling labels,
+never input features. Actual resolved pass outcomes are validation labels only.
+New pre-action decision streams support spatial fitting; outcome-selected legacy
+previews are not substituted. Display temperatures use calibration matches only.
+The default `score` command writes a periodic audit sample with full on-demand
+evaluation; `--all-decisions` materialises every source decision using four workers.
+No future rollout branches are stored for all candidates. Private fitting samples
+are ignored, new models and source snapshots are versioned separately.
+
+All original SHA-256 anchors are checked again during validation. Results and
+limitations are recorded in [the validation report](docs/role-b-validation.md).
+Hold value, high-ball physics, individual weak-foot/radar causal effects and a live
+C agent are intentionally not claimed. Independent football review and licensed
+tracking/event validation are still needed before real-football quality claims.
+
 A dependency-free football data demo for match replay, event consumption, live statistics and squad browsing. Club names, 2026/27 squad numbers and player details are real; every match result, event and tracking frame is procedurally generated.
 
 ## Frontend

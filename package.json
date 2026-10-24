@@ -6,6 +6,15 @@
     "dev": "python3 server.py",
     "start": "python3 server.py",
     "test": "node --test tests/*.test.js && python3 -m unittest discover -s tests -p 'test_*.py'",
-    "analyze": "python3 analysis_agent.py"
+    "analyze": "python3 analysis_agent.py",
+    "test:contract": "python3 -m unittest discover -s tests -p 'test_role_b_contract.py'",
+    "validate:schema": "node scripts/validate_role_b.mjs",
+    "test:role-b": "python3 -m unittest discover -s tests -p 'test_role_b*.py'",
+    "validate:role-b": "node scripts/validate_role_b.mjs",
+    "validate:legacy": "python3 validate.py && python3 validate_league.py"
+  },
+  "devDependencies": {
+    "ajv": "8.17.1",
+    "ajv-formats": "3.0.1"
   }
 }

@@ -1,0 +1,171 @@
+{
+  "features": [
+    {
+      "name": "progress",
+      "source": "current snapshot + standardised candidate geometry",
+      "future_input": false
+    },
+    {
+      "name": "y",
+      "source": "current snapshot + standardised candidate geometry",
+      "future_input": false
+    },
+    {
+      "name": "vx",
+      "source": "current snapshot + standardised candidate geometry",
+      "future_input": false
+    },
+    {
+      "name": "vy",
+      "source": "current snapshot + standardised candidate geometry",
+      "future_input": false
+    },
+    {
+      "name": "ball_speed",
+      "source": "current snapshot + standardised candidate geometry",
+      "future_input": false
+    },
+    {
+      "name": "distance",
+      "source": "current snapshot + standardised candidate geometry",
+      "future_input": false
+    },
+    {
+      "name": "advance",
+      "source": "current snapshot + standardised candidate geometry",
+      "future_input": false
+    },
+    {
+      "name": "lateral",
+      "source": "current snapshot + standardised candidate geometry",
+      "future_input": false
+    },
+    {
+      "name": "duration",
+      "source": "current snapshot + standardised candidate geometry",
+      "future_input": false
+    },
+    {
+      "name": "source_pressure",
+      "source": "current snapshot + standardised candidate geometry",
+      "future_input": false
+    },
+    {
+      "name": "receiver_pressure",
+      "source": "current snapshot + standardised candidate geometry",
+      "future_input": false
+    },
+    {
+      "name": "nearest_defender",
+      "source": "current snapshot + standardised candidate geometry",
+      "future_input": false
+    },
+    {
+      "name": "closing_speed",
+      "source": "current snapshot + standardised candidate geometry",
+      "future_input": false
+    },
+    {
+      "name": "lane_pressure",
+      "source": "current snapshot + standardised candidate geometry",
+      "future_input": false
+    },
+    {
+      "name": "intercept_margin",
+      "source": "current snapshot + standardised candidate geometry",
+      "future_input": false
+    },
+    {
+      "name": "goal_distance",
+      "source": "current snapshot + standardised candidate geometry",
+      "future_input": false
+    },
+    {
+      "name": "goal_angle",
+      "source": "current snapshot + standardised candidate geometry",
+      "future_input": false
+    },
+    {
+      "name": "blockers",
+      "source": "current snapshot + standardised candidate geometry",
+      "future_input": false
+    },
+    {
+      "name": "keeper_offset",
+      "source": "current snapshot + standardised candidate geometry",
+      "future_input": false
+    },
+    {
+      "name": "target_speed",
+      "source": "current snapshot + standardised candidate geometry",
+      "future_input": false
+    },
+    {
+      "name": "attack_ratio",
+      "source": "current snapshot + standardised candidate geometry",
+      "future_input": false
+    },
+    {
+      "name": "passing_ratio",
+      "source": "current snapshot + standardised candidate geometry",
+      "future_input": false
+    },
+    {
+      "name": "time_fraction",
+      "source": "current snapshot + standardised candidate geometry",
+      "future_input": false
+    },
+    {
+      "name": "score_difference",
+      "source": "current snapshot + standardised candidate geometry",
+      "future_input": false
+    },
+    {
+      "name": "player_difference",
+      "source": "current snapshot + standardised candidate geometry",
+      "future_input": false
+    },
+    {
+      "name": "receiver_nearest_defender",
+      "source": "current snapshot + standardised candidate geometry",
+      "future_input": false
+    },
+    {
+      "name": "receiver_reachable",
+      "source": "current snapshot + standardised candidate geometry",
+      "future_input": false
+    },
+    {
+      "name": "keeper_depth",
+      "source": "current snapshot + standardised candidate geometry",
+      "future_input": false
+    },
+    {
+      "name": "keeper_cover",
+      "source": "current snapshot + standardised candidate geometry",
+      "future_input": false
+    },
+    {
+      "name": "state_quality",
+      "source": "current snapshot + standardised candidate geometry",
+      "future_input": false
+    }
+  ],
+  "explicit_notes": {
+    "direction": "snapshot.attacking_direction; periods come from metadata",
+    "duration": "planned template duration, not actual duration",
+    "team_ratios": "source league ratings; missing ratings labelled neutral",
+    "state_quality": "constant 1 for verified exact generator snapshots",
+    "receiver_reachable": "legacy derived feature, not a complete biomechanical constraint"
+  },
+  "not_features": [
+    "selected.probability",
+    "candidate.success teacher label",
+    "event outcome",
+    "future endpoint",
+    "future goals",
+    "source radar as causal ability",
+    "weak-foot default"
+  ],
+  "source_decision_identification": "generator decisions.jsonl snapshots, not legacy carry-chain inference"
+}

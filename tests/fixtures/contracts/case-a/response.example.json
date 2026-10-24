@@ -1,0 +1,358 @@
+{
+  "status": "model_unavailable",
+  "snapshot_id": "f181321fea364728",
+  "candidate_set_id": "outcome-0.1:f6018d2d06b0f1b2",
+  "data_version": "gen-310ae52497736051",
+  "profile_version": "sim-1",
+  "candidates": [
+    {
+      "action_id": "carry:left",
+      "type": "carry",
+      "is_actual": false,
+      "eligible": true,
+      "opportunity": "Move the ball toward the candidate carrying target.",
+      "main_risk": "Retention and defender response are hand-defined assumptions.",
+      "rank": 1,
+      "evidence_ids": [
+        "ev-option-01"
+      ],
+      "assumptions": [
+        "preferred_foot_not_considered",
+        "location_value_model_exploratory",
+        "carry_retention_unvalidated"
+      ],
+      "rollout_supported": false
+    },
+    {
+      "action_id": "carry:forward",
+      "type": "carry",
+      "is_actual": false,
+      "eligible": true,
+      "opportunity": "Move the ball toward the candidate carrying target.",
+      "main_risk": "Retention and defender response are hand-defined assumptions.",
+      "rank": 2,
+      "evidence_ids": [
+        "ev-option-02"
+      ],
+      "assumptions": [
+        "preferred_foot_not_considered",
+        "location_value_model_exploratory",
+        "carry_retention_unvalidated"
+      ],
+      "rollout_supported": false
+    },
+    {
+      "action_id": "carry:right",
+      "type": "carry",
+      "is_actual": false,
+      "eligible": true,
+      "opportunity": "Move the ball toward the candidate carrying target.",
+      "main_risk": "Retention and defender response are hand-defined assumptions.",
+      "rank": 3,
+      "evidence_ids": [
+        "ev-option-03"
+      ],
+      "assumptions": [
+        "preferred_foot_not_considered",
+        "location_value_model_exploratory",
+        "carry_retention_unvalidated"
+      ],
+      "rollout_supported": false
+    },
+    {
+      "action_id": "pass:H09",
+      "type": "pass",
+      "is_actual": true,
+      "eligible": true,
+      "opportunity": "Move possession to an active teammate.",
+      "main_risk": "A defender can reach the passing lane before the ball under the lane rule.",
+      "rank": 4,
+      "evidence_ids": [
+        "ev-option-04"
+      ],
+      "assumptions": [
+        "preferred_foot_not_considered",
+        "location_value_model_exploratory",
+        "lane_rule_unvalidated"
+      ],
+      "rollout_supported": true
+    },
+    {
+      "action_id": "hold:1s",
+      "type": "hold",
+      "is_actual": false,
+      "eligible": true,
+      "opportunity": "Keep possession briefly while preserving current options.",
+      "main_risk": "Support movement and changing pressure are not predicted.",
+      "rank": 5,
+      "evidence_ids": [
+        "ev-option-05"
+      ],
+      "assumptions": [
+        "preferred_foot_not_considered",
+        "location_value_model_exploratory",
+        "hold_retention_unvalidated"
+      ],
+      "rollout_supported": false
+    },
+    {
+      "action_id": "pass:H08",
+      "type": "pass",
+      "is_actual": false,
+      "eligible": true,
+      "opportunity": "Move possession to an active teammate.",
+      "main_risk": "Defender reactions and receiver control remain uncertain.",
+      "rank": 6,
+      "evidence_ids": [
+        "ev-option-06"
+      ],
+      "assumptions": [
+        "preferred_foot_not_considered",
+        "location_value_model_exploratory",
+        "lane_rule_unvalidated"
+      ],
+      "rollout_supported": true
+    },
+    {
+      "action_id": "pass:H06",
+      "type": "pass",
+      "is_actual": false,
+      "eligible": true,
+      "opportunity": "Move possession to an active teammate.",
+      "main_risk": "Defender reactions and receiver control remain uncertain.",
+      "rank": 7,
+      "evidence_ids": [
+        "ev-option-07"
+      ],
+      "assumptions": [
+        "preferred_foot_not_considered",
+        "location_value_model_exploratory",
+        "lane_rule_unvalidated"
+      ],
+      "rollout_supported": true
+    },
+    {
+      "action_id": "pass:H11",
+      "type": "pass",
+      "is_actual": false,
+      "eligible": true,
+      "opportunity": "Move possession to an active teammate.",
+      "main_risk": "A defender can reach the passing lane before the ball under the lane rule.",
+      "rank": 8,
+      "evidence_ids": [
+        "ev-option-08"
+      ],
+      "assumptions": [
+        "preferred_foot_not_considered",
+        "location_value_model_exploratory",
+        "lane_rule_unvalidated"
+      ],
+      "rollout_supported": true
+    },
+    {
+      "action_id": "pass:H07",
+      "type": "pass",
+      "is_actual": false,
+      "eligible": true,
+      "opportunity": "Move possession to an active teammate.",
+      "main_risk": "A defender can reach the passing lane before the ball under the lane rule.",
+      "rank": 9,
+      "evidence_ids": [
+        "ev-option-09"
+      ],
+      "assumptions": [
+        "preferred_foot_not_considered",
+        "location_value_model_exploratory",
+        "lane_rule_unvalidated"
+      ],
+      "rollout_supported": true
+    },
+    {
+      "action_id": "pass:H04",
+      "type": "pass",
+      "is_actual": false,
+      "eligible": true,
+      "opportunity": "Move possession to an active teammate.",
+      "main_risk": "Defender reactions and receiver control remain uncertain.",
+      "rank": 10,
+      "evidence_ids": [
+        "ev-option-10"
+      ],
+      "assumptions": [
+        "preferred_foot_not_considered",
+        "location_value_model_exploratory",
+        "lane_rule_unvalidated"
+      ],
+      "rollout_supported": true
+    },
+    {
+      "action_id": "pass:H03",
+      "type": "pass",
+      "is_actual": false,
+      "eligible": true,
+      "opportunity": "Move possession to an active teammate.",
+      "main_risk": "A defender can reach the passing lane before the ball under the lane rule.",
+      "rank": 11,
+      "evidence_ids": [
+        "ev-option-11"
+      ],
+      "assumptions": [
+        "preferred_foot_not_considered",
+        "location_value_model_exploratory",
+        "lane_rule_unvalidated"
+      ],
+      "rollout_supported": true
+    },
+    {
+      "action_id": "pass:H02",
+      "type": "pass",
+      "is_actual": false,
+      "eligible": true,
+      "opportunity": "Move possession to an active teammate.",
+      "main_risk": "A defender can reach the passing lane before the ball under the lane rule.",
+      "rank": 12,
+      "evidence_ids": [
+        "ev-option-12"
+      ],
+      "assumptions": [
+        "preferred_foot_not_considered",
+        "location_value_model_exploratory",
+        "lane_rule_unvalidated"
+      ],
+      "rollout_supported": true
+    },
+    {
+      "action_id": "pass:H05",
+      "type": "pass",
+      "is_actual": false,
+      "eligible": true,
+      "opportunity": "Move possession to an active teammate.",
+      "main_risk": "A defender can reach the passing lane before the ball under the lane rule.",
+      "rank": 13,
+      "evidence_ids": [
+        "ev-option-13"
+      ],
+      "assumptions": [
+        "preferred_foot_not_considered",
+        "location_value_model_exploratory",
+        "lane_rule_unvalidated"
+      ],
+      "rollout_supported": true
+    },
+    {
+      "action_id": "pass:H01",
+      "type": "pass",
+      "is_actual": false,
+      "eligible": true,
+      "opportunity": "Move possession to an active teammate.",
+      "main_risk": "A defender can reach the passing lane before the ball under the lane rule.",
+      "rank": 14,
+      "evidence_ids": [
+        "ev-option-14"
+      ],
+      "assumptions": [
+        "preferred_foot_not_considered",
+        "location_value_model_exploratory",
+        "lane_rule_unvalidated"
+      ],
+      "rollout_supported": true
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "ev-option-01",
+      "kind": "computed",
+      "source": "outcome.compare",
+      "value": "Candidate target is projected from the current position and attacking direction."
+    },
+    {
+      "evidence_id": "ev-option-02",
+      "kind": "computed",
+      "source": "outcome.compare",
+      "value": "Candidate target is projected from the current position and attacking direction."
+    },
+    {
+      "evidence_id": "ev-option-03",
+      "kind": "computed",
+      "source": "outcome.compare",
+      "value": "Candidate target is projected from the current position and attacking direction."
+    },
+    {
+      "evidence_id": "ev-option-04",
+      "kind": "computed",
+      "source": "outcome.compare",
+      "value": "Minimum defender arrival margin: -0.9697 s; eligible: true."
+    },
+    {
+      "evidence_id": "ev-option-05",
+      "kind": "computed",
+      "source": "outcome.compare",
+      "value": "Holding is a one-second retention assumption from current defender proximity."
+    },
+    {
+      "evidence_id": "ev-option-06",
+      "kind": "computed",
+      "source": "outcome.compare",
+      "value": "Minimum defender arrival margin: 0.4725 s; eligible: true."
+    },
+    {
+      "evidence_id": "ev-option-07",
+      "kind": "computed",
+      "source": "outcome.compare",
+      "value": "Minimum defender arrival margin: 0.1312 s; eligible: true."
+    },
+    {
+      "evidence_id": "ev-option-08",
+      "kind": "computed",
+      "source": "outcome.compare",
+      "value": "Minimum defender arrival margin: -0.5901 s; eligible: true."
+    },
+    {
+      "evidence_id": "ev-option-09",
+      "kind": "computed",
+      "source": "outcome.compare",
+      "value": "Minimum defender arrival margin: -0.2021 s; eligible: true."
+    },
+    {
+      "evidence_id": "ev-option-10",
+      "kind": "computed",
+      "source": "outcome.compare",
+      "value": "Minimum defender arrival margin: 0.0719 s; eligible: true."
+    },
+    {
+      "evidence_id": "ev-option-11",
+      "kind": "computed",
+      "source": "outcome.compare",
+      "value": "Minimum defender arrival margin: -0.2339 s; eligible: true."
+    },
+    {
+      "evidence_id": "ev-option-12",
+      "kind": "computed",
+      "source": "outcome.compare",
+      "value": "Minimum defender arrival margin: -1.3388 s; eligible: true."
+    },
+    {
+      "evidence_id": "ev-option-13",
+      "kind": "computed",
+      "source": "outcome.compare",
+      "value": "Minimum defender arrival margin: -1.0324 s; eligible: true."
+    },
+    {
+      "evidence_id": "ev-option-14",
+      "kind": "computed",
+      "source": "outcome.compare",
+      "value": "Minimum defender arrival margin: -0.3225 s; eligible: true."
+    }
+  ],
+  "explanation": null,
+  "agent_trace": [],
+  "limitations": [
+    "Contract example only: no language model was called.",
+    "Preferred foot was not considered; the simulated profile is unknown.",
+    "Ranking is exploratory, not a validated best-action recommendation.",
+    "Values use a 10-action location-only model; turnover value is an assumed opponent restart at target.",
+    "Scenario ranges are hand-selected sensitivity checks, NOT confidence intervals.",
+    "Body orientation, preferred foot and first-touch stability are unknown.",
+    "Observed outcome and future endpoint are not inputs to compare()."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "a_commit": "96d13a377e98602c9998e3ebb82186843762febf",
+  "b_base": "61aefb91602d4e1236383ce7dfede3cd64bb1d3b",
+  "vendor_hashes": {
+    "contracts/model.py": "21b48a4075cc7cac864dc6388270526c7a62f4c6d64aae8d254643f7c56ae409",
+    "contracts/schema.json": "39416e487e34a43cd5c0c9c20f719a431e09dd532e32e87d843366440eb5d430",
+    "schema.json": "e06fa9c241f7a25ab28a9197610c6cf6febb5a7480b7fad67aeb98e79a97c7aa",
+    "decision/engine.py": "bae8c798c1b7de819e34c03cc571a08a8ac673e8455ef5cf8b5a12a5cf429a70",
+    "decision/rollout.py": "18f228e7312f5c2ed7684d9939bbbf3cffe0a9bad20233fc28352c050e1a0b07"
+  }
+}

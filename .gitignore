@@ -224,3 +224,9 @@ __marimo__/
 .local/
 .venv-enrichment/
 data/league-enriched-v1/.work/
+
+node_modules/
+.role-b-cache/
+.venv-role-b/
+
+data/league-enriched-gen-*/.training/

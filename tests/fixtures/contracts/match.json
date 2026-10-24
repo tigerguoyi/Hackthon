@@ -1,0 +1,307 @@
+{
+  "schema_version": "contract-1",
+  "data_version": "gen-310ae52497736051",
+  "metadata": {
+    "schema_version": "1.0.0",
+    "match_id": "SYN-20261019-001",
+    "synthetic": true,
+    "seed": 20261019,
+    "generator": "generate.py v2.3.0",
+    "action_policy": {
+      "revision": "player-actions-1",
+      "multipliers": {
+        "pass": 1.2676785250291727,
+        "carry": 1.4731620286964047,
+        "shot": 0.5354764191523225
+      },
+      "attribute_strength": 1.0,
+      "scope": "pass/carry/foot-shot selection; radar effects are bounded hypotheses, not fitted player outcomes"
+    },
+    "duration_ms": 6000000,
+    "tracking_hz": 5,
+    "pitch": {
+      "length_m": 105,
+      "width_m": 68,
+      "origin": "top_left",
+      "x_axis": "right",
+      "y_axis": "down",
+      "z_axis": "up"
+    },
+    "periods": [
+      {
+        "period": 1,
+        "start_ms": 0,
+        "duration_ms": 3000000,
+        "regulation_ms": 2700000,
+        "home_attacks": "positive_x"
+      },
+      {
+        "period": 2,
+        "start_ms": 3000000,
+        "duration_ms": 3000000,
+        "regulation_ms": 2700000,
+        "home_attacks": "negative_x"
+      }
+    ],
+    "clock_note": "Two 45+5 minute periods; halftime break omitted. Use period and period_ms for displayed clock.",
+    "teams": [
+      {
+        "team_id": "HOME",
+        "name": "Harbor FC",
+        "formation": "4-3-3"
+      },
+      {
+        "team_id": "AWAY",
+        "name": "Mountain FC",
+        "formation": "4-3-3"
+      }
+    ],
+    "players": [
+      {
+        "player_id": "H01",
+        "team_id": "HOME",
+        "jersey_number": 1,
+        "name": "Harbor Player 01",
+        "position": "GK",
+        "position_detail": "GK",
+        "nationality": null,
+        "starter": true
+      },
+      {
+        "player_id": "H02",
+        "team_id": "HOME",
+        "jersey_number": 2,
+        "name": "Harbor Player 02",
+        "position": "LB",
+        "position_detail": "LB",
+        "nationality": null,
+        "starter": true
+      },
+      {
+        "player_id": "H03",
+        "team_id": "HOME",
+        "jersey_number": 3,
+        "name": "Harbor Player 03",
+        "position": "LCB",
+        "position_detail": "LCB",
+        "nationality": null,
+        "starter": true
+      },
+      {
+        "player_id": "H04",
+        "team_id": "HOME",
+        "jersey_number": 4,
+        "name": "Harbor Player 04",
+        "position": "RCB",
+        "position_detail": "RCB",
+        "nationality": null,
+        "starter": true
+      },
+      {
+        "player_id": "H05",
+        "team_id": "HOME",
+        "jersey_number": 5,
+        "name": "Harbor Player 05",
+        "position": "RB",
+        "position_detail": "RB",
+        "nationality": null,
+        "starter": true
+      },
+      {
+        "player_id": "H06",
+        "team_id": "HOME",
+        "jersey_number": 6,
+        "name": "Harbor Player 06",
+        "position": "LCM",
+        "position_detail": "LCM",
+        "nationality": null,
+        "starter": true
+      },
+      {
+        "player_id": "H07",
+        "team_id": "HOME",
+        "jersey_number": 7,
+        "name": "Harbor Player 07",
+        "position": "DM",
+        "position_detail": "DM",
+        "nationality": null,
+        "starter": true
+      },
+      {
+        "player_id": "H08",
+        "team_id": "HOME",
+        "jersey_number": 8,
+        "name": "Harbor Player 08",
+        "position": "RCM",
+        "position_detail": "RCM",
+        "nationality": null,
+        "starter": true
+      },
+      {
+        "player_id": "H09",
+        "team_id": "HOME",
+        "jersey_number": 9,
+        "name": "Harbor Player 09",
+        "position": "LW",
+        "position_detail": "LW",
+        "nationality": null,
+        "starter": true
+      },
+      {
+        "player_id": "H10",
+        "team_id": "HOME",
+        "jersey_number": 10,
+        "name": "Harbor Player 10",
+        "position": "ST",
+        "position_detail": "ST",
+        "nationality": null,
+        "starter": true
+      },
+      {
+        "player_id": "H11",
+        "team_id": "HOME",
+        "jersey_number": 11,
+        "name": "Harbor Player 11",
+        "position": "RW",
+        "position_detail": "RW",
+        "nationality": null,
+        "starter": true
+      },
+      {
+        "player_id": "A01",
+        "team_id": "AWAY",
+        "jersey_number": 1,
+        "name": "Mountain Player 01",
+        "position": "GK",
+        "position_detail": "GK",
+        "nationality": null,
+        "starter": true
+      },
+      {
+        "player_id": "A02",
+        "team_id": "AWAY",
+        "jersey_number": 2,
+        "name": "Mountain Player 02",
+        "position": "LB",
+        "position_detail": "LB",
+        "nationality": null,
+        "starter": true
+      },
+      {
+        "player_id": "A03",
+        "team_id": "AWAY",
+        "jersey_number": 3,
+        "name": "Mountain Player 03",
+        "position": "LCB",
+        "position_detail": "LCB",
+        "nationality": null,
+        "starter": true
+      },
+      {
+        "player_id": "A04",
+        "team_id": "AWAY",
+        "jersey_number": 4,
+        "name": "Mountain Player 04",
+        "position": "RCB",
+        "position_detail": "RCB",
+        "nationality": null,
+        "starter": true
+      },
+      {
+        "player_id": "A05",
+        "team_id": "AWAY",
+        "jersey_number": 5,
+        "name": "Mountain Player 05",
+        "position": "RB",
+        "position_detail": "RB",
+        "nationality": null,
+        "starter": true
+      },
+      {
+        "player_id": "A06",
+        "team_id": "AWAY",
+        "jersey_number": 6,
+        "name": "Mountain Player 06",
+        "position": "LCM",
+        "position_detail": "LCM",
+        "nationality": null,
+        "starter": true
+      },
+      {
+        "player_id": "A07",
+        "team_id": "AWAY",
+        "jersey_number": 7,
+        "name": "Mountain Player 07",
+        "position": "DM",
+        "position_detail": "DM",
+        "nationality": null,
+        "starter": true
+      },
+      {
+        "player_id": "A08",
+        "team_id": "AWAY",
+        "jersey_number": 8,
+        "name": "Mountain Player 08",
+        "position": "RCM",
+        "position_detail": "RCM",
+        "nationality": null,
+        "starter": true
+      },
+      {
+        "player_id": "A09",
+        "team_id": "AWAY",
+        "jersey_number": 9,
+        "name": "Mountain Player 09",
+        "position": "LW",
+        "position_detail": "LW",
+        "nationality": null,
+        "starter": true
+      },
+      {
+        "player_id": "A10",
+        "team_id": "AWAY",
+        "jersey_number": 10,
+        "name": "Mountain Player 10",
+        "position": "ST",
+        "position_detail": "ST",
+        "nationality": null,
+        "starter": true
+      },
+      {
+        "player_id": "A11",
+        "team_id": "AWAY",
+        "jersey_number": 11,
+        "name": "Mountain Player 11",
+        "position": "RW",
+        "position_detail": "RW",
+        "nationality": null,
+        "starter": true
+      }
+    ],
+    "columns": {
+      "tracking.players": [
+        "player_id",
+        "x_m",
+        "y_m",
+        "vx_mps",
+        "vy_mps"
+      ],
+      "tracking.ball": [
+        "x_m",
+        "y_m",
+        "z_m",
+        "vx_mps",
+        "vy_mps",
+        "vz_mps"
+      ]
+    },
+    "limitations": [
+      "Simplified procedural motion, not a professional football or physics simulator.",
+      "Club, player and venue names are fictional aliases; roster attributes are preserved from the source dataset. Match events and tracking are synthetic.",
+      "No offsides, physical collisions or realistic fatigue. Cards and tactical substitutions follow a synthetic schedule.",
+      "Incoming substitutes inherit the outgoing formation slot and position; no touchline entrance animation is modeled.",
+      "Pressure is a proximity heuristic; ball transport during restart_setup is non-playing animation.",
+      "Outcomes exist only in resolved events at available_at_ms; do not expose future events during replay."
+    ]
+  }
+}

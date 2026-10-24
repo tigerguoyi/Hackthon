@@ -1,0 +1,281 @@
+[
+  {
+    "case": "a",
+    "snapshot_id": "f181321fea364728",
+    "public_candidate_set_id": "outcome-2.0:b994daad26969c37",
+    "old_B_top": "pass:H08",
+    "A_outcome_top": "carry:left",
+    "new_B_top": "pass:H08",
+    "focus": "pass:H11",
+    "focus_scenarios": [
+      "intercepted",
+      "intercepted",
+      "intercepted",
+      "received"
+    ],
+    "candidates": [
+      {
+        "action_id": "pass:H08",
+        "rank": 1,
+        "eligible": true
+      },
+      {
+        "action_id": "pass:H06",
+        "rank": 2,
+        "eligible": true
+      },
+      {
+        "action_id": "pass:H09",
+        "rank": 3,
+        "eligible": true
+      },
+      {
+        "action_id": "pass:H11",
+        "rank": 4,
+        "eligible": true
+      },
+      {
+        "action_id": "pass:H07",
+        "rank": 5,
+        "eligible": true
+      },
+      {
+        "action_id": "carry:left",
+        "rank": 6,
+        "eligible": true
+      },
+      {
+        "action_id": "pass:H04",
+        "rank": 7,
+        "eligible": true
+      },
+      {
+        "action_id": "carry:forward",
+        "rank": 8,
+        "eligible": true
+      },
+      {
+        "action_id": "carry:right",
+        "rank": 9,
+        "eligible": true
+      },
+      {
+        "action_id": "pass:H03",
+        "rank": 10,
+        "eligible": true
+      },
+      {
+        "action_id": "shot:goal",
+        "rank": 11,
+        "eligible": true
+      },
+      {
+        "action_id": "pass:H01",
+        "rank": null,
+        "eligible": false
+      },
+      {
+        "action_id": "pass:H02",
+        "rank": null,
+        "eligible": false
+      },
+      {
+        "action_id": "pass:H05",
+        "rank": null,
+        "eligible": false
+      },
+      {
+        "action_id": "hold:1s",
+        "rank": null,
+        "eligible": false
+      }
+    ],
+    "note": "Different value targets/tails/candidate support; rank disagreement is not accuracy or a causal attribution."
+  },
+  {
+    "case": "b",
+    "snapshot_id": "f0a38b27789c6ba4",
+    "public_candidate_set_id": "outcome-2.0:9f3468025de39a3a",
+    "old_B_top": "carry:left",
+    "A_outcome_top": "shot:goal",
+    "new_B_top": "carry:left",
+    "focus": "pass:H09",
+    "focus_scenarios": [
+      "received",
+      "received",
+      "received",
+      "received"
+    ],
+    "candidates": [
+      {
+        "action_id": "carry:left",
+        "rank": 1,
+        "eligible": true
+      },
+      {
+        "action_id": "carry:forward",
+        "rank": 2,
+        "eligible": true
+      },
+      {
+        "action_id": "carry:right",
+        "rank": 3,
+        "eligible": true
+      },
+      {
+        "action_id": "shot:goal",
+        "rank": 4,
+        "eligible": true
+      },
+      {
+        "action_id": "pass:H11",
+        "rank": 5,
+        "eligible": true
+      },
+      {
+        "action_id": "pass:H08",
+        "rank": 6,
+        "eligible": true
+      },
+      {
+        "action_id": "pass:H09",
+        "rank": 7,
+        "eligible": true
+      },
+      {
+        "action_id": "pass:H07",
+        "rank": 8,
+        "eligible": true
+      },
+      {
+        "action_id": "pass:H06",
+        "rank": 9,
+        "eligible": true
+      },
+      {
+        "action_id": "pass:H01",
+        "rank": null,
+        "eligible": false
+      },
+      {
+        "action_id": "pass:H02",
+        "rank": null,
+        "eligible": false
+      },
+      {
+        "action_id": "pass:H03",
+        "rank": null,
+        "eligible": false
+      },
+      {
+        "action_id": "pass:H04",
+        "rank": null,
+        "eligible": false
+      },
+      {
+        "action_id": "pass:H05",
+        "rank": null,
+        "eligible": false
+      },
+      {
+        "action_id": "hold:1s",
+        "rank": null,
+        "eligible": false
+      }
+    ],
+    "note": "Different value targets/tails/candidate support; rank disagreement is not accuracy or a causal attribution."
+  },
+  {
+    "case": "c",
+    "snapshot_id": "b92721932c4b7255",
+    "public_candidate_set_id": "outcome-2.0:ace83100e190127f",
+    "old_B_top": "pass:A11",
+    "A_outcome_top": "shot:goal",
+    "new_B_top": "pass:A11",
+    "focus": "pass:A09",
+    "focus_scenarios": [
+      "received",
+      "received",
+      "received",
+      "received"
+    ],
+    "candidates": [
+      {
+        "action_id": "pass:A11",
+        "rank": 1,
+        "eligible": true
+      },
+      {
+        "action_id": "carry:left",
+        "rank": 2,
+        "eligible": true
+      },
+      {
+        "action_id": "carry:forward",
+        "rank": 3,
+        "eligible": true
+      },
+      {
+        "action_id": "carry:right",
+        "rank": 4,
+        "eligible": true
+      },
+      {
+        "action_id": "pass:A08",
+        "rank": 5,
+        "eligible": true
+      },
+      {
+        "action_id": "pass:A09",
+        "rank": 6,
+        "eligible": true
+      },
+      {
+        "action_id": "pass:A07",
+        "rank": 7,
+        "eligible": true
+      },
+      {
+        "action_id": "pass:A06",
+        "rank": 8,
+        "eligible": true
+      },
+      {
+        "action_id": "pass:A04",
+        "rank": 9,
+        "eligible": true
+      },
+      {
+        "action_id": "shot:goal",
+        "rank": 10,
+        "eligible": true
+      },
+      {
+        "action_id": "pass:A01",
+        "rank": null,
+        "eligible": false
+      },
+      {
+        "action_id": "pass:A02",
+        "rank": null,
+        "eligible": false
+      },
+      {
+        "action_id": "pass:A03",
+        "rank": null,
+        "eligible": false
+      },
+      {
+        "action_id": "pass:A05",
+        "rank": null,
+        "eligible": false
+      },
+      {
+        "action_id": "hold:1s",
+        "rank": null,
+        "eligible": false
+      }
+    ],
+    "note": "Different value targets/tails/candidate support; rank disagreement is not accuracy or a causal attribution."
+  }
+]

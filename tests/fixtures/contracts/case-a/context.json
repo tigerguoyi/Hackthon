@@ -1,0 +1,8 @@
+{
+  "case": "A",
+  "source": "data/decisions.jsonl",
+  "decision_id": "d000001",
+  "actual_action_id": "pass:H09",
+  "focus_action_id": "pass:H11",
+  "note": "Presentation context only. Do not pass actual_action_id or future events to compare()."
+}

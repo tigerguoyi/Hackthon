@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>NextPlay · Generator integration</title>
+  <link rel="stylesheet" href="team-integration.css?v=1">
+  <script type="module" src="team-integration.js?v=1"></script>
+</head>
+<body><main>
+  <header><a href="/?dataset=enriched-v1&view=stats">← Legacy research dashboard</a><span class="badge">A snapshots · B Q2 · contract-1</span></header>
+  <p class="eyebrow">NEXTPLAY / GENERATOR INTEGRATION</p>
+  <h1>The same snapshot. One action ranking.</h1>
+  <p class="intro">Compare passes, carries and shots using B's two-step model. Rankings, opportunities and risks are exploratory; hypothetical play stays separate from the observed match.</p>
+  <div class="source-summary" id="source-summary">Loading the pinned source…</div>
+  <form id="analysis-form" class="card controls">
+    <label>Source / fixed case<select id="source" disabled></select></label>
+    <label id="decision-field" hidden>Decision-time snapshot<select id="decision"></select></label>
+    <label>Audience<select id="mode"><option value="fan">Fan</option><option value="analyst">Analyst</option></select></label>
+    <label>Simulated preferred foot<select id="foot"><option value="">Unknown / neutral</option><option value="left">Left</option><option value="right">Right</option><option value="both">Both</option></select></label>
+    <label>Simulated weak foot<select id="weak-foot"><option value="">Unknown / neutral</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></label>
+    <label class="question">Question<input id="question" value="Compare the current choices and their risks." maxlength="4000" required></label>
+    <div class="buttons"><button id="analyze" type="submit" disabled>Compare actions</button><button id="actual" type="button" disabled>Reveal historical choice</button><button id="export" type="button" disabled>Export public response</button></div>
+    <p class="note">The simulated profile is editable and binds the candidate-set ID. Foot effects are neutral: this version does not infer unobserved individual success rates.</p>
+  </form>
+  <p id="status" role="status" aria-live="polite">Loading…</p>
+  <div class="workspace">
+    <section class="card pitch-card"><div class="section-heading"><h2 id="pitch-title">Observed decision-time snapshot</h2><span id="clock"></span></div>
+      <svg id="pitch" viewBox="-4 -5 113 78" role="img" aria-label="Observed player positions and selected hypothetical route"></svg>
+      <p class="legend"><span>● Home</span><span>● Away</span><span>Dashed orange: modelled option</span></p>
+      <div id="conditions" class="conditions"></div>
+      <details><summary>Observed source profile</summary><div id="observed-profile">Select a snapshot.</div></details>
+    </section>
+    <section class="card"><div class="section-heading"><h2>Action ranking</h2><span id="model-status">Not computed</span></div>
+      <p class="note">Public contract view: ordinal ranks and evidence, without internal value scores or success percentages. Unsupported actions have no rank.</p>
+      <div class="table-wrap"><table><thead><tr><th>Rank</th><th>Action</th><th>Opportunity</th><th>Main risk</th></tr></thead><tbody id="candidates"></tbody></table></div>
+      <div id="selected" class="selected">Select a snapshot, then compare actions.</div>
+    </section>
+  </div>
+  <section class="card rollout-panel"><div class="section-heading"><h2>Counterfactual pass playback</h2><span class="badge">Hypothesis · not a match event</span></div>
+    <p>Only the exact supported ground-pass template can be played. Four reaction/error settings are illustrative cases, not probability samples.</p>
+    <div class="buttons"><button id="rollout" disabled>Compute selected pass</button><label>Scenario<select id="scenario" disabled></select></label><button id="play" disabled>Play hypothesis</button><button id="reset" disabled>Reset to observed snapshot</button></div>
+    <input id="hypothesis-time" type="range" min="0" max="1" step="1" value="0" disabled aria-label="Separate hypothetical timeline">
+    <p id="rollout-status">Choose an eligible ground pass after comparison.</p>
+  </section>
+  <section class="card"><h2>Evidence and assumptions</h2><div id="evidence">No computed evidence yet.</div><p id="actual-status">Historical choice is hidden. It is matched only after the comparison is complete.</p><details><summary>Version binding and limitations</summary><pre id="identity"></pre></details></section>
+  <footer>Original B matches, enriched-v1 outputs and the original generator are unchanged. No language model is called by this page. Direction follows explicit metadata; movement direction is not body orientation.</footer>
+</main></body></html>

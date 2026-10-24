@@ -1,0 +1,15 @@
+{
+  "match_id": "SYN-20261019-001",
+  "snapshot_id": "f0a38b27789c6ba4",
+  "t_ms": 763000,
+  "actor_id": "H10",
+  "question": "Why shoot instead of making one more pass?",
+  "mode": "fan",
+  "language": "en",
+  "profile": {
+    "profile_version": "sim-1",
+    "kind": "simulated",
+    "preferred_foot": null,
+    "weak_foot": null
+  }
+}

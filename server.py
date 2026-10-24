@@ -11,6 +11,7 @@ from urllib.parse import urlsplit, parse_qs
 
 from analysis_agent import build_report
 from model_service import narrate, validate_base_url
+from role_b.service import handle_get as role_b_get, handle_post as role_b_post
 
 ROOT = Path(__file__).resolve().parent
 CONFIG = ROOT / '.local' / 'model-service.json'
@@ -93,6 +94,8 @@ class Handler(SimpleHTTPRequestHandler):
         return super().send_head()
 
     def do_GET(self):
+        if role_b_get(self):
+            return
         route = urlsplit(self.path)
         if route.path == '/api/match-report':
             if not self.trusted():
@@ -128,6 +131,8 @@ class Handler(SimpleHTTPRequestHandler):
             if not isinstance(data, dict):
                 raise ValueError('Expected a JSON object.')
             route = urlsplit(self.path).path
+            if role_b_post(self, route, data):
+                return
             if route == '/api/model-settings':
                 self.reply(200, save_config(data))
                 return
